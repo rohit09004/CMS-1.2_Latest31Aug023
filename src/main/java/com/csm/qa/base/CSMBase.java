@@ -1,9 +1,11 @@
 package com.csm.qa.base;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,8 +28,15 @@ public class CSMBase {
 		{
 		prop = new Properties();
 		//FileInputStream ip= new FileInputStream("D:\\CCSMAAutomation\\src\\main\\java\\com\\csm"+"/qa/config/config.properties");
-		FileInputStream ip= new FileInputStream("D:\\Eclipse_rohit\\CMSWFH\\src\\main\\java\\com\\csm\\qa\\config\\configg.properties");
-		prop.load(ip);
+//		FileInputStream ip= new FileInputStream("D:\\Eclipse_rohit\\CMSWFH\\src\\main\\java\\com\\csm\\qa\\config\\configg.properties");
+//		prop.load(ip);
+		
+		   File file =new File("configg.txt");
+		   System.out.println(file.getAbsolutePath());
+           String Path1= file.getAbsolutePath().toString();
+		   FileInputStream fs = new FileInputStream(Path1);
+		   prop.load(fs);
+
 		
 	    }catch(FileNotFoundException e)
 		{
