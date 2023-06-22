@@ -32,6 +32,8 @@ public class LoginPageTest extends CSMBase{
 		Thread.sleep(1000);
 		Assert.assertTrue(logo);
 		System.out.println("ValidateCMSLogoImage doned");
+		System.out.println("ValidateCMSLogoImage2 doned");
+		
 	}
 	//Validate Login with Valid Credentials 
 	@Test(priority=1)
