@@ -23,7 +23,7 @@ public class LoginPage extends CSMBase {
      @FindBy(xpath="//img[contains(@class,'profile-img-card')]")
      WebElement CMSLogo;
      
-     @FindBy(xpath="/html/body/div[1]/div/section[2]/div[3]/div/div/div/div[1]/button")
+     @FindBy(id="btnClose")
      WebElement closePasswordPoup;
      
     //Initialize Page object  
