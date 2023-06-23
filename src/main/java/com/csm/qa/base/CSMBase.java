@@ -26,22 +26,18 @@ public class CSMBase {
 	{
 		try
 		{
-		prop = new Properties();
-		//FileInputStream ip= new FileInputStream("D:\\CCSMAAutomation\\src\\main\\java\\com\\csm"+"/qa/config/config.properties");
-//		FileInputStream ip= new FileInputStream("D:\\Eclipse_rohit\\CMSWFH\\src\\main\\java\\com\\csm\\qa\\config\\configg.properties");
-//		prop.load(ip);
-		
-		   File file =new File("configg.txt");
-		   System.out.println(file.getAbsolutePath());
+		   prop = new Properties();
+           File file =new File("configg.txt");
+		 // System.out.println(file.getAbsolutePath());
            String Path1= file.getAbsolutePath().toString();
 		   FileInputStream fs = new FileInputStream(Path1);
 		   prop.load(fs);
-
-		
-	    }catch(FileNotFoundException e)
+        }catch(FileNotFoundException e)
 		{
 	    	e.printStackTrace();
+		
 		}catch(IOException e) {
+		
 			e.printStackTrace();
 		}	
 	}
@@ -49,8 +45,7 @@ public class CSMBase {
 	public static void initialize() throws InterruptedException
 	{
 	 
-		//System.setProperty("webdriver.chrome.driver","D:\\Eclipse_rohit\\EclipseSetup_Library\\ChromeDriverJune2023\\chromedriver.exe");
-		WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		driver = new ChromeDriver(options);
@@ -58,9 +53,8 @@ public class CSMBase {
 		 driver.manage().window().maximize();
 		 driver.manage().deleteAllCookies();
 		 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TestUtil.pageload_wait));
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.implicit_wait));
+		 //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.implicit_wait));
 		 driver.get(prop.getProperty("url"));//url is launched 
 	
-		 
-	}
+     }
 }

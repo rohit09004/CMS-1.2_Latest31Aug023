@@ -28,35 +28,12 @@ public class HomePage extends CSMBase{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String VerifyHomePagetitle()
-	{
-		return driver.getTitle();
-	}
-	
 	public void clickOnCMSModuleMenu()
 	{
 		CMS_Module.click();
 	}
 	
-	public void clickOnAdmin()
-	{
-		Admin.click();
-	}
+
 	
-	public boolean VerifycorrectJobCodeKey()
-	{
-		return Job_code_key.isDisplayed();
-	}
-	
-	public IDCPage clickOnIDC()
-	{
-		Actions ac= new Actions(driver);
-		ac.moveToElement(CMS_Module).build().perform();
-		clickOnIDC.click();	
-		return new IDCPage();
-		/*WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-		WebElement element =wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='Menu-treeview']/child::div/child::div/child::div/child::div/child::div/child::ul/child::li[2]/child::div[2]")));
-		element.click();*/
-	}
 	
 }

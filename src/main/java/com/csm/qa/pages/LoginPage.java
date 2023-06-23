@@ -31,16 +31,6 @@ public class LoginPage extends CSMBase {
      {
     	 PageFactory.initElements(driver,this);
      }
-     //Action:  
-     public String validateLoginPageTitle()
-     {
-    	 return driver.getTitle();   	 
-     }
-     
-     public boolean validateCSMLogo()
-     {
-    	 return CMSLogo.isDisplayed();
-     }
      
      public HomePage login(String uid, String pwd)
      {
@@ -51,8 +41,5 @@ public class LoginPage extends CSMBase {
     	 return new HomePage();
     		
      }
-	private void closePasswordPoup() {
-		// TODO Auto-generated method stub
-		
-	}
+
 }

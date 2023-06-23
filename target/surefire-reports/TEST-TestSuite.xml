@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="23.53" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="28.308" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="20+36-2344"/>
     <property name="sun.boot.library.path" value="D:\JDK_new_updated\jdk-20\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\Eclipse_rohit\CMSWFH"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Eclipse_rohit\CMS"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\Eclipse_rohit\CMSWFH"/>
+    <property name="user.dir" value="D:\Eclipse_rohit\CMS"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="20+36-2344"/>
     <property name="os.arch" value="amd64"/>
@@ -26,7 +26,7 @@
     <property name="user.variant" value=""/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\Eclipse_rohit\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10582571411507131512.tmp"/>
+    <property name="classworlds.conf" value="D:\Eclipse_rohit\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3217158749364755989.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="java.library.path" value="D:\JDK_new_updated\jdk-20\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/106-3249/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20221004-1257/jre/bin/server;C:/Users/106-3249/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20221004-1257/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.4.1;C:\Program Files\Java\jdk-17.0.4.1\bin;C:\Program Files\apache-maven-3.9.2-bin\apache-maven-3.9.2\bin;C:\Users\106-3249\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Azure Data Studio\bin;C:\Windows\system32;;."/>
@@ -51,7 +51,7 @@
     <property name="java.version" value="20"/>
     <property name="native.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="D:\Eclipse_rohit\CMSWFH\EMBEDDED"/>
+    <property name="maven.home" value="D:\Eclipse_rohit\CMS\EMBEDDED"/>
     <property name="style.color" value="always"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2023-03-21"/>
@@ -60,7 +60,8 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="clickOnCMSModule" classname="com.csm.qa.test.HomePageTest" time="2.147"/>
-  <testcase name="clickonIDC" classname="com.csm.qa.test.HomePageTest" time="5.102"/>
-  <testcase name="LoginWithValidCredentials" classname="com.csm.qa.test.LoginPageTest" time="4.888"/>
+  <testcase name="clickOnCMSModule" classname="com.csm.qa.test.HomePageTest" time="1.388"/>
+  <testcase name="clickonIDC" classname="com.csm.qa.test.HomePageTest" time="3.531"/>
+  <testcase name="LoginWithValidCredentials" classname="com.csm.qa.test.LoginPageTest" time="8.741"/>
+  <testcase name="Test2" classname="com.csm.qa.test.LoginPageTest" time="0.088"/>
 </testsuite>
