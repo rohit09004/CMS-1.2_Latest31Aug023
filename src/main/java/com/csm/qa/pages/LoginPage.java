@@ -32,11 +32,12 @@ public class LoginPage extends CSMBase {
     	 PageFactory.initElements(driver,this);
      }
      
-     public HomePage login(String uid, String pwd)
+     public HomePage login(String uid, String pwd) throws InterruptedException
      {
     	 UserID.sendKeys(uid);
     	 Password.sendKeys(pwd);
     	 login_Btn.click(); 
+    	 Thread.sleep(3000);
     	 closePasswordPoup.click();
     	 return new HomePage();
     		
