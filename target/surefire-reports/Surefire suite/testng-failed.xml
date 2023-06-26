@@ -9,7 +9,6 @@
           <include name="startReport"/>
           <include name="Test5"/>
           <include name="endReport"/>
-          <include name="Test6"/>
         </methods>
       </class> <!-- com.csm.qa.test.LoginPageTest -->
     </classes>
