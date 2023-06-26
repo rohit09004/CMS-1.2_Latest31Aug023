@@ -3,21 +3,13 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.csm.qa.test.HomePageTest">
-        <methods>
-          <include name="clickonIDC"/>
-          <include name="setup"/>
-          <include name="clickOnCMSModule"/>
-        </methods>
-      </class> <!-- com.csm.qa.test.HomePageTest -->
       <class name="com.csm.qa.test.LoginPageTest">
         <methods>
           <include name="getResult"/>
-          <include name="Test1"/>
           <include name="startReport"/>
+          <include name="Test5"/>
           <include name="endReport"/>
-          <include name="setup"/>
-          <include name="LoginWithValidCredentials"/>
+          <include name="Test6"/>
         </methods>
       </class> <!-- com.csm.qa.test.LoginPageTest -->
     </classes>

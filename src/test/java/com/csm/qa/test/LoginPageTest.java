@@ -100,12 +100,12 @@ public class LoginPageTest extends CSMBase{
 		driver.quit();
 	}
 	 
-@Test(priority=2)
-public void Test2() throws EncryptedDocumentException, InterruptedException, IOException
+@Test(priority=4)
+public void Test4() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	   
         
-	   test=extent.startTest("Test 2 - Insertion of new data ");
+	   test=extent.startTest("Test 4 - Insertion of new data ");
 	   
 	   File file =new File("POShipping.xlsx");
 	   System.out.println(file.getAbsolutePath());
@@ -115,24 +115,64 @@ public void Test2() throws EncryptedDocumentException, InterruptedException, IOE
 	   XSSFWorkbook workbook = new XSSFWorkbook(fs);
 	   XSSFSheet sheet = workbook.getSheetAt(0);
 	   String po1=sheet.getRow(4).getCell(2).getStringCellValue();
-	   System.out.println(po1);
+       System.out.println(po1);
 	   String po2=sheet.getRow(5).getCell(2).getStringCellValue();
 	   System.out.println(po2);
          
-	   System.out.println("Test 2 passed with invalid credentials");  
+	   System.out.println("Test 4 passed with invalid credentials");  
 	   
         Assert.assertTrue(true);
-  		test.log(LogStatus.PASS, "Test 2 - Insertion of new data PASSED");
+  		test.log(LogStatus.PASS, "Test 4 - Insertion of new data PASSED");
   		
-  		    	   	 
-}
+  }
+
+@Test(priority=5)
+public void Test5() throws EncryptedDocumentException, InterruptedException, IOException
+{
+	   
+        
+	   test=extent.startTest("Test 5 - Insertion of new data ");
+	   
+	    initialize();
+		loginPage= new LoginPage(driver);
+        homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		Thread.sleep(1000);
+		String homePagetitle= driver.getTitle();
+		Assert.assertEquals(homePagetitle,"Home Page", "Invalid Credentials");
+       
+		System.out.println("Test 5 passed with invalid credentials");  
+	   
+        Assert.assertTrue(true);
+  		test.log(LogStatus.PASS, "Test 5 - Insertion of new data PASSED");
+  		
+  }
+@Test(priority=6)
+public void Test6() throws EncryptedDocumentException, InterruptedException, IOException
+{
+	   
+        
+	   test=extent.startTest("Test 6 - Insertion of new data ");
+	   
+	    initialize();
+		loginPage= new LoginPage(driver);
+        homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		Thread.sleep(1000);
+		String homePagetitle= driver.getTitle();
+		Assert.assertEquals(homePagetitle,"Home Page", "Invalid Credentials");
+       
+		System.out.println("Test 6 passed with invalid credentials");  
+	   
+        Assert.assertTrue(true);
+  		test.log(LogStatus.PASS, "Test 6 - Insertion of new data PASSED");
+  		
+  }
 
 @AfterMethod
 public void getResult(ITestResult result) throws IOException
 {
     if(result.getStatus() == ITestResult.FAILURE)
     {
-    	Random randVar = new Random();
+      Random randVar = new Random();
       int randomVarr=randVar.nextInt(1000);
       String screenShotPath = GetScreenShot.capture(driver, "FailedTestScreen"+randomVarr);
       test.log(LogStatus.FAIL, result.getThrowable());

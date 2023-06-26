@@ -1,65 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-23T15:34:00 IST" name="Surefire suite" finished-at="2023-06-23T15:34:28 IST" duration-ms="28183">
+  <suite started-at="2023-06-26T10:20:33 IST" name="Surefire suite" finished-at="2023-06-26T10:21:21 IST" duration-ms="48409">
     <groups>
     </groups>
-    <test started-at="2023-06-23T15:34:00 IST" name="Surefire test" finished-at="2023-06-23T15:34:28 IST" duration-ms="28183">
+    <test started-at="2023-06-26T10:20:33 IST" name="Surefire test" finished-at="2023-06-26T10:21:21 IST" duration-ms="48409">
       <class name="com.csm.qa.test.LoginPageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@40e6dfe1]" started-at="2023-06-23T15:34:00 IST" name="startReport" finished-at="2023-06-23T15:34:01 IST" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@105fece7]" started-at="2023-06-26T10:20:33 IST" name="startReport" finished-at="2023-06-26T10:20:33 IST" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method signature="LoginWithValidCredentials()[pri:1, instance:com.csm.qa.test.LoginPageTest@40e6dfe1]" started-at="2023-06-23T15:34:19 IST" name="LoginWithValidCredentials" finished-at="2023-06-23T15:34:28 IST" duration-ms="9319" status="PASS">
+        <test-method signature="LoginWithValidCredentials()[pri:1, instance:com.csm.qa.test.LoginPageTest@105fece7]" started-at="2023-06-26T10:20:53 IST" name="LoginWithValidCredentials" finished-at="2023-06-26T10:21:04 IST" duration-ms="10813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithValidCredentials -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@40e6dfe1]" started-at="2023-06-23T15:34:28 IST" name="getResult" finished-at="2023-06-23T15:34:28 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@105fece7]" started-at="2023-06-26T10:21:04 IST" name="getResult" finished-at="2023-06-26T10:21:04 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginWithValidCredentials status=SUCCESS method=LoginPageTest.LoginWithValidCredentials()[pri:1, instance:com.csm.qa.test.LoginPageTest@40e6dfe1] output={null}]]]>
+                <![CDATA[[TestResult name=LoginWithValidCredentials status=SUCCESS method=LoginPageTest.LoginWithValidCredentials()[pri:1, instance:com.csm.qa.test.LoginPageTest@105fece7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Test2()[pri:2, instance:com.csm.qa.test.LoginPageTest@40e6dfe1]" started-at="2023-06-23T15:34:28 IST" name="Test2" finished-at="2023-06-23T15:34:28 IST" duration-ms="102" status="PASS">
+        <test-method signature="Test4()[pri:4, instance:com.csm.qa.test.LoginPageTest@105fece7]" started-at="2023-06-26T10:21:04 IST" name="Test4" finished-at="2023-06-26T10:21:04 IST" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@40e6dfe1]" started-at="2023-06-23T15:34:28 IST" name="getResult" finished-at="2023-06-23T15:34:28 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Test4 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@105fece7]" started-at="2023-06-26T10:21:04 IST" name="getResult" finished-at="2023-06-26T10:21:04 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Test2 status=SUCCESS method=LoginPageTest.Test2()[pri:2, instance:com.csm.qa.test.LoginPageTest@40e6dfe1] output={null}]]]>
+                <![CDATA[[TestResult name=Test4 status=SUCCESS method=LoginPageTest.Test4()[pri:4, instance:com.csm.qa.test.LoginPageTest@105fece7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@40e6dfe1]" started-at="2023-06-23T15:34:28 IST" name="endReport" finished-at="2023-06-23T15:34:28 IST" duration-ms="424" status="PASS">
+        <test-method signature="Test5()[pri:5, instance:com.csm.qa.test.LoginPageTest@105fece7]" started-at="2023-06-26T10:21:04 IST" name="Test5" finished-at="2023-06-26T10:21:13 IST" duration-ms="8694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test5 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@105fece7]" started-at="2023-06-26T10:21:13 IST" name="getResult" finished-at="2023-06-26T10:21:13 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test5 status=SUCCESS method=LoginPageTest.Test5()[pri:5, instance:com.csm.qa.test.LoginPageTest@105fece7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="Test6()[pri:6, instance:com.csm.qa.test.LoginPageTest@105fece7]" started-at="2023-06-26T10:21:13 IST" name="Test6" finished-at="2023-06-26T10:21:21 IST" duration-ms="8302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test6 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@105fece7]" started-at="2023-06-26T10:21:21 IST" name="getResult" finished-at="2023-06-26T10:21:21 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test6 status=SUCCESS method=LoginPageTest.Test6()[pri:6, instance:com.csm.qa.test.LoginPageTest@105fece7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@105fece7]" started-at="2023-06-26T10:21:21 IST" name="endReport" finished-at="2023-06-26T10:21:21 IST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.csm.qa.test.LoginPageTest -->
       <class name="com.csm.qa.test.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.csm.qa.test.HomePageTest@29ba4338]" started-at="2023-06-23T15:34:01 IST" name="setup" finished-at="2023-06-23T15:34:08 IST" duration-ms="7409" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.csm.qa.test.HomePageTest@7bb58ca3]" started-at="2023-06-26T10:20:33 IST" name="setup" finished-at="2023-06-26T10:20:42 IST" duration-ms="8673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickOnCMSModule()[pri:2, instance:com.csm.qa.test.HomePageTest@29ba4338]" started-at="2023-06-23T15:34:08 IST" name="clickOnCMSModule" finished-at="2023-06-23T15:34:09 IST" duration-ms="1335" status="PASS">
+        <test-method signature="clickOnCMSModule()[pri:2, instance:com.csm.qa.test.HomePageTest@7bb58ca3]" started-at="2023-06-26T10:20:42 IST" name="clickOnCMSModule" finished-at="2023-06-26T10:20:43 IST" duration-ms="1347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnCMSModule -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.csm.qa.test.HomePageTest@29ba4338]" started-at="2023-06-23T15:34:09 IST" name="setup" finished-at="2023-06-23T15:34:16 IST" duration-ms="6392" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.csm.qa.test.HomePageTest@7bb58ca3]" started-at="2023-06-26T10:20:43 IST" name="setup" finished-at="2023-06-26T10:20:51 IST" duration-ms="7465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickonIDC()[pri:3, instance:com.csm.qa.test.HomePageTest@29ba4338]" started-at="2023-06-23T15:34:16 IST" name="clickonIDC" finished-at="2023-06-23T15:34:19 IST" duration-ms="2979" status="PASS">
+        <test-method signature="clickonIDC()[pri:3, instance:com.csm.qa.test.HomePageTest@7bb58ca3]" started-at="2023-06-26T10:20:51 IST" name="clickonIDC" finished-at="2023-06-26T10:20:53 IST" duration-ms="2738" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickonIDC -->
