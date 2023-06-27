@@ -193,8 +193,8 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 
 	       //Inspection and clicking of "Insert" Button for Child grid under PO Screen
 	  		WebDriverWait insertChildSymbole1= new WebDriverWait(driver, Duration.ofMillis(8000));
-	  	    insertChildSymbole1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")));
-	  	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")).click();
+	  	    insertChildSymbole1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-button-content'])[7]")));
+	  	    driver.findElement(By.xpath("(//div[@class='dx-button-content'])[7]")).click();
 	  	    System.out.println("06.Clicked on 'Insert' button to add new CHILD Record");
 	  	    Reporter.log("06.Clicked on 'Insert' button to add new CHILD Record");
 	  	    reportLog("06.Clicked on 'Insert' button to add new CHILD Record");
