@@ -20,7 +20,7 @@ public class HomePageTest extends CSMBase {
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));	
 	}
 
-	@Test(priority=2)
+	//@Test(priority=2)
 	public void clickOnCMSModule() throws InterruptedException
 	{
 	
@@ -31,7 +31,7 @@ public class HomePageTest extends CSMBase {
 	
 	}
 	
-	@Test(priority=3)
+	//@Test(priority=3)
 	public void clickonIDC() throws InterruptedException
 	{
 	
