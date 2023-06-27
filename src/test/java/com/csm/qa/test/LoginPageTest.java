@@ -202,14 +202,14 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 	  	    
 	  	    //Inspection and clicking of "Discipline Code"   	    
 	  	    WebDriverWait disciplineCodeDropdown1 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	  	    disciplineCodeDropdown1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")));
-	  	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")).click();
+	  	    disciplineCodeDropdown1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-button-content'])[17]")));
+	  	    driver.findElement(By.xpath("(//div[@class='dx-button-content'])[17]")).click();
 	  	    Thread.sleep(1000);
 	  	    
 	  	    //Inspection and clicking of particular "Discipline Code"    	    
 	  	    WebDriverWait disciplineCodeDropdownPiping1 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	  	    disciplineCodeDropdownPiping1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[24]")));
-	  	    driver.findElement(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[24]")).click();
+	  	    disciplineCodeDropdownPiping1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[64]")));
+	  	    driver.findElement(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[64]")).click();
 	  	    System.out.println("07.Choosing 'Displine code' ");
 	  	    Reporter.log("07.Choosing 'Displine code' ");
 	  	    reportLog("07.Choosing 'Displine code' ");
