@@ -189,7 +189,7 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 	    System.out.println("05.Cliking on 'SAVE' button ");
 	    Reporter.log("05.Cliking on 'SAVE' button ");
 	    reportLog("05.Cliking on 'SAVE' button ");
-	    Thread.sleep(1000);
+	    Thread.sleep(3000);
 
 	       //Inspection and clicking of "Insert" Button for Child grid under PO Screen
 	  		WebDriverWait insertChildSymbole1= new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -238,7 +238,7 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 	    Actions action1 = new Actions(driver); 
 	    WebElement  element1 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
 	    action1.moveToElement(element1).click().perform();
-	    Thread.sleep(1000);
+	    Thread.sleep(3000);
 		    
 	    //Inspection and clicking of "PO Qty."
 	    WebDriverWait poQty1 = new WebDriverWait(driver, Duration.ofMillis(8000));
