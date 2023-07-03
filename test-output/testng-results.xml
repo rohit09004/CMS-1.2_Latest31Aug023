@@ -125,16 +125,16 @@
       <![CDATA[ ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-06-28T12:03:28 IST" name="Default suite" finished-at="2023-06-28T12:04:17 IST" duration-ms="49539">
+  <suite started-at="2023-07-03T09:33:06 IST" name="Default suite" finished-at="2023-07-03T09:33:54 IST" duration-ms="48138">
     <groups>
     </groups>
-    <test started-at="2023-06-28T12:03:28 IST" name="Default test" finished-at="2023-06-28T12:04:17 IST" duration-ms="49539">
+    <test started-at="2023-07-03T09:33:06 IST" name="Default test" finished-at="2023-07-03T09:33:54 IST" duration-ms="48138">
       <class name="com.csm.qa.test.LoginPageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@76505305]" started-at="2023-06-28T12:03:28 IST" name="startReport" finished-at="2023-06-28T12:03:28 IST" duration-ms="145" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@76505305]" started-at="2023-07-03T09:33:06 IST" name="startReport" finished-at="2023-07-03T09:33:06 IST" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method signature="Test6()[pri:6, instance:com.csm.qa.test.LoginPageTest@76505305]" started-at="2023-06-28T12:03:28 IST" name="Test6" finished-at="2023-06-28T12:04:17 IST" duration-ms="48984" status="PASS">
+        <test-method signature="Test6()[pri:6, instance:com.csm.qa.test.LoginPageTest@76505305]" started-at="2023-07-03T09:33:06 IST" name="Test6" finished-at="2023-07-03T09:33:54 IST" duration-ms="47641" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ ]]>
@@ -261,7 +261,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test6 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@76505305]" started-at="2023-06-28T12:04:17 IST" name="getResult" finished-at="2023-06-28T12:04:17 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@76505305]" started-at="2023-07-03T09:33:54 IST" name="getResult" finished-at="2023-07-03T09:33:54 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -272,7 +272,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@76505305]" started-at="2023-06-28T12:04:17 IST" name="endReport" finished-at="2023-06-28T12:04:17 IST" duration-ms="375" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@76505305]" started-at="2023-07-03T09:33:54 IST" name="endReport" finished-at="2023-07-03T09:33:54 IST" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
