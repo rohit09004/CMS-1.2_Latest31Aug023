@@ -242,12 +242,12 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 		    
 	    //Inspection and clicking of "PO Qty."
 	    WebDriverWait poQty1 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    poQty1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@class='dx-texteditor-input'])[20]"))); 
-	    driver.findElement(By.xpath("(//input[@class='dx-texteditor-input'])[20]")).click();
+	    poQty1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))); 
+	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
 	    base.commonPOQtyBackSpace(driver);
         Thread.sleep(1000);
 		String poQtyData1= sheet.getRow(1).getCell(9).getStringCellValue();
-	    driver.findElement(By.xpath("(//input[@class='dx-texteditor-input'])[20]")).sendKeys(poQtyData1);
+	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(poQtyData1);
 	    System.out.println("10.Inserting 'PO Qty.' field ");
 	    Reporter.log("10.Inserting 'PO Qty.' field ");
 	    reportLog("10.Inserting 'PO Qty.' field ");
