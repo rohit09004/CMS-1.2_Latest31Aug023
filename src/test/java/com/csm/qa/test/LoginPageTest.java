@@ -242,7 +242,7 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 	    Thread.sleep(3000);
 		    
 	    //Inspection and clicking of "PO Qty."
-	    WebDriverWait poQty1 = new WebDriverWait(driver, Duration.ofMillis(8000));
+	    WebDriverWait poQty1 = new WebDriverWait(driver, Duration.ofMillis(20000));
 	    poQty1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))); 
 	    driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
 	    String poQtyDataa= sheet.getRow(1).getCell(9).getStringCellValue();
