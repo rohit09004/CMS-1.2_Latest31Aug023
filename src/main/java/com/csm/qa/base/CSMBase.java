@@ -193,11 +193,11 @@ public class CSMBase {
 			  Thread.sleep(4000);
 	   }
 		public void commonPOQtyBackSpace(WebDriver driver) {
-			 driver.findElement(By.xpath("(//input[@class='dx-texteditor-input'])[20]")).sendKeys(Keys.BACK_SPACE);
-		     driver.findElement(By.xpath("(//input[@class='dx-texteditor-input'])[20]")).sendKeys(Keys.BACK_SPACE);
-		     driver.findElement(By.xpath("(//input[@class='dx-texteditor-input'])[20]")).sendKeys(Keys.BACK_SPACE);
-		     driver.findElement(By.xpath("(//input[@class='dx-texteditor-input'])[20]")).sendKeys(Keys.BACK_SPACE);
-		     driver.findElement(By.xpath("(//input[@class='dx-texteditor-input'])[20]")).sendKeys("8");
+			 driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(Keys.BACK_SPACE);
+		     driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(Keys.BACK_SPACE);
+		     driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(Keys.BACK_SPACE);
+		     driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(Keys.BACK_SPACE);
+		     driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys("8");
 		     
 		}
 		
