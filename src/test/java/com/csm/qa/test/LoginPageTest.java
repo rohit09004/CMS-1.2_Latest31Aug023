@@ -242,28 +242,37 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 	    Thread.sleep(10000);
 		   
 
-		    //Inspection and clicking of "PO Qty."
-		    WebDriverWait poQty11 = new WebDriverWait(driver, Duration.ofMillis(20000));
-		    System.out.println("Po start 1");
-		    poQty11.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")));
-		    System.out.println("Po start 2");
-		    //driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
-		    System.out.println("Po start 3");
-		    String poQtyDataaa= sheet.getRow(1).getCell(9).getStringCellValue();
-		    System.out.println(poQtyDataaa);
-		    base.commonPOQtyBackSpace(driver);
-		    //driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(poQtyDataaa);
-		    //driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(Keys.CONTROL + "a" + Keys.CONTROL+"8");
-		    //driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(Keys.CONTROL + "a" + Keys.CONTROL+"8");
-
-		    Actions act =  new Actions(driver);
-		    act.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))).click().sendKeys("8").perform();
-		    
-		   // driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys("8");
-		    System.out.println("10.Inserting 'PO Qty.' field ");
-		    Reporter.log("10.Inserting 'PO Qty.' field ");
-		    reportLog("10.Inserting 'PO Qty.' field ");
-		    Thread.sleep(1000);
+//		    //Inspection and clicking of "PO Qty."
+//		    WebDriverWait poQty11 = new WebDriverWait(driver, Duration.ofMillis(20000));
+//		    System.out.println("Po start 1");
+//		    poQty11.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")));
+//		    System.out.println("Po start 2");
+//		    //driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
+//		    System.out.println("Po start 3");
+//		    String poQtyDataaa= sheet.getRow(1).getCell(9).getStringCellValue();
+//		    System.out.println(poQtyDataaa);
+//		    base.commonPOQtyBackSpace(driver);
+//		    //driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(poQtyDataaa);
+//		    //driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(Keys.CONTROL + "a" + Keys.CONTROL+"8");
+//            Actions act =  new Actions(driver);
+//		    act.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))).click().sendKeys("8").perform();
+//            // driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys("8");
+//		    System.out.println("10.Inserting 'PO Qty.' field ");
+//		    Reporter.log("10.Inserting 'PO Qty.' field ");
+//		    reportLog("10.Inserting 'PO Qty.' field ");
+//		    Thread.sleep(1000);
+	    
+	  //Inspection and clicking of "PO Qty."
+	    WebDriverWait poQty11 = new WebDriverWait(driver, Duration.ofMillis(20000));
+	    poQty11.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")));
+        String poQtyDataaa= sheet.getRow(1).getCell(9).getStringCellValue();
+	    base.commonPOQtyBackSpace(driver);
+        Actions act =  new Actions(driver);
+	    act.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))).click().sendKeys(poQtyDataaa).perform();
+        System.out.println("10.Inserting 'PO Qty.' field ");
+	    Reporter.log("10.Inserting 'PO Qty.' field ");
+	    reportLog("10.Inserting 'PO Qty.' field ");
+	    Thread.sleep(1000);
 	    
 	    
 	    base.commonSAVEbuttonCHILD(driver);
