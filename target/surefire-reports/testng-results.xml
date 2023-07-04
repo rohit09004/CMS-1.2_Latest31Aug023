@@ -77,12 +77,6 @@
       <![CDATA[10.Inserting 'PO Qty.' field ]]>
     </line>
     <line>
-      <![CDATA[10.Inserting 'PO Qty.' field ]]>
-    </line>
-    <line>
-      <![CDATA[10.Inserting 'PO Qty.' field ]]>
-    </line>
-    <line>
       <![CDATA[11.Cliking on 'SAVE' button ]]>
     </line>
     <line>
@@ -131,16 +125,16 @@
       <![CDATA[ ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-04T11:54:57 IST" name="Surefire suite" finished-at="2023-07-04T11:55:55 IST" duration-ms="58325">
+  <suite started-at="2023-07-04T12:41:41 IST" name="Surefire suite" finished-at="2023-07-04T12:42:35 IST" duration-ms="53697">
     <groups>
     </groups>
-    <test started-at="2023-07-04T11:54:57 IST" name="Surefire test" finished-at="2023-07-04T11:55:55 IST" duration-ms="58325">
+    <test started-at="2023-07-04T12:41:41 IST" name="Surefire test" finished-at="2023-07-04T12:42:35 IST" duration-ms="53697">
       <class name="com.csm.qa.test.LoginPageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@161b062a]" started-at="2023-07-04T11:54:57 IST" name="startReport" finished-at="2023-07-04T11:54:57 IST" duration-ms="176" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@548a102f]" started-at="2023-07-04T12:41:41 IST" name="startReport" finished-at="2023-07-04T12:41:41 IST" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method signature="Test6()[pri:6, instance:com.csm.qa.test.LoginPageTest@161b062a]" started-at="2023-07-04T11:54:57 IST" name="Test6" finished-at="2023-07-04T11:55:55 IST" duration-ms="57726" status="PASS">
+        <test-method signature="Test6()[pri:6, instance:com.csm.qa.test.LoginPageTest@548a102f]" started-at="2023-07-04T12:41:41 IST" name="Test6" finished-at="2023-07-04T12:42:35 IST" duration-ms="53371" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ ]]>
@@ -218,12 +212,6 @@
               <![CDATA[10.Inserting 'PO Qty.' field ]]>
             </line>
             <line>
-              <![CDATA[10.Inserting 'PO Qty.' field ]]>
-            </line>
-            <line>
-              <![CDATA[10.Inserting 'PO Qty.' field ]]>
-            </line>
-            <line>
               <![CDATA[11.Cliking on 'SAVE' button ]]>
             </line>
             <line>
@@ -273,18 +261,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test6 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@161b062a]" started-at="2023-07-04T11:55:55 IST" name="getResult" finished-at="2023-07-04T11:55:55 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@548a102f]" started-at="2023-07-04T12:42:35 IST" name="getResult" finished-at="2023-07-04T12:42:35 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Test6 status=SUCCESS method=LoginPageTest.Test6()[pri:6, instance:com.csm.qa.test.LoginPageTest@161b062a]]]]>
+                <![CDATA[[TestResult name=Test6 status=SUCCESS method=LoginPageTest.Test6()[pri:6, instance:com.csm.qa.test.LoginPageTest@548a102f]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@161b062a]" started-at="2023-07-04T11:55:55 IST" name="endReport" finished-at="2023-07-04T11:55:55 IST" duration-ms="390" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@548a102f]" started-at="2023-07-04T12:42:35 IST" name="endReport" finished-at="2023-07-04T12:42:35 IST" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

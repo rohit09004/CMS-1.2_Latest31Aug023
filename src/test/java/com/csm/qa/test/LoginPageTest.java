@@ -240,26 +240,15 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 	    WebElement  element1 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
 	    action1.moveToElement(element1).click().perform();
 	    Thread.sleep(10000);
-		    
-	    
-	    try {
-//	    	 //Inspection and clicking of "PO Qty."
-//		    WebDriverWait poQty1 = new WebDriverWait(driver, Duration.ofMillis(20000));
-//		    poQty1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))); 
-//		    driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
-//		    String poQtyDataa= sheet.getRow(1).getCell(9).getStringCellValue();
-//		    System.out.println(poQtyDataa);
-//		    base.commonPOQtyBackSpace(driver);
-//		    //driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(poQtyDataa);
-//		    System.out.println("10.Inserting 'PO Qty.' field ");
-//		    Reporter.log("10.Inserting 'PO Qty.' field ");
-//		    reportLog("10.Inserting 'PO Qty.' field ");
-//		    Thread.sleep(1000);
-		    
+		   
+
 		    //Inspection and clicking of "PO Qty."
 		    WebDriverWait poQty11 = new WebDriverWait(driver, Duration.ofMillis(20000));
-		    poQty11.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))); 
+		    System.out.println("Po start 1");
+		    poQty11.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")));
+		    System.out.println("Po start 2");
 		    driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
+		    System.out.println("Po start 3");
 		    String poQtyDataaa= sheet.getRow(1).getCell(9).getStringCellValue();
 		    System.out.println(poQtyDataaa);
 		    base.commonPOQtyBackSpace(driver);
@@ -275,40 +264,6 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 		    Reporter.log("10.Inserting 'PO Qty.' field ");
 		    reportLog("10.Inserting 'PO Qty.' field ");
 		    Thread.sleep(1000);
-		    
-		    
-//		 driver.findElement(By.id("")).sendKeys(Keys.chord(Keys.CONTROL,"c"));
-//		 // now apply the command to paste
-//		 driver.findElement (By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/div/table/tbody/tr[2]/td[2]")).sendKeys(Keys.chord(Keys.CONTROL, "v"));
-//		    
-	    }catch(Exception e) {
-	    	
-	    	//Inspection and clicking of "PO Qty."
-		    WebDriverWait poQty1 = new WebDriverWait(driver, Duration.ofMillis(20000));
-		    poQty1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))); 
-		    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
-		    System.out.println("Took new xpath");
-		    String poQtyDataa= sheet.getRow(1).getCell(9).getStringCellValue();
-		    System.out.println(poQtyDataa);
-		    base.commonPOQtyBackSpaceCatchBlock(driver);
-		    //driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(poQtyDataa);
-		    System.out.println("10.Inserting 'PO Qty.' field ");
-		    Reporter.log("10.Inserting 'PO Qty.' field ");
-		    reportLog("10.Inserting 'PO Qty.' field ");
-		    Thread.sleep(1000);
-	    }
-	    //Inspection and clicking of "PO Qty."
-	    WebDriverWait poQty1 = new WebDriverWait(driver, Duration.ofMillis(20000));
-	    poQty1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))); 
-	    driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
-	    String poQtyDataa= sheet.getRow(1).getCell(9).getStringCellValue();
-	    System.out.println(poQtyDataa);
-	    base.commonPOQtyBackSpace(driver);
-	    //driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(poQtyDataa);
-	    System.out.println("10.Inserting 'PO Qty.' field ");
-	    Reporter.log("10.Inserting 'PO Qty.' field ");
-	    reportLog("10.Inserting 'PO Qty.' field ");
-	    Thread.sleep(1000);
 	    
 	    
 	    base.commonSAVEbuttonCHILD(driver);
