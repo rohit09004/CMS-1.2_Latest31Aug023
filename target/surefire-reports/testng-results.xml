@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[ ]]>
@@ -124,17 +124,1325 @@
     <line>
       <![CDATA[ ]]>
     </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 2--> Insertion of data as 'NULL' field ]**************************************************** ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Scenario 2--> Insertion of data as 'NULL' field ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 2 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 2 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[[Scenario 2 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Scenario 2 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 2--> 'Insertion of data as 'NULL' field' is ''PASSED'' ]************************************ ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 2--> 'Insertion of data as 'NULL' field' is ''PASSED'' ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 3--> Insertion of new data having field capacity more than provided ]**************************************************** ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 3--> Insertion of new data having field capacity more than provided ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 3 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 3 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[13.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[13.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[14.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[14.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[15.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[15.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 3 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 3 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 3--> 'Insertion of new data having field capacity more than provided' is ''PASSED'' ]************************************ ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 3--> 'Insertion of new data having field capacity more than provided' is ''PASSED'' ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 4--> Insertion of new record for non-exsisting data ]**************************************************** ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 4--> Insertion of new record for non-exsisting data ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 4 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 4 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 4 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 4 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 4]--> 'Insertion of new record for non-exsisting data' is ''PASSED'' ]************************************ ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 4]--> 'Insertion of new record for non-exsisting data' is ''PASSED'' ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 5--> Insertion of new record as BULK records ]**************************************************** ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 5--> Insertion of new record as BULK records ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 5 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 5 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[13.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[13.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[14.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[14.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[15.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[15.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[17.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[17.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[18.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[18.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[19.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[19.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[20.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[20.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[21.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[21.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[23.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[23.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[24.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[24.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[25.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[25.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[26.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[26.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[27.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[27.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[28.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[28.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[29.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[29.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[30.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[30.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[31.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[31.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 5 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 5 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 5--> 'Insertion of new record as BULK records' is ''PASSED'' ]************************************ ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 5--> 'Insertion of new record as BULK records' is ''PASSED'' ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 6--> Insertion of new record with duplicate data validation ]**************************************************** ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 6--> Insertion of new record with duplicate data validation ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 6 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 6 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicked on 'Insert' button to add new Record for duplicate data validation]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicked on 'Insert' button to add new Record for duplicate data validation]]>
+    </line>
+    <line>
+      <![CDATA[13.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[13.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[14.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[14.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[15.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[15.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[16.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[16.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[17.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[17.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[18.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[18.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 6 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 6 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 6--> 'Insertion of new record with duplicate data validation' is ''PASSED'' ]************************************ ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 6--> 'Insertion of new record with duplicate data validation' is ''PASSED'' ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 7--> Insertion of new record with Leading space and Trailing space ]**************************************************** ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 7--> Insertion of new record with Leading space and Trailing space ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 7 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 7 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicked on 'Insert' button to add new Record ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicked on 'Insert' button to add new Record ]]>
+    </line>
+    <line>
+      <![CDATA[13.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[13.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[14.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[14.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[15.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[15.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[16.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[16.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[17.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[17.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[18.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[18.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 7 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 7 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 7--> 'Insertion of new record with Leading space and Trailing space' is ''PASSED'' ]************************************ ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 7--> 'Insertion of new record with Leading space and Trailing space' is ''PASSED'' ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 8--> Updating particular record with new data(Updatation operation) ]**************************************************** ]]>
+    </line>
+    <line>
+      <![CDATA[*****[ Test 8--> Updating particular record with new data(Updatation operation) ]***** ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 8 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 8 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[12. Clicking on Edit button for Parent record ]]>
+    </line>
+    <line>
+      <![CDATA[12. Clicking on Edit button for Parent record ]]>
+    </line>
+    <line>
+      <![CDATA[13.Updatating 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[13.Updatating 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[14.Updatating 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[14.Updatating 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[15.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[15.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[16.Clicking on Edit button for Child record ]]>
+    </line>
+    <line>
+      <![CDATA[16.Clicking on Edit button for Child record ]]>
+    </line>
+    <line>
+      <![CDATA[17.Updatating 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[17.Updatating 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[18.Updatating 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[18.Updatating 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[19.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[19.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[20.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[20.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[21.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[21.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[22.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[22.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 8 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 8 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 8--> 'Updating particular record with new data(Updatation operation)' is ''PASSED'' ]************************************ ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 8--> 'Updating particular record with new data(Updatation operation)' is ''PASSED'' ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Scenario 9--> Insertion of new data, to print REPORT. ]**************************************************** ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Scenario 9--> Insertion of new data, to print REPORT. ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[[Scenario 9 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Scenario 9 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[13.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[13.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[14.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[14.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[15.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[15.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[17.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[17.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[18.Cliking on 'Print' button to print Report]]>
+    </line>
+    <line>
+      <![CDATA[18.Cliking on 'Print' button to print Report]]>
+    </line>
+    <line>
+      <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[21.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[21.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[22.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[22.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[23.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[23.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[24.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[24.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 9 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 9--> 'Insertion of new data, to print REPORT' is ''PASSED'' ]************************************ ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 9--> 'Insertion of new data, to print REPORT' is ''PASSED'' ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 10--> Insertion of new data, to validate search bar disappearing or not!. ]**************************************************** ]]>
+    </line>
+    <line>
+      <![CDATA[*****[ Test 10--> Insertion of new data, to validate search bar disappearing or not!. ]******** ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 10 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 10 steps 'STARTS'] ]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[13.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[13.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[14.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[14.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[15.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[15.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[17.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[17.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[18.Clicking on Edit button to validating search bar disappearing or not ]]>
+    </line>
+    <line>
+      <![CDATA[18.Clicking on Edit button to validating search bar disappearing or not ]]>
+    </line>
+    <line>
+      <![CDATA[19.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[19.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[20.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[20.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[21.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[21.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[22.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[22.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[23.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[23.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[24.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[24.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 10 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 10 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 10--> 'Insertion of new data, to validate search bar disappearing or not!' is ''PASSED'' ]************************************ ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 10--> 'Insertion of new data, to validate search bar disappearing or not!' is ''PASSED'' ]****** ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
+    <line>
+      <![CDATA[ ]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-07-04T14:10:32 IST" name="Surefire suite" finished-at="2023-07-04T14:11:24 IST" duration-ms="52138">
+  <suite started-at="2023-07-04T16:23:36 IST" name="Surefire suite" finished-at="2023-07-04T16:34:32 IST" duration-ms="656512">
     <groups>
     </groups>
-    <test started-at="2023-07-04T14:10:32 IST" name="Surefire test" finished-at="2023-07-04T14:11:24 IST" duration-ms="52138">
+    <test started-at="2023-07-04T16:23:36 IST" name="Surefire test" finished-at="2023-07-04T16:34:32 IST" duration-ms="656512">
       <class name="com.csm.qa.test.LoginPageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@212bf671]" started-at="2023-07-04T14:10:32 IST" name="startReport" finished-at="2023-07-04T14:10:32 IST" duration-ms="180" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:23:36 IST" name="startReport" finished-at="2023-07-04T16:23:36 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method signature="Test6()[pri:6, instance:com.csm.qa.test.LoginPageTest@212bf671]" started-at="2023-07-04T14:10:32 IST" name="Test6" finished-at="2023-07-04T14:11:24 IST" duration-ms="51688" status="PASS">
+        <test-method signature="Test111()[pri:1, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:23:36 IST" name="Test111" finished-at="2023-07-04T16:24:27 IST" duration-ms="51301" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ ]]>
@@ -260,19 +1568,1462 @@
               <![CDATA[ ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Test6 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@212bf671]" started-at="2023-07-04T14:11:24 IST" name="getResult" finished-at="2023-07-04T14:11:24 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- Test111 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:24:27 IST" name="getResult" finished-at="2023-07-04T16:24:27 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Test6 status=SUCCESS method=LoginPageTest.Test6()[pri:6, instance:com.csm.qa.test.LoginPageTest@212bf671]]]]>
+                <![CDATA[[TestResult name=Test111 status=SUCCESS method=LoginPageTest.Test111()[pri:1, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@212bf671]" started-at="2023-07-04T14:11:24 IST" name="endReport" finished-at="2023-07-04T14:11:24 IST" duration-ms="238" status="PASS">
+        <test-method signature="Test22()[pri:2, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:24:27 IST" name="Test22" finished-at="2023-07-04T16:24:47 IST" duration-ms="19761" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 2--> Insertion of data as 'NULL' field ]**************************************************** ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Scenario 2--> Insertion of data as 'NULL' field ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 2 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 2 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[[Scenario 2 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Scenario 2 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 2--> 'Insertion of data as 'NULL' field' is ''PASSED'' ]************************************ ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 2--> 'Insertion of data as 'NULL' field' is ''PASSED'' ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test22 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:24:47 IST" name="getResult" finished-at="2023-07-04T16:24:47 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test22 status=SUCCESS method=LoginPageTest.Test22()[pri:2, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="Test33()[pri:3, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:24:47 IST" name="Test33" finished-at="2023-07-04T16:25:31 IST" duration-ms="43578" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 3--> Insertion of new data having field capacity more than provided ]**************************************************** ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 3--> Insertion of new data having field capacity more than provided ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 3 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 3 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[13.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[13.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[14.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[14.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[15.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[15.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 3 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 3 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 3--> 'Insertion of new data having field capacity more than provided' is ''PASSED'' ]************************************ ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 3--> 'Insertion of new data having field capacity more than provided' is ''PASSED'' ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test33 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:25:31 IST" name="getResult" finished-at="2023-07-04T16:25:31 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test33 status=SUCCESS method=LoginPageTest.Test33()[pri:3, instance:com.csm.qa.test.LoginPageTest@50a7bc6e] output=""]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="Test44()[pri:4, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:25:31 IST" name="Test44" finished-at="2023-07-04T16:25:38 IST" duration-ms="7336" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 4--> Insertion of new record for non-exsisting data ]**************************************************** ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 4--> Insertion of new record for non-exsisting data ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 4 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 4 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 4 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 4 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 4]--> 'Insertion of new record for non-exsisting data' is ''PASSED'' ]************************************ ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 4]--> 'Insertion of new record for non-exsisting data' is ''PASSED'' ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test44 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:25:38 IST" name="getResult" finished-at="2023-07-04T16:25:38 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test44 status=SUCCESS method=LoginPageTest.Test44()[pri:4, instance:com.csm.qa.test.LoginPageTest@50a7bc6e] output=""]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="Test55()[pri:5, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:25:38 IST" name="Test55" finished-at="2023-07-04T16:27:27 IST" duration-ms="109494" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 5--> Insertion of new record as BULK records ]**************************************************** ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 5--> Insertion of new record as BULK records ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 5 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 5 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[13.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[13.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[14.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[14.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[15.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[15.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[17.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[17.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[18.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[18.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[19.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[19.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[20.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[20.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[21.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[21.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[23.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[23.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[24.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[24.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[25.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[25.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[26.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[26.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[27.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[27.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[28.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[28.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[29.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[29.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[30.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[30.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[31.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[31.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 5 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 5 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 5--> 'Insertion of new record as BULK records' is ''PASSED'' ]************************************ ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 5--> 'Insertion of new record as BULK records' is ''PASSED'' ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test55 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:27:27 IST" name="getResult" finished-at="2023-07-04T16:27:27 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test55 status=SUCCESS method=LoginPageTest.Test55()[pri:5, instance:com.csm.qa.test.LoginPageTest@50a7bc6e] output=""]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="Test66()[pri:6, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:27:27 IST" name="Test66" finished-at="2023-07-04T16:28:37 IST" duration-ms="69865" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 6--> Insertion of new record with duplicate data validation ]**************************************************** ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 6--> Insertion of new record with duplicate data validation ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 6 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 6 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicked on 'Insert' button to add new Record for duplicate data validation]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicked on 'Insert' button to add new Record for duplicate data validation]]>
+            </line>
+            <line>
+              <![CDATA[13.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[13.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[14.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[14.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[15.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[15.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[16.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[16.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[17.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[17.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[18.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[18.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 6 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 6 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 6--> 'Insertion of new record with duplicate data validation' is ''PASSED'' ]************************************ ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 6--> 'Insertion of new record with duplicate data validation' is ''PASSED'' ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test66 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:28:37 IST" name="getResult" finished-at="2023-07-04T16:28:37 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test66 status=SUCCESS method=LoginPageTest.Test66()[pri:6, instance:com.csm.qa.test.LoginPageTest@50a7bc6e] output=""]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="Test77()[pri:7, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:28:37 IST" name="Test77" finished-at="2023-07-04T16:29:47 IST" duration-ms="69335" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 7--> Insertion of new record with Leading space and Trailing space ]**************************************************** ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 7--> Insertion of new record with Leading space and Trailing space ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 7 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 7 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicked on 'Insert' button to add new Record ]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicked on 'Insert' button to add new Record ]]>
+            </line>
+            <line>
+              <![CDATA[13.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[13.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[14.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[14.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[15.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[15.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[16.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[16.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[17.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[17.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[18.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[18.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 7 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 7 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 7--> 'Insertion of new record with Leading space and Trailing space' is ''PASSED'' ]************************************ ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 7--> 'Insertion of new record with Leading space and Trailing space' is ''PASSED'' ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test77 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:29:47 IST" name="getResult" finished-at="2023-07-04T16:29:47 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test77 status=SUCCESS method=LoginPageTest.Test77()[pri:7, instance:com.csm.qa.test.LoginPageTest@50a7bc6e] output=""]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="Test88()[pri:8, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:29:47 IST" name="Test88" finished-at="2023-07-04T16:31:17 IST" duration-ms="90858" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 8--> Updating particular record with new data(Updatation operation) ]**************************************************** ]]>
+            </line>
+            <line>
+              <![CDATA[*****[ Test 8--> Updating particular record with new data(Updatation operation) ]***** ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 8 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 8 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[12. Clicking on Edit button for Parent record ]]>
+            </line>
+            <line>
+              <![CDATA[12. Clicking on Edit button for Parent record ]]>
+            </line>
+            <line>
+              <![CDATA[13.Updatating 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[13.Updatating 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[14.Updatating 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[14.Updatating 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[15.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[15.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[16.Clicking on Edit button for Child record ]]>
+            </line>
+            <line>
+              <![CDATA[16.Clicking on Edit button for Child record ]]>
+            </line>
+            <line>
+              <![CDATA[17.Updatating 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[17.Updatating 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[18.Updatating 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[18.Updatating 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[19.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[19.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[20.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[20.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[21.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[21.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[22.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[22.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 8 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 8 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 8--> 'Updating particular record with new data(Updatation operation)' is ''PASSED'' ]************************************ ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 8--> 'Updating particular record with new data(Updatation operation)' is ''PASSED'' ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test88 -->
+        <test-method signature="Test99()[pri:9, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:31:17 IST" name="Test99" finished-at="2023-07-04T16:32:57 IST" duration-ms="99055" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Scenario 9--> Insertion of new data, to print REPORT. ]**************************************************** ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Scenario 9--> Insertion of new data, to print REPORT. ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[[Scenario 9 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Scenario 9 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[13.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[13.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[14.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[14.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[15.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[15.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[17.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[17.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[18.Cliking on 'Print' button to print Report]]>
+            </line>
+            <line>
+              <![CDATA[18.Cliking on 'Print' button to print Report]]>
+            </line>
+            <line>
+              <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[19.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[20.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[21.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[21.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[22.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[22.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[23.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[23.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[24.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[24.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 9 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 9--> 'Insertion of new data, to print REPORT' is ''PASSED'' ]************************************ ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 9--> 'Insertion of new data, to print REPORT' is ''PASSED'' ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test99 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:31:17 IST" name="getResult" finished-at="2023-07-04T16:31:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test88 status=SUCCESS method=LoginPageTest.Test88()[pri:8, instance:com.csm.qa.test.LoginPageTest@50a7bc6e] output=""]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:32:57 IST" name="getResult" finished-at="2023-07-04T16:32:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test99 status=SUCCESS method=LoginPageTest.Test99()[pri:9, instance:com.csm.qa.test.LoginPageTest@50a7bc6e] output=""]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="Test100()[pri:10, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:32:57 IST" name="Test100" finished-at="2023-07-04T16:34:32 IST" duration-ms="95417" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 10--> Insertion of new data, to validate search bar disappearing or not!. ]**************************************************** ]]>
+            </line>
+            <line>
+              <![CDATA[*****[ Test 10--> Insertion of new data, to validate search bar disappearing or not!. ]******** ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 10 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 10 steps 'STARTS'] ]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[03.Choosing 'Company code' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[04.Inserting 'Title1' field ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicked on 'Insert' button to add new CHILD Record]]>
+            </line>
+            <line>
+              <![CDATA[13.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[13.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[14.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[14.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[15.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[15.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[17.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[17.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[18.Clicking on Edit button to validating search bar disappearing or not ]]>
+            </line>
+            <line>
+              <![CDATA[18.Clicking on Edit button to validating search bar disappearing or not ]]>
+            </line>
+            <line>
+              <![CDATA[19.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[19.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[20.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[20.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[21.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[21.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[22.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[22.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[23.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[23.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[24.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[24.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 10 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 10 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 10--> 'Insertion of new data, to validate search bar disappearing or not!' is ''PASSED'' ]************************************ ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 10--> 'Insertion of new data, to validate search bar disappearing or not!' is ''PASSED'' ]****** ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+            <line>
+              <![CDATA[ ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Test100 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:34:32 IST" name="getResult" finished-at="2023-07-04T16:34:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test100 status=SUCCESS method=LoginPageTest.Test100()[pri:10, instance:com.csm.qa.test.LoginPageTest@50a7bc6e] output=""]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@50a7bc6e]" started-at="2023-07-04T16:34:32 IST" name="endReport" finished-at="2023-07-04T16:34:32 IST" duration-ms="284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

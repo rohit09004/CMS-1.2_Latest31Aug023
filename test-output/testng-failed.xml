@@ -6,9 +6,15 @@
       <class name="com.csm.qa.test.LoginPageTest">
         <methods>
           <include name="getResult"/>
+          <include name="Test100"/>
           <include name="startReport"/>
           <include name="endReport"/>
-          <include name="Test6"/>
+          <include name="Test44"/>
+          <include name="Test55"/>
+          <include name="Test66"/>
+          <include name="Test77"/>
+          <include name="Test88"/>
+          <include name="Test99"/>
         </methods>
       </class> <!-- com.csm.qa.test.LoginPageTest -->
     </classes>
