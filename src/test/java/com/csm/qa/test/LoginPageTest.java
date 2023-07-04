@@ -171,7 +171,7 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 		    System.out.println("03.Choosing 'Company code' field ");
 		    Reporter.log("03.Choosing 'Company code' field ");
 		    reportLog("03.Choosing 'Company code' field ");
-		System.out.println("Test 6 passed with invalid credentials");  
+		
 		
 		base.commonCompanyCodeField(driver);
 		base.commonElementPODate(driver);
@@ -243,19 +243,39 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 		    
 	    
 	    try {
-	    	 //Inspection and clicking of "PO Qty."
-		    WebDriverWait poQty1 = new WebDriverWait(driver, Duration.ofMillis(20000));
-		    poQty1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))); 
+//	    	 //Inspection and clicking of "PO Qty."
+//		    WebDriverWait poQty1 = new WebDriverWait(driver, Duration.ofMillis(20000));
+//		    poQty1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))); 
+//		    driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
+//		    String poQtyDataa= sheet.getRow(1).getCell(9).getStringCellValue();
+//		    System.out.println(poQtyDataa);
+//		    base.commonPOQtyBackSpace(driver);
+//		    //driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(poQtyDataa);
+//		    System.out.println("10.Inserting 'PO Qty.' field ");
+//		    Reporter.log("10.Inserting 'PO Qty.' field ");
+//		    reportLog("10.Inserting 'PO Qty.' field ");
+//		    Thread.sleep(1000);
+		    
+		    //Inspection and clicking of "PO Qty."
+		    WebDriverWait poQty11 = new WebDriverWait(driver, Duration.ofMillis(20000));
+		    poQty11.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input"))); 
 		    driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
-		    String poQtyDataa= sheet.getRow(1).getCell(9).getStringCellValue();
-		    System.out.println(poQtyDataa);
+		    String poQtyDataaa= sheet.getRow(1).getCell(9).getStringCellValue();
+		    System.out.println(poQtyDataaa);
 		    base.commonPOQtyBackSpace(driver);
-		    //driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(poQtyDataa);
+		    //driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(poQtyDataaa);
+		    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys(Keys.CONTROL + "a" + Keys.CONTROL+"8");
+		   // driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).sendKeys("8");
 		    System.out.println("10.Inserting 'PO Qty.' field ");
 		    Reporter.log("10.Inserting 'PO Qty.' field ");
 		    reportLog("10.Inserting 'PO Qty.' field ");
 		    Thread.sleep(1000);
 		    
+		    
+//		 driver.findElement(By.id("")).sendKeys(Keys.chord(Keys.CONTROL,"c"));
+//		 // now apply the command to paste
+//		 driver.findElement (By.xpath("/html/body/main/div/div/div[2]/div/div/div[2]/div/table/tbody/tr[2]/td[2]")).sendKeys(Keys.chord(Keys.CONTROL, "v"));
+//		    
 	    }catch(Exception e) {
 	    	
 	    	//Inspection and clicking of "PO Qty."
