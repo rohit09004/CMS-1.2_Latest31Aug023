@@ -247,7 +247,7 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
 		    System.out.println("Po start 1");
 		    poQty11.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")));
 		    System.out.println("Po start 2");
-		    driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
+		    //driver.findElement(By.xpath("//*[@id=\"dxPoDetailGrid\"]/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div[1]/div/div/input")).click();
 		    System.out.println("Po start 3");
 		    String poQtyDataaa= sheet.getRow(1).getCell(9).getStringCellValue();
 		    System.out.println(poQtyDataaa);
