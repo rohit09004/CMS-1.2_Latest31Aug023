@@ -439,11 +439,27 @@ public void Test1() throws EncryptedDocumentException, InterruptedException, IOE
      //Inspection and clicking of "Upload" button
 	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
 	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("06.Clicked on 'Upload' button");
+	   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+	    Actions act52 =  new Actions(driver);
+	    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+	    System.out.println("06.Clicked on 'Upload' button");
 	     Reporter.log("06.Clicked on 'Upload' button");
 	     reportLog("06.Clicked on 'Upload' button");
-      Thread.sleep(1000);
+         Thread.sleep(1000);
+     
+      
+//    //Inspection and clicking of "PO Qty."
+//	    WebDriverWait poQty52 = new WebDriverWait(driver, Duration.ofMillis(20000));
+//	    poQty52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")));
+//      String poQtyData52= sheet.getRow(29).getCell(9).getStringCellValue();
+//	    base.commonPOQtyBackSpace(driver);
+//      Actions act52 =  new Actions(driver);
+//      act52.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))).click().sendKeys(poQtyData52).perform();
+//      System.out.println("10.Inserting 'PO Qty.' field ");
+//	    Reporter.log("10.Inserting 'PO Qty.' field ");
+//	    reportLog("10.Inserting 'PO Qty.' field ");
+//	    Thread.sleep(1000);
+      
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -523,14 +539,16 @@ public void Test2() throws InterruptedException, AWTException
    rb.keyRelease(KeyEvent.VK_ENTER); 
    Thread.sleep(5000);
    
-     //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-      Thread.sleep(2000);
+ //Inspection and clicking of "Upload" button
+   WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+   uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+  // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+   Actions act52 =  new Actions(driver);
+   act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+   System.out.println("06.Clicked on 'Upload' button");
+    Reporter.log("06.Clicked on 'Upload' button");
+    reportLog("06.Clicked on 'Upload' button");
+    Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
