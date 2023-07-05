@@ -432,10 +432,12 @@ public void Test1() throws EncryptedDocumentException, InterruptedException, IOE
    // for pressing and releasing Enter
    rb.keyPress(KeyEvent.VK_ENTER);
    rb.keyRelease(KeyEvent.VK_ENTER); 
-   Thread.sleep(2000);
+   Thread.sleep(5000);
+   
+   System.out.println("after robot");
    
      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
 	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
 	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
 	     System.out.println("06.Clicked on 'Upload' button");
@@ -519,10 +521,10 @@ public void Test2() throws InterruptedException, AWTException
    // for pressing and releasing Enter
    rb.keyPress(KeyEvent.VK_ENTER);
    rb.keyRelease(KeyEvent.VK_ENTER); 
-   Thread.sleep(2000);
+   Thread.sleep(5000);
    
      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
 	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
 	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
 	     System.out.println("03.Clicked on 'Upload' button");
