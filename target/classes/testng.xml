@@ -8,18 +8,18 @@
 
 <classes>
 <class name="com.csm.qa.test.PO_Import">
-  <!--        <methods>
+          <methods>
                   <include name="LoginWithValidCredentials"></include>
-         </methods> -->
+         </methods> 
 </class>
-<!-- 
+ 
 <class name="com.csm.qa.test.HomePageTest">
          <methods>
                   <include name="clickOnCMSModule"></include>
                    <include name="clickonIDC"></include>
          </methods>
 </class>
--->
+
 </classes>
 
  
