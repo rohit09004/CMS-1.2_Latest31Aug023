@@ -92,10 +92,10 @@
       <![CDATA[01.Clicked on 'Select Import File' button]]>
     </line>
     <line>
-      <![CDATA[02.Choosing excel file(having records) from System Directory to perform Import functionility]]>
+      <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
     </line>
     <line>
-      <![CDATA[02.Choosing excel file(having records) from System Directory to perform Import functionility]]>
+      <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
     </line>
     <line>
       <![CDATA[06.Clicked on 'Upload' button]]>
@@ -128,16 +128,16 @@
       <![CDATA[ ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-05T15:45:03 IST" name="Default suite" finished-at="2023-07-05T15:46:03 IST" duration-ms="60006">
+  <suite started-at="2023-07-05T17:31:25 IST" name="Default suite" finished-at="2023-07-05T17:32:26 IST" duration-ms="61510">
     <groups>
     </groups>
-    <test started-at="2023-07-05T15:45:03 IST" name="Default test" finished-at="2023-07-05T15:46:03 IST" duration-ms="60006">
+    <test started-at="2023-07-05T17:31:25 IST" name="Default test" finished-at="2023-07-05T17:32:26 IST" duration-ms="61510">
       <class name="com.csm.qa.test2.LoginPageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T15:45:03 IST" name="startReport" finished-at="2023-07-05T15:45:03 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T17:31:25 IST" name="startReport" finished-at="2023-07-05T17:31:25 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method signature="Test1()[pri:1, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T15:45:03 IST" name="Test1" finished-at="2023-07-05T15:45:43 IST" duration-ms="39123" status="PASS">
+        <test-method signature="Test1()[pri:1, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T17:31:25 IST" name="Test1" finished-at="2023-07-05T17:32:07 IST" duration-ms="41773" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[************************************[ Test 1--> 'Importing new record' ]************************************ ]]>
@@ -213,7 +213,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T15:45:43 IST" name="getResult" finished-at="2023-07-05T15:45:43 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T17:32:07 IST" name="getResult" finished-at="2023-07-05T17:32:07 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -224,7 +224,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Test2()[pri:2, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T15:45:43 IST" name="Test2" finished-at="2023-07-05T15:46:03 IST" duration-ms="20446" status="PASS">
+        <test-method signature="Test2()[pri:2, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T17:32:07 IST" name="Test2" finished-at="2023-07-05T17:32:26 IST" duration-ms="19344" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[************************************[ Test 2--> 'Importing record as duplicate data' ]************************************ ]]>
@@ -245,10 +245,10 @@
               <![CDATA[01.Clicked on 'Select Import File' button]]>
             </line>
             <line>
-              <![CDATA[02.Choosing excel file(having records) from System Directory to perform Import functionility]]>
+              <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
             </line>
             <line>
-              <![CDATA[02.Choosing excel file(having records) from System Directory to perform Import functionility]]>
+              <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
             </line>
             <line>
               <![CDATA[06.Clicked on 'Upload' button]]>
@@ -282,7 +282,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test2 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T15:46:03 IST" name="getResult" finished-at="2023-07-05T15:46:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T17:32:26 IST" name="getResult" finished-at="2023-07-05T17:32:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -293,17 +293,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T15:46:03 IST" name="endReport" finished-at="2023-07-05T15:46:03 IST" duration-ms="61" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@28701274]" started-at="2023-07-05T17:32:26 IST" name="endReport" finished-at="2023-07-05T17:32:26 IST" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.csm.qa.test2.LoginPageTest -->
       <class name="com.csm.qa.test.LoginPageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@7c7a06ec]" started-at="2023-07-05T15:45:03 IST" name="startReport" finished-at="2023-07-05T15:45:03 IST" duration-ms="173" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@7c7a06ec]" started-at="2023-07-05T17:31:25 IST" name="startReport" finished-at="2023-07-05T17:31:25 IST" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@7c7a06ec]" started-at="2023-07-05T15:46:03 IST" name="endReport" finished-at="2023-07-05T15:46:03 IST" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@7c7a06ec]" started-at="2023-07-05T17:32:26 IST" name="endReport" finished-at="2023-07-05T17:32:26 IST" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
