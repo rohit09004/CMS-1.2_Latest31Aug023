@@ -422,7 +422,7 @@ public void Test1() throws EncryptedDocumentException, InterruptedException, IOE
 //   Thread.sleep(1000);
    
    File filee =new File("01_Po_Data.csv");
-   String Path11= file.getAbsolutePath().toString();
+   String Path11= filee.getAbsolutePath().toString();
    StringSelection str = new StringSelection(Path11);
    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
    System.out.println("05.Choosing excel file(having records) from System Directory to perform Import functionility");
@@ -527,13 +527,22 @@ public void Test2() throws InterruptedException, AWTException
    // creating object of Robot class
     Robot rb = new Robot();
 
-   // copying File path to Clipboard
-   StringSelection str = new StringSelection("D:\\Eclipse_rohit\\CMS_DMscreens(2.0)\\TestEvidences[ExtentReport]\\ImportMenu\\POShipping\\02_Po_Data_DuplicateDataValidation.csv");
-   Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-   System.out.println("02.Choosing excel file(having records) from System Directory to perform Import functionility");
-	  Reporter.log("02.Choosing excel file(having records) from System Directory to perform Import functionility");
-	  reportLog("02.Choosing excel file(having records) from System Directory to perform Import functionility");
-   Thread.sleep(2000);
+//   // copying File path to Clipboard
+//   StringSelection str = new StringSelection("D:\\Eclipse_rohit\\CMS_DMscreens(2.0)\\TestEvidences[ExtentReport]\\ImportMenu\\POShipping\\02_Po_Data_DuplicateDataValidation.csv");
+//   Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+//   System.out.println("02.Choosing excel file(having records) from System Directory to perform Import functionility");
+//	  Reporter.log("02.Choosing excel file(having records) from System Directory to perform Import functionility");
+//	  reportLog("02.Choosing excel file(having records) from System Directory to perform Import functionility");
+//   Thread.sleep(2000);
+    
+    File fileee =new File("01_Po_Data.csv");
+    String Path11= fileee.getAbsolutePath().toString();
+    StringSelection str = new StringSelection(Path11);
+    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+    System.out.println("05.Choosing excel file(having records) from System Directory to perform Import functionility");
+ 	  Reporter.log("05.Choosing excel file(having records) from System Directory to perform Import functionility");
+ 	  reportLog("05.Choosing excel file(having records) from System Directory to perform Import functionility");
+   Thread.sleep(1000);
 	  
     // press Contol+V for pasting
     rb.keyPress(KeyEvent.VK_CONTROL);
