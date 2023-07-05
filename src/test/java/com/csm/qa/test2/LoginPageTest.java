@@ -413,13 +413,22 @@ public void Test1() throws EncryptedDocumentException, InterruptedException, IOE
    // creating object of Robot class
     Robot rb = new Robot();
 
-   // copying File path to Clipboard
-   StringSelection str = new StringSelection("D:\\Eclipse_rohit\\CMS_DMscreens(2.0)\\TestEvidences[ExtentReport]\\ImportMenu\\POShipping\\01_Po_Data.csv");
+//   // copying File path to Clipboard
+//   StringSelection str = new StringSelection("D:\\Eclipse_rohit\\CMS_DMscreens(2.0)\\TestEvidences[ExtentReport]\\ImportMenu\\POShipping\\01_Po_Data.csv");
+//   Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+//   System.out.println("05.Choosing excel file(having records) from System Directory to perform Import functionility");
+//	  Reporter.log("05.Choosing excel file(having records) from System Directory to perform Import functionility");
+//	  reportLog("05.Choosing excel file(having records) from System Directory to perform Import functionility");
+//   Thread.sleep(1000);
+   
+   File filee =new File("01_Po_Data.csv");
+   String Path11= file.getAbsolutePath().toString();
+   StringSelection str = new StringSelection(Path11);
    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
    System.out.println("05.Choosing excel file(having records) from System Directory to perform Import functionility");
 	  Reporter.log("05.Choosing excel file(having records) from System Directory to perform Import functionility");
 	  reportLog("05.Choosing excel file(having records) from System Directory to perform Import functionility");
-   Thread.sleep(1000);
+  Thread.sleep(1000);
 	  
     // press Contol+V for pasting
     rb.keyPress(KeyEvent.VK_CONTROL);
