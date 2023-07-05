@@ -7,17 +7,19 @@
 <test name="CMS App Test Cases">
 
 <classes>
-<class name="com.csm.qa.test.LoginPageTest">
-         <methods>
+<class name="com.csm.qa.test.PO_Import">
+  <!--        <methods>
                   <include name="LoginWithValidCredentials"></include>
-         </methods>
+         </methods> -->
 </class>
+<!-- 
 <class name="com.csm.qa.test.HomePageTest">
          <methods>
                   <include name="clickOnCMSModule"></include>
                    <include name="clickonIDC"></include>
          </methods>
 </class>
+-->
 </classes>
 
  

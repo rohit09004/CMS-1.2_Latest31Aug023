@@ -125,8 +125,51 @@ public class CSMBase {
 		    poScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")));
 		    driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")).click();
 
-		  
+    }
+		
+		public static void commonAllElementsPOImport() throws InterruptedException {
+			
+			//Inspection and clicking of "CMS" tab 	    
+		    WebDriverWait cmstab_wait = new WebDriverWait(driver, Duration.ofMillis(8000));
+		    cmstab_wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/header/nav/div/ul/li[2]/a")));
+		    driver.findElement(By.xpath("/html/body/div[1]/header/nav/div/ul/li[2]/a")).click();
+
+		    //Inspection and clicking of "MAC" tab
+		    WebDriverWait mactab_wait = new WebDriverWait(driver, Duration.ofMillis(8000));
+		    mactab_wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/header/nav/div/ul/li[2]/ul/li[1]/ul/li[3]/a")));
+		    driver.findElement(By.xpath("/html/body/div[1]/header/nav/div/ul/li[2]/ul/li[1]/ul/li[3]/a")).click();
 		    
+		  //Inspection and clicking of "Select Store Location" 
+		    WebDriverWait macjobcodeList = new WebDriverWait(driver, Duration.ofMillis(8000));
+		    macjobcodeList.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[2]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div")));
+		    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[2]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div")).click();
+		    
+		    //Inspection and clicking particular Store Location
+		    WebDriverWait macjobcodeListOption = new WebDriverWait(driver, Duration.ofMillis(8000));
+		    macjobcodeListOption.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/div/div/div[1]/div/div[1]/div[2]/div[8]/div")));
+		    driver.findElement(By.xpath("/html/body/div[3]/div/div/div/div[1]/div/div[1]/div[2]/div[8]/div")).click();
+
+		    //Inspection and clicking of "SAVE" Button
+		    WebDriverWait saveButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+		    saveButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[2]/div/div/div[2]/div/div[2]/div/div[3]/div[1]/div[1]/div")));
+		    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[2]/div/div/div[2]/div/div[2]/div/div[3]/div[1]/div[1]/div")).click();
+
+		  //Inspection and clicking of "CLOSE" Button
+		    WebDriverWait closeButtonpoup = new WebDriverWait(driver, Duration.ofMillis(8000));
+		    closeButtonpoup.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[2]/div/div/div[2]/div/div[2]/div/div[3]/div[1]/div[2]/div")));
+		    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[2]/div/div/div[2]/div/div[2]/div/div[3]/div[1]/div[2]/div")).click();
+
+		    //Inspection and clicking of "IMPORT" menu
+		    WebDriverWait importMenuArrow = new WebDriverWait(driver, Duration.ofMillis(8000));
+		   importMenuArrow.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
+		    driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")).click();
+
+		  //Inspection and clicking of "PO/Shipping Screen" screen
+		    WebDriverWait poShippingScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
+		    poShippingScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/ul/li[2]/div")));
+		    driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/ul/li[2]/div")).click();
+		   Thread.sleep(5000);
+		   
 		}
 		public void commonParentInsertionButton(WebDriver driver) {
 
