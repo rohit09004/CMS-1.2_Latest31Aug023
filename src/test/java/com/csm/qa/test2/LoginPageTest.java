@@ -498,7 +498,7 @@ public void Test1() throws EncryptedDocumentException, InterruptedException, IOE
 		Thread.sleep(3000);
 }
 
-@Test(priority=2)
+//@Test(priority=2)
 public void Test2() throws InterruptedException, AWTException
 {
 	test=extent.startTest("Test 02 - Importing record as duplicate data ");
@@ -603,7 +603,7 @@ public void Test2() throws InterruptedException, AWTException
 		Thread.sleep(8000);  
 }
 
-@Test(priority=3)
+//@Test(priority=3)
 public void Test3() throws InterruptedException, AWTException
 {
 	test=extent.startTest("Test 03 - Importing record as 'PO No' having MAX length ");
@@ -710,7 +710,7 @@ public void Test3() throws InterruptedException, AWTException
 		Thread.sleep(8000);  
 }
 
-@Test(priority=4)
+//@Test(priority=4)
 public void Test4() throws InterruptedException, AWTException
 {
 	test=extent.startTest("Test 04 - Importing record as 'PO No' having Leading and Trailing space data ");
@@ -817,7 +817,7 @@ public void Test4() throws InterruptedException, AWTException
 		Thread.sleep(8000); 
 }
 
-@Test(priority=5)
+//@Test(priority=5)
 public void Test5() throws InterruptedException, AWTException
 {
 	 test=extent.startTest("Test 05 - Importing record as Non Exsisting 'Job Code Key' field ");
@@ -924,7 +924,7 @@ public void Test5() throws InterruptedException, AWTException
 		Thread.sleep(8000);  
 }
 
-@Test(priority=6)
+//@Test(priority=6)
 public void Test() throws InterruptedException, AWTException
 {
 	 test=extent.startTest("Test 06 - Importing record as No data inside Excel file(No Rows exsists) ");
@@ -1032,7 +1032,7 @@ public void Test() throws InterruptedException, AWTException
 		Thread.sleep(8000); 
 }
 
-@Test(priority=7)
+//@Test(priority=7)
 public void Test7() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1138,7 +1138,7 @@ public void Test7() throws EncryptedDocumentException, InterruptedException, IOE
 		test.log(LogStatus.PASS, "Test 07 - Importing record as NULL 'Job Code Key' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-@Test(priority=8)
+//@Test(priority=8)
 public void Test8() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1245,7 +1245,7 @@ public void Test8() throws EncryptedDocumentException, InterruptedException, IOE
 		Thread.sleep(8000);  		    
 }
 
-@Test(priority=9)
+//@Test(priority=9)
 public void Test9() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1351,7 +1351,7 @@ public void Test9() throws EncryptedDocumentException, InterruptedException, IOE
 		test.log(LogStatus.PASS, "Test 09 - Importing record as NULL 'PO Order Date' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-@Test(priority=10)
+//@Test(priority=10)
 public void Test10() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1457,7 +1457,7 @@ public void Test10() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 10 - Importing record as NULL 'PO Title1' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-@Test(priority=11)
+//@Test(priority=11)
 public void Test11() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1563,7 +1563,7 @@ public void Test11() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 11 - 'Importing record as NULL 'Discipline Code' field' is PASSED");
 		Thread.sleep(8000); 		    
 }
-@Test(priority=12)
+//@Test(priority=12)
 public void Test12() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1670,7 +1670,7 @@ public void Test12() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 12 - Importing record as NULL 'Item No' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-@Test(priority=13)
+//@Test(priority=13)
 public void Test13() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1776,7 +1776,7 @@ public void Test13() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 13 - Importing record as NULL 'Ident Code' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-@Test(priority=14)
+//@Test(priority=14)
 public void Test14() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1884,7 +1884,7 @@ public void Test14() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 14 - Importing record as NULL 'Size Decreament' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-@Test(priority=15)
+//@Test(priority=15)
 public void Test15() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1992,7 +1992,7 @@ public void Test15() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-@Test(priority=16)
+//@Test(priority=16)
 public void Test16() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2101,7 +2101,7 @@ public void Test16() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-@Test(priority=17)
+//@Test(priority=17)
 public void Test17() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2210,7 +2210,7 @@ public void Test17() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-@Test(priority=18)
+//@Test(priority=18)
 public void Test18() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2318,7 +2318,7 @@ public void Test18() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 18 - Importing record as 'PO No' having MIN length IS PASSED");
 		Thread.sleep(8000);  		    
 }
-@Test(priority=19)
+//@Test(priority=19)
 public void Test19() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2426,7 +2426,7 @@ public void Test19() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 19 - Importing record as Non Exsisting 'Job Code Key' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-@Test(priority=20)
+//@Test(priority=20)
 public void Test20() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2534,7 +2534,7 @@ public void Test20() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 20 - Importing record as Non Exsisting 'Ident Code' field is PASSED");
 		Thread.sleep(8000); 		    
 }
-@Test(priority=21)
+//@Test(priority=21)
 public void Test21() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2643,7 +2643,7 @@ public void Test21() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);		    
 }
 
-@Test(priority=22)
+//@Test(priority=22)
 public void Test22() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2751,7 +2751,7 @@ public void Test22() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);		    
 }
 
-@Test(priority=23)
+//@Test(priority=23)
 public void Test23() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2860,7 +2860,7 @@ public void Test23() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-@Test(priority=24)
+//@Test(priority=24)
 public void Test24() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2968,7 +2968,7 @@ public void Test24() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-@Test(priority=25)
+//@Test(priority=25)
 public void Test25() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3077,7 +3077,7 @@ public void Test25() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-@Test(priority=26)
+//@Test(priority=26)
 public void Test26() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3186,7 +3186,7 @@ public void Test26() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000); 		    
 }
 
-@Test(priority=27)
+//@Test(priority=27)
 public void Test27() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3295,7 +3295,7 @@ public void Test27() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-@Test(priority=28)
+//@Test(priority=28)
 public void Test28() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3402,7 +3402,7 @@ public void Test28() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 28 - Importing record as Non Exsisting 'Unit' field is PASSED");
 		Thread.sleep(8000); 		    
 }
-@Test(priority=29)
+//@Test(priority=29)
 public void Test29() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3510,7 +3510,7 @@ public void Test29() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 29 - Importing record as 'Item No' having MIN length is PASSED");
 		Thread.sleep(8000); 		    
 }
-@Test(priority=30)
+//@Test(priority=30)
 public void Test30() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3619,7 +3619,7 @@ public void Test30() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000); 		    
 }
 
-@Test(priority=31)
+//@Test(priority=31)
 public void Test31() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3727,7 +3727,7 @@ public void Test31() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 31 - Importing record as 'Item No' having length more than provided(exceeding MAX Length) is PASSED");
 		Thread.sleep(8000); 		    
 }
-@Test(priority=32)
+//@Test(priority=32)
 public void Test32() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3836,7 +3836,7 @@ public void Test32() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000); 		    
 }
 
-@Test(priority=33)
+//@Test(priority=33)
 public void Test33() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3944,7 +3944,7 @@ public void Test33() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 33 - Importing record as input '0' inside 'Cancel Flag' field is PASSED");
 		Thread.sleep(8000); 		    
 }
-@Test(priority=34)
+//@Test(priority=34)
 public void Test34() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -4051,7 +4051,7 @@ public void Test34() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 34 - Importing record as input '0' inside 'Cancel Flag' field is PASSED");
 		Thread.sleep(8000); 		    
 }
-@Test(priority=35)
+//@Test(priority=35)
 public void Test35() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4161,7 +4161,7 @@ public void Test35() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 35 - Importing records with Error(With Error Records) is PASSED");
 		Thread.sleep(8000); 		    
 }
-@Test(priority=36)
+//@Test(priority=36)
 public void Test36() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4278,7 +4278,7 @@ public void Test36() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 36 - To print Error records in PDF(Error Report Print) format is PASSED");
 		Thread.sleep(8000); 		    
 }
-@Test(priority=37)
+//@Test(priority=37)
 public void Test37() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4397,7 +4397,7 @@ public void Test37() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 37 - To print records in Excel(Export Excel sheet/file) format is PASSED");
 		Thread.sleep(8000); 		    
 }
-@Test(priority=38)
+//@Test(priority=38)
 public void Test38() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4508,7 +4508,7 @@ public void Test38() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 38 - Importing records as BULK is PASSED");
 		Thread.sleep(8000); 		    
 }
-@Test(priority=39)
+//@Test(priority=39)
 public void Test39() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4629,7 +4629,7 @@ public void Test39() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000); 		    
 }
 
-@Test(priority=40)
+//@Test(priority=40)
 public void Test40() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -5055,10 +5055,18 @@ public void Test42() throws EncryptedDocumentException, InterruptedException, IO
 	     reportLog("04.Clicked on 'Import file' button once file uploaded successfully");
        Thread.sleep(2000);
      
-   //Inspection and clicking of 'Import Menu' button
-     WebDriverWait importMenuClickCLOSE = new WebDriverWait(driver, Duration.ofMillis(8000));
-     importMenuClickCLOSE.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
-     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")).click();
+//   //Inspection and clicking of 'Import Menu' button
+//     WebDriverWait importMenuClickCLOSE = new WebDriverWait(driver, Duration.ofMillis(8000));
+//     importMenuClickCLOSE.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
+//     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")).click();
+//     
+   //Inspection and clicking of "Upload" button
+     WebDriverWait importMenuClickCLOSEE = new WebDriverWait(driver, Duration.ofMillis(12000));
+     importMenuClickCLOSEE.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
+    // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+     Actions act52importMenu =  new Actions(driver);
+     act52importMenu.moveToElement(driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]"))).click().perform();
+     Thread.sleep(1000);
      
 //   //Inspection and clicking of 'Import Menu' button
 //     WebDriverWait dataMaintainceTabClickOpen = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -5070,10 +5078,19 @@ public void Test42() throws EncryptedDocumentException, InterruptedException, IO
 //     receivingDataTabClickOpen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/div[2]")));
 //     driver.findElement(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/div[2]")).click();
 //  
-   //Inspection and clicking of 'poScreen' button
-     WebDriverWait poScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
+  
+//      //Inspection and clicking of 'poScreen' button
+//     WebDriverWait poScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
+//     poScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")));
+//     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")).click();
+//     
+   //Inspection and clicking of "Upload" button
+     WebDriverWait poScreen = new WebDriverWait(driver, Duration.ofMillis(12000));
      poScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")));
-     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")).click();
+    // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+     Actions act52poScreen =  new Actions(driver);
+     act52poScreen.moveToElement(driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div"))).click().perform();
+      Thread.sleep(1000);
      
    //Inspection and clicking of "PO NO:" Field 
 	    WebDriverWait poNoField = new WebDriverWait(driver, Duration.ofMillis(8000));
