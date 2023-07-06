@@ -1,0 +1,18 @@
+Job Code Key,Po No,Item No,Po Amd ,Po Ord Date,Po Title 1 ,Po Title 2,Company Code,Discipline Code,PJ Commodity,Size Descr,Thickness Descr,Po Item Descr,Po Qty,Unit,Po Dlv Dt,Remarks,Cancel Flag,Ident Cd
+0-7723-2 ,P-2242-1010-BD,1,12,,Test 1, Test01 ,JGC,2, Rz-001,20,***, njdnjdnv  ,50,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1011-BD,5,12,,Test 1, Test01 ,JGC,1, Rz-001,20,***, njdnjdnv  ,30,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1012-BD,9,12,,Test 1, Test01 ,JGC,2, Rz-001,20,***, njdnjdnv  ,20,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1013-BD,1,12,,Test 1, Test01 ,JGC,3, Rz-001,20,***, njdnjdnv  ,43,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1014-BD,2,12,,Test 1, Test01 ,JGC,2, Rz-001,20,***, njdnjdnv  ,21,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1015-BD,4,12,,Test 1, Test01 ,JGC,5, Rz-001,20,***, njdnjdnv  ,56,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1016-BD,7,12,,Test 1, Test01 ,JGC,2, Rz-001,20,***, njdnjdnv  ,98,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1017-BD,1,12,,Test 1, Test01 ,JGC,6, Rz-001,20,***, njdnjdnv  ,34,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1018-BD,3,12,,Test 1, Test01 ,JGC,2, Rz-001,20,***, njdnjdnv  ,100,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1019-BD,7,12,,Test 1, Test01 ,JGC,4, Rz-001,20,***, njdnjdnv  ,499,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1020-BD,4,12,,Test 1, Test01 ,JGC,3, Rz-001,20,***, njdnjdnv  ,999,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1021-BD,2,12,,Test 1, Test01 ,JGC,1, Rz-001,20,***, njdnjdnv  ,81,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1022-BD,1,12,,Test 1, Test01 ,JGC,5, Rz-001,20,***, njdnjdnv  ,0.00001,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1023-BD,9,12,,Test 1, Test01 ,JGC,4, Rz-001,20,***, njdnjdnv  ,50001,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2242-1024-BD,6,12,,Test 1, Test01 ,JGC,1, Rz-001,20,***, njdnjdnv  ,1,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2243-1024-BD,6,12,,Test 1, Test01 ,JGC,1, Rz-001,20,***, njdnjdnv  ,123456789.1,BAG,,test,a,010PRV-016
+0-7723-2 ,P-2244-1024-BD,6,12,,Test 1, Test01 ,JGC,1, Rz-001,20,***, njdnjdnv  ,12345678901,BAG,,test,a,010PRV-016
