@@ -1457,7 +1457,7 @@ public void Test10() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 10 - Importing record as NULL 'PO Title1' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-//@Test(priority=11)
+@Test(priority=11)
 public void Test11() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1563,7 +1563,7 @@ public void Test11() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 11 - 'Importing record as NULL 'Discipline Code' field' is PASSED");
 		Thread.sleep(8000); 		    
 }
-//@Test(priority=12)
+@Test(priority=12)
 public void Test12() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1670,7 +1670,7 @@ public void Test12() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 12 - Importing record as NULL 'Item No' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-//@Test(priority=13)
+@Test(priority=13)
 public void Test13() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1776,7 +1776,7 @@ public void Test13() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 13 - Importing record as NULL 'Ident Code' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-//@Test(priority=14)
+@Test(priority=14)
 public void Test14() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1884,7 +1884,7 @@ public void Test14() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 14 - Importing record as NULL 'Size Decreament' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-//@Test(priority=15)
+@Test(priority=15)
 public void Test15() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -1992,7 +1992,7 @@ public void Test15() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-//@Test(priority=16)
+@Test(priority=16)
 public void Test16() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2101,7 +2101,7 @@ public void Test16() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-//@Test(priority=17)
+@Test(priority=17)
 public void Test17() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2162,14 +2162,25 @@ public void Test17() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -2199,7 +2210,7 @@ public void Test17() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-//@Test(priority=18)
+@Test(priority=18)
 public void Test18() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2260,14 +2271,25 @@ public void Test18() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -2296,7 +2318,7 @@ public void Test18() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 18 - Importing record as 'PO No' having MIN length IS PASSED");
 		Thread.sleep(8000);  		    
 }
-//@Test(priority=19)
+@Test(priority=19)
 public void Test19() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2357,14 +2379,25 @@ public void Test19() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -2393,7 +2426,7 @@ public void Test19() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 19 - Importing record as Non Exsisting 'Job Code Key' field is PASSED");
 		Thread.sleep(8000);  		    
 }
-//@Test(priority=20)
+@Test(priority=20)
 public void Test20() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2454,14 +2487,25 @@ public void Test20() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -2490,7 +2534,7 @@ public void Test20() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 20 - Importing record as Non Exsisting 'Ident Code' field is PASSED");
 		Thread.sleep(8000); 		    
 }
-//@Test(priority=21)
+@Test(priority=21)
 public void Test21() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2551,15 +2595,26 @@ public void Test21() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
 
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
+    
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
 	    importfilebutton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[4]/button")));
@@ -2588,7 +2643,7 @@ public void Test21() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);		    
 }
 
-//@Test(priority=22)
+@Test(priority=22)
 public void Test22() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2648,15 +2703,26 @@ public void Test22() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
 
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
+    
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
 	    importfilebutton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[4]/button")));
@@ -2685,7 +2751,7 @@ public void Test22() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);		    
 }
 
-//@Test(priority=23)
+@Test(priority=23)
 public void Test23() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2746,14 +2812,25 @@ public void Test23() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -2783,7 +2860,7 @@ public void Test23() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-//@Test(priority=24)
+@Test(priority=24)
 public void Test24() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2843,14 +2920,25 @@ public void Test24() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -2880,7 +2968,7 @@ public void Test24() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-//@Test(priority=25)
+@Test(priority=25)
 public void Test25() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -2941,14 +3029,25 @@ public void Test25() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -2978,7 +3077,7 @@ public void Test25() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-//@Test(priority=26)
+@Test(priority=26)
 public void Test26() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3039,14 +3138,25 @@ public void Test26() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -3076,7 +3186,7 @@ public void Test26() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000); 		    
 }
 
-//@Test(priority=27)
+@Test(priority=27)
 public void Test27() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3137,14 +3247,25 @@ public void Test27() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -3174,7 +3295,7 @@ public void Test27() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000);  		    
 }
 
-//@Test(priority=28)
+@Test(priority=28)
 public void Test28() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3234,14 +3355,25 @@ public void Test28() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-       //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//       //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -3270,7 +3402,7 @@ public void Test28() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 28 - Importing record as Non Exsisting 'Unit' field is PASSED");
 		Thread.sleep(8000); 		    
 }
-//@Test(priority=29)
+@Test(priority=29)
 public void Test29() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3331,14 +3463,25 @@ public void Test29() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -3367,7 +3510,7 @@ public void Test29() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 29 - Importing record as 'Item No' having MIN length is PASSED");
 		Thread.sleep(8000); 		    
 }
-//@Test(priority=30)
+@Test(priority=30)
 public void Test30() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3428,14 +3571,25 @@ public void Test30() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -3465,7 +3619,7 @@ public void Test30() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000); 		    
 }
 
-//@Test(priority=31)
+@Test(priority=31)
 public void Test31() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3526,14 +3680,25 @@ public void Test31() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -3562,7 +3727,7 @@ public void Test31() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 31 - Importing record as 'Item No' having length more than provided(exceeding MAX Length) is PASSED");
 		Thread.sleep(8000); 		    
 }
-//@Test(priority=32)
+@Test(priority=32)
 public void Test32() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3623,14 +3788,25 @@ public void Test32() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -3660,7 +3836,7 @@ public void Test32() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000); 		    
 }
 
-//@Test(priority=33)
+@Test(priority=33)
 public void Test33() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3721,14 +3897,25 @@ public void Test33() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -3757,7 +3944,7 @@ public void Test33() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 33 - Importing record as input '0' inside 'Cancel Flag' field is PASSED");
 		Thread.sleep(8000); 		    
 }
-//@Test(priority=34)
+@Test(priority=34)
 public void Test34() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
   
@@ -3817,14 +4004,25 @@ public void Test34() throws EncryptedDocumentException, InterruptedException, IO
     rb.keyRelease(KeyEvent.VK_ENTER); 
     Thread.sleep(2000);
     
-      //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-       Thread.sleep(2000);
+//      //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//       Thread.sleep(2000);
+    
+  //Inspection and clicking of "Upload" button
+    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+    Actions act52 =  new Actions(driver);
+    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+    System.out.println("06.Clicked on 'Upload' button");
+     Reporter.log("06.Clicked on 'Upload' button");
+     reportLog("06.Clicked on 'Upload' button");
+     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -3853,7 +4051,7 @@ public void Test34() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 34 - Importing record as input '0' inside 'Cancel Flag' field is PASSED");
 		Thread.sleep(8000); 		    
 }
-//@Test(priority=35)
+@Test(priority=35)
 public void Test35() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -3914,14 +4112,25 @@ public void Test35() throws EncryptedDocumentException, InterruptedException, IO
   rb.keyRelease(KeyEvent.VK_ENTER); 
   Thread.sleep(2000);
   
-    //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-     Thread.sleep(2000);
+//    //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//     Thread.sleep(2000);
+  
+//Inspection and clicking of "Upload" button
+  WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+  uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+ // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+  Actions act52 =  new Actions(driver);
+  act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+  System.out.println("06.Clicked on 'Upload' button");
+   Reporter.log("06.Clicked on 'Upload' button");
+   reportLog("06.Clicked on 'Upload' button");
+   Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -3952,7 +4161,7 @@ public void Test35() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 35 - Importing records with Error(With Error Records) is PASSED");
 		Thread.sleep(8000); 		    
 }
-//@Test(priority=36)
+@Test(priority=36)
 public void Test36() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4012,14 +4221,25 @@ public void Test36() throws EncryptedDocumentException, InterruptedException, IO
   rb.keyRelease(KeyEvent.VK_ENTER); 
   Thread.sleep(2000);
   
-    //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-     Thread.sleep(2000);
+//    //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//     Thread.sleep(2000);
+  
+//Inspection and clicking of "Upload" button
+  WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+  uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+ // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+  Actions act52 =  new Actions(driver);
+  act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+  System.out.println("06.Clicked on 'Upload' button");
+   Reporter.log("06.Clicked on 'Upload' button");
+   reportLog("06.Clicked on 'Upload' button");
+   Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -4058,7 +4278,7 @@ public void Test36() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 36 - To print Error records in PDF(Error Report Print) format is PASSED");
 		Thread.sleep(8000); 		    
 }
-//@Test(priority=37)
+@Test(priority=37)
 public void Test37() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4119,14 +4339,26 @@ public void Test37() throws EncryptedDocumentException, InterruptedException, IO
   rb.keyRelease(KeyEvent.VK_ENTER); 
   Thread.sleep(2000);
   
-    //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-     Thread.sleep(2000);
+//    //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//     Thread.sleep(2000);
+  
+  
+//Inspection and clicking of "Upload" button
+  WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+  uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+ // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+  Actions act52 =  new Actions(driver);
+  act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+  System.out.println("06.Clicked on 'Upload' button");
+   Reporter.log("06.Clicked on 'Upload' button");
+   reportLog("06.Clicked on 'Upload' button");
+   Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -4165,7 +4397,7 @@ public void Test37() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 37 - To print records in Excel(Export Excel sheet/file) format is PASSED");
 		Thread.sleep(8000); 		    
 }
-//@Test(priority=38)
+@Test(priority=38)
 public void Test38() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4226,15 +4458,27 @@ public void Test38() throws EncryptedDocumentException, InterruptedException, IO
   rb.keyRelease(KeyEvent.VK_ENTER); 
   Thread.sleep(2000);
   
-    //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-     Thread.sleep(2000);
+//    //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//     Thread.sleep(2000);
 
+  
+//Inspection and clicking of "Upload" button
+  WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+  uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+ // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+  Actions act52 =  new Actions(driver);
+  act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+  System.out.println("06.Clicked on 'Upload' button");
+   Reporter.log("06.Clicked on 'Upload' button");
+   reportLog("06.Clicked on 'Upload' button");
+   Thread.sleep(1000);
+  
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
 	    importfilebutton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[4]/button")));
@@ -4264,7 +4508,7 @@ public void Test38() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 38 - Importing records as BULK is PASSED");
 		Thread.sleep(8000); 		    
 }
-//@Test(priority=39)
+@Test(priority=39)
 public void Test39() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4326,14 +4570,25 @@ public void Test39() throws EncryptedDocumentException, InterruptedException, IO
   rb.keyRelease(KeyEvent.VK_ENTER); 
   Thread.sleep(2000);
   
-    //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-     Thread.sleep(2000);
+//    //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//     Thread.sleep(2000);
+  
+//Inspection and clicking of "Upload" button
+  WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+  uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+ // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+  Actions act52 =  new Actions(driver);
+  act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+  System.out.println("06.Clicked on 'Upload' button");
+   Reporter.log("06.Clicked on 'Upload' button");
+   reportLog("06.Clicked on 'Upload' button");
+   Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -4374,7 +4629,7 @@ public void Test39() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000); 		    
 }
 
-//@Test(priority=40)
+@Test(priority=40)
 public void Test40() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4435,15 +4690,26 @@ public void Test40() throws EncryptedDocumentException, InterruptedException, IO
   rb.keyRelease(KeyEvent.VK_ENTER); 
   Thread.sleep(2000);
   
-    //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-     Thread.sleep(2000);
+//    //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//     Thread.sleep(2000);
 
+//Inspection and clicking of "Upload" button
+  WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+  uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+ // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+  Actions act52 =  new Actions(driver);
+  act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+  System.out.println("06.Clicked on 'Upload' button");
+   Reporter.log("06.Clicked on 'Upload' button");
+   reportLog("06.Clicked on 'Upload' button");
+   Thread.sleep(1000);
+  
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
 	    importfilebutton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[4]/button")));
@@ -4491,7 +4757,7 @@ public void Test40() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000); 		    
 }
 
-//@Test(priority=41)
+@Test(priority=41)
 public void Test41() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4555,14 +4821,25 @@ public void Test41() throws EncryptedDocumentException, InterruptedException, IO
   rb.keyRelease(KeyEvent.VK_ENTER); 
   Thread.sleep(2000);
   
-    //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-     Thread.sleep(2000);
+//    //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//     Thread.sleep(2000);
+  
+//Inspection and clicking of "Upload" button
+  WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+  uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+ // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+  Actions act52 =  new Actions(driver);
+  act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+  System.out.println("06.Clicked on 'Upload' button");
+   Reporter.log("06.Clicked on 'Upload' button");
+   reportLog("06.Clicked on 'Upload' button");
+   Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -4660,352 +4937,23 @@ public void Test41() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(10000); 		    
 }
 
-//@Test(priority=42)
+@Test(priority=42)
 public void Test42() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
-//	 FileInputStream fileNew=new FileInputStream("D:\\Eclipse_rohit\\CMS_DMscreens(2.0)\\TestEvidences[ExtentReport]\\ImportMenu\\POShipping\\41_Po_Data_PoDataWithSpecialSymbols.csv");
-//	   sh= WorkbookFactory.create(fileNew).getSheet("Sheet");
-//	   
-	   test=extent.startTest("Test 42 - To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of same child record ");
+	   test=extent.startTest("Test 42 - To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data ");
 
 	   System.setProperty("webdriver.chrome.driver",
 				"D:\\Eclipse_rohit\\EclipseSetup_Library\\chromedriver\\chromedriver.exe");
 		
     
-     System.out.println("************************************[ Test 42--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of same child record' ]************************************ ");
-		 Reporter.log("************************************[ Test 42--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of same child record' ]************************************ ");
-		 reportLog("******[ Test 42--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of same child record' ]****** ");
+     System.out.println("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ");
+		 Reporter.log("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ");
+		 reportLog("******[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]****** ");
 		    
      System.out.println("[Test 42 steps 'STARTS'] ");
 	     Reporter.log("[Test 42 steps 'STARTS'] ");
 	     reportLog("[Test 42 steps 'STARTS'] ");
-     
-	    Thread.sleep(2000);
-	    
-	  //Inspection and clicking on "PO" Screen
-	    WebDriverWait poScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    poScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div/div")));
-	    driver.findElement(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div/div")).click();
-	    System.out.println("08.Clicked on 'PO' Screen");
-	     Reporter.log("08.Clicked on 'PO' Screen");
-	     reportLog("08.Clicked on 'PO' Screen");
-     
-	    Thread.sleep(2000);
-	    
-	   //Inspection and clicking of "PO NO:" Field 
-	    WebDriverWait poNoField = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    poNoField.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input"))); 
-	   // driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input")).click();
-		//String poNoFieldd= sh.getRow(1).getCell(1).getStringCellValue();
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input")).sendKeys("P-2174-3021-#@*&-2@23-//");
-	    Thread.sleep(2000);
-	    Actions action3 = new Actions(driver); 
-	    WebElement  element3 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
-	    action3.moveToElement(element3).click().perform();
-	    System.out.println("09.Clicked inside 'PO No' field");
-	    Reporter.log("09.Clicked inside 'PO No' field");
-	    reportLog("09.Clicked inside 'PO No' field");
-	    Thread.sleep(2000);
-        
-	    //Inspection and clicking of "Go" Button 
-	    WebDriverWait clickingGOButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    clickingGOButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[2]/div/div")));
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[2]/div/div")).click();
-        System.out.println("10.Clicked on 'Go' button");
-        Reporter.log("10.Clicked on 'Go' button");
-        reportLog("10.Clicked on 'Go' button");
-	    Thread.sleep(5000);
-        
-               //Inspection and clicking of "Insert" Button for Child grid under PO Screen
- 		  		WebDriverWait insertChildSymbole1= new WebDriverWait(driver, Duration.ofMillis(8000));
- 		  	    insertChildSymbole1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")));
- 		  	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")).click();
- 		  	    System.out.println("11.Clicked on 'Insert' button to add new CHILD Record");
- 		  	    Reporter.log("11.Clicked on 'Insert' button to add new CHILD Record");
- 		  	    reportLog("11.Clicked on 'Insert' button to add new CHILD Record");
- 		  	    Thread.sleep(1000);		    
- 		  	    
- 		  	    //Inspection and clicking of "Discipline Code"   	    
- 		  	    WebDriverWait disciplineCodeDropdown1 = new WebDriverWait(driver, Duration.ofMillis(8000));
- 		  	    disciplineCodeDropdown1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")));
- 		  	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")).click();
- 		  	    Thread.sleep(1000);
- 		  	    
- 		  	    //Inspection and clicking of particular "Discipline Code"    	    
- 		  	    WebDriverWait disciplineCodeDropdownPiping1 = new WebDriverWait(driver, Duration.ofMillis(8000));
- 		  	    disciplineCodeDropdownPiping1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[24]")));
- 		  	    driver.findElement(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[24]")).click();
- 		  	    System.out.println("12.Choosing 'Displine code' ");
- 		  	    Reporter.log("12.Choosing 'Displine code' ");
- 		  	    reportLog("12.Choosing 'Displine code' ");
- 		  	    Thread.sleep(1000);
- 		    
- 			//Inspection and clicking of "Item No"   	    
- 			WebDriverWait itemNo1 = new WebDriverWait(driver, Duration.ofMillis(8000));
- 			itemNo1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")));
- 			//String itemNoData1=sh.getRow(1).getCell(4).getStringCellValue();
- 			driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")).sendKeys("121");
- 			System.out.println("13.Inserting 'Item No.' field ");
- 			Reporter.log("13.Inserting 'Item No.' field ");
- 			reportLog("13.Inserting 'Item No.' field ");
- 			Thread.sleep(1000);
- 	  
- 	      //Inspection and clicking of "Ident Code"   	    
- 	  	    WebDriverWait identCodeList1 = new WebDriverWait(driver, Duration.ofMillis(8000));
- 			identCodeList1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")));
- 		    //String identCodeData1=sh.getRow(1).getCell(5).getStringCellValue();
- 		    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")).sendKeys("010PRV-016");
- 		    System.out.println("14.Selecting 'Ident Code' field ");
- 		    Reporter.log("14.Selecting 'Ident Code' field ");
- 		    reportLog("14.Selecting 'Ident Code' field ");
- 		    Thread.sleep(1000);
- 		    //Inspection and clicking a particular "Ident Code" once inserted inside field(Showing blue color ident code data i.e Existing data)  
- 		    Actions action1 = new Actions(driver); 
- 		    WebElement  element1 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
- 		    action1.moveToElement(element1).click().perform();
- 		    Thread.sleep(1000);
- 			    
- 		    //Inspection and clicking of "PO Qty."
- 		    WebDriverWait poQty1 = new WebDriverWait(driver, Duration.ofMillis(8000));
- 		    poQty1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))); 
- 		    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).click();
- 		   driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
- 		     driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
- 		     driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
- 		     driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
- 		     
- 	        Thread.sleep(1000);
- 			//String poQtyData1= sh.getRow(1).getCell(9).getStringCellValue();
- 		    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys("599");
- 		    System.out.println("15.Inserting 'PO Qty.' field ");
- 		    Reporter.log("15.Inserting 'PO Qty.' field ");
- 		    reportLog("15.Inserting 'PO Qty.' field ");
- 		    Thread.sleep(1000);
- 		    
- 				    
- 		   //Inspection and clicking of "SAVE" Button inside Child grid 
- 		      WebDriverWait saveButtonChildd = new WebDriverWait(driver, Duration.ofMillis(8000));
- 		      saveButtonChildd.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[2]/table/tbody/tr[1]/td[2]/a[1]/span")));
- 			  driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[2]/table/tbody/tr[1]/td[2]/a[1]/span")).click();
- 			  Thread.sleep(4000);
- 			System.out.println("16.Cliking on 'SAVE' button ");
- 			Reporter.log("16.Cliking on 'SAVE' button ");
- 			reportLog("16.Cliking on 'SAVE' button ");
- 			Thread.sleep(1000);
-        
- 			
-// 			String notExpectedValidatoion = "Record cannot be inserted, already exists.";
-// 		    WebElement actualValidationXPATH= driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[1]/table/tbody/tr[3]/td/div[2]"));
-// 	        String ActualValidation = actualValidationXPATH.getText();
-// 		    System.out.println(ActualValidation);
-// 		   // Assert.assertEquals(ExpectedItemNo, ActualItemNo);
-// 		    Assert.assertNotEquals(notExpectedValidatoion, ActualValidation);
-
- 	        
- 			
-            System.out.println("[Test 42 steps 'ENDS'] ");
-		    Reporter.log("[Test 42 steps 'ENDS'] ");
-		    reportLog("[Test 42 steps 'ENDS'] ");
-		 
-		    System.out.println("************************************[ Test 42--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of same child record' is ''PASSED'' ]************************************ ");
-		    Reporter.log("************************************[ Test 42--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of same child record' is ''PASSED'' ]************************************ ");
-		    reportLog("******[ Test 42--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of same child record' is ''PASSED'' ]****** ");
-		    System.out.println(" ");
-		    Reporter.log(" ");
-		    System.out.println(" ");
-		    Reporter.log(" ");
-		    //driver.quit();
-      //ends PO3
-      
-    Assert.assertTrue(true);
-		test.log(LogStatus.PASS, "Test 42 - To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of same child record is PASSED");
-		Thread.sleep(10000); 		    
-}
-
-//@Test(priority=43)
-public void Test43() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
-{
-
-//	 FileInputStream fileNew=new FileInputStream("D:\\Eclipse_rohit\\CMS_DMscreens(2.0)\\TestEvidences[ExtentReport]\\ImportMenu\\POShipping\\41_Po_Data_PoDataWithSpecialSymbols.csv");
-//	   sh= WorkbookFactory.create(fileNew).getSheet("Sheet");
-//	   
-	   test=extent.startTest("Test 43 - To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of NEW child record ");
-
-	   System.setProperty("webdriver.chrome.driver",
-				"D:\\Eclipse_rohit\\EclipseSetup_Library\\chromedriver\\chromedriver.exe");
-		
-    
-     System.out.println("************************************[ Test 43--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of NEW child record' ]************************************ ");
-		 Reporter.log("************************************[ Test 43--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of NEW child record' ]************************************ ");
-		 reportLog("******[ Test 43--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of NEW child record' ]****** ");
-		    
-     System.out.println("[Test 43 steps 'STARTS'] ");
-	     Reporter.log("[Test 43 steps 'STARTS'] ");
-	     reportLog("[Test 43 steps 'STARTS'] ");
-	     Thread.sleep(3000);
-     
-    
-	  //Inspection and clicking of "PO" Screen
-	    WebDriverWait poScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    poScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div/div")));
-	    driver.findElement(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div/div")).click();
-	    System.out.println("01.Clicked on 'PO' Screen ");
-	    Reporter.log("01.Clicked on 'PO' Screen ");
-	    reportLog("01.Clicked on 'PO' Screen ");
-	    
-	    Thread.sleep(2000);
-	    
-	   //Inspection and clicking of "PO NO:" Field 
-	    WebDriverWait poNoField = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    poNoField.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input"))); 
-	   // driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input")).click();
-		//String poNoFieldd= sh.getRow(1).getCell(1).getStringCellValue();
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input")).sendKeys("P-2174-3021-#@*&-2@23-//");
-	    Thread.sleep(2000);
-	    Actions action3 = new Actions(driver); 
-	    WebElement  element3 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
-	    action3.moveToElement(element3).click().perform();
-	    System.out.println("02.Clicked inside 'PO No' field ");
-	    Reporter.log("02.Clicked inside 'PO No' field ");
-	    reportLog("02.Clicked inside 'PO No' field ");
-	    Thread.sleep(2000);
-        
-	    //Inspection and clicking of "Go" Button 
-	    WebDriverWait clickingGOButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    clickingGOButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[2]/div/div")));
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[2]/div/div")).click();
-        System.out.println("03.Clicked on 'Go' button");
-        Reporter.log("03.Clicked on 'Go' button");
-        reportLog("03.Clicked on 'Go' button");
-	    
-
-        //Inspection and clicking of "Insert" Button for Child grid under PO Screen
- 		  		WebDriverWait insertChildSymbole1= new WebDriverWait(driver, Duration.ofMillis(8000));
- 		  	    insertChildSymbole1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")));
- 		  	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")).click();
- 		  	    System.out.println("04.Clicked on 'Insert' button to add new CHILD Record");
- 		  	    Reporter.log("04.Clicked on 'Insert' button to add new CHILD Record");
- 		  	    reportLog("04.Clicked on 'Insert' button to add new CHILD Record");
- 		  	    Thread.sleep(1000);		    
- 		  	    
- 		  	    //Inspection and clicking of "Discipline Code"   	    
- 		  	    WebDriverWait disciplineCodeDropdown1 = new WebDriverWait(driver, Duration.ofMillis(8000));
- 		  	    disciplineCodeDropdown1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")));
- 		  	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")).click();
- 		  	    Thread.sleep(1000);
- 		  	    
- 		  	    //Inspection and clicking of particular "Discipline Code"    	    
- 		  	    WebDriverWait disciplineCodeDropdownPiping1 = new WebDriverWait(driver, Duration.ofMillis(8000));
- 		  	    disciplineCodeDropdownPiping1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[24]")));
- 		  	    driver.findElement(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[24]")).click();
- 		  	    System.out.println("05.Choosing 'Displine code' ");
- 		  	    Reporter.log("05.Choosing 'Displine code' ");
- 		  	    reportLog("05.Choosing 'Displine code' ");
- 		  	    Thread.sleep(1000);
- 		    
- 			//Inspection and clicking of "Item No"  
- 		  	Random randVar = new Random();
- 		    int random_num=randVar.nextInt(100);
- 			WebDriverWait itemNo1 = new WebDriverWait(driver, Duration.ofMillis(8000));
- 			itemNo1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")));
- 			//String itemNoData1=sh.getRow(1).getCell(4).getStringCellValue();
- 			driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")).sendKeys(""+random_num);
- 			System.out.println("06.Inserting 'Item No.' field ");
- 			Reporter.log("06.Inserting 'Item No.' field ");
- 			reportLog("06.Inserting 'Item No.' field ");
- 			Thread.sleep(1000);
- 	  
- 	      //Inspection and clicking of "Ident Code"   	    
- 	  	    WebDriverWait identCodeList1 = new WebDriverWait(driver, Duration.ofMillis(8000));
- 			identCodeList1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")));
- 		    //String identCodeData1=sh.getRow(1).getCell(5).getStringCellValue();
- 		    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")).sendKeys("UN21-18-FO-00001");
- 		    System.out.println("07.Selecting 'Ident Code' field ");
- 		    Reporter.log("07.Selecting 'Ident Code' field ");
- 		    reportLog("07.Selecting 'Ident Code' field ");
- 		    Thread.sleep(1000);
- 		    //Inspection and clicking a particular "Ident Code" once inserted inside field(Showing blue color ident code data i.e Existing data)  
- 		    Actions action1 = new Actions(driver); 
- 		    WebElement  element1 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
- 		    action1.moveToElement(element1).click().perform();
- 		    Thread.sleep(1000);
- 			    
- 		    //Inspection and clicking of "PO Qty."
- 		   Random randVar1 = new Random();
-		    int random_num1=randVar1.nextInt(1000);
- 		    WebDriverWait poQty1 = new WebDriverWait(driver, Duration.ofMillis(8000));
- 		    poQty1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))); 
- 		    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).click();
- 		   driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
- 		     driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
- 		     driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
- 		     driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
- 		     
- 	        Thread.sleep(1000);
- 			//String poQtyData1= sh.getRow(1).getCell(9).getStringCellValue();
- 		    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(""+random_num1);
- 		    System.out.println("08.Inserting 'PO Qty.' field ");
- 		    Reporter.log("08.Inserting 'PO Qty.' field ");
- 		    reportLog("08.Inserting 'PO Qty.' field ");
- 		    Thread.sleep(1000);
- 		    
- 				    
- 		   //Inspection and clicking of "SAVE" Button inside Child grid 
- 		      WebDriverWait saveButtonChildd = new WebDriverWait(driver, Duration.ofMillis(8000));
- 		      saveButtonChildd.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[2]/table/tbody/tr[1]/td[2]/a[1]/span")));
- 			  driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[2]/table/tbody/tr[1]/td[2]/a[1]/span")).click();
- 			  Thread.sleep(4000);
- 			System.out.println("09.Cliking on 'SAVE' button ");
- 			Reporter.log("09.Cliking on 'SAVE' button ");
- 			reportLog("09.Cliking on 'SAVE' button ");
- 			Thread.sleep(1000);
-        
-// 			String notExpectedValidatoion = "Record cannot be inserted, already exists.";
-// 		    WebElement actualValidationXPATH= driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[1]/table/tbody/tr[3]/td/div[2]"));
-// 	        String ActualValidation = actualValidationXPATH.getText();
-// 		    System.out.println(ActualValidation);
-// 		    Assert.assertEquals(notExpectedValidatoion, ActualValidation);
-// 		   // Assert.assertNotEquals(notExpectedValidatoion, ActualValidation);
-
-            System.out.println("[Test 43 steps 'ENDS'] ");
-		    Reporter.log("[Test 43 steps 'ENDS'] ");
-		    reportLog("[Test 43 steps 'ENDS'] ");
-		 
-		    System.out.println("************************************[ Test 43--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of NEW child record' is ''PASSED'' ]************************************ ");
-		    Reporter.log("************************************[ Test 43--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of NEW child record' is ''PASSED'' ]************************************ ");
-		    reportLog("******[ Test 43--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of NEW child record' is ''PASSED'' ]****** ");
-		    System.out.println(" ");
-		    Reporter.log(" ");
-		    System.out.println(" ");
-		    Reporter.log(" ");
-		    //driver.quit();
-      //ends PO3
-      
-    Assert.assertTrue(true);
-		test.log(LogStatus.PASS, "Test 43 - To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not! with addition of NEW child record is PASSED");
-		Thread.sleep(8000); 		    
-}
-
-
-
-//@Test(priority=44)
-public void Test44() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
-{
-
-	   test=extent.startTest("Test 44 - To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data ");
-
-	   System.setProperty("webdriver.chrome.driver",
-				"D:\\Eclipse_rohit\\EclipseSetup_Library\\chromedriver\\chromedriver.exe");
-		
-    
-     System.out.println("************************************[ Test 44--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ");
-		 Reporter.log("************************************[ Test 44--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ");
-		 reportLog("******[ Test 44--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]****** ");
-		    
-     System.out.println("[Test 44 steps 'STARTS'] ");
-	     Reporter.log("[Test 44 steps 'STARTS'] ");
-	     reportLog("[Test 44 steps 'STARTS'] ");
      
 	   //Inspection and clicking of 'Import Menu' button
 	     WebDriverWait importMenuClick = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -5078,14 +5026,25 @@ public void Test44() throws EncryptedDocumentException, InterruptedException, IO
   rb.keyRelease(KeyEvent.VK_ENTER); 
   Thread.sleep(2000);
   
-    //Inspection and clicking of "Upload" button
-	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-	     System.out.println("03.Clicked on 'Upload' button");
-	     Reporter.log("03.Clicked on 'Upload' button");
-	     reportLog("03.Clicked on 'Upload' button");
-     Thread.sleep(2000);
+//    //Inspection and clicking of "Upload" button
+//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//	     System.out.println("03.Clicked on 'Upload' button");
+//	     Reporter.log("03.Clicked on 'Upload' button");
+//	     reportLog("03.Clicked on 'Upload' button");
+//     Thread.sleep(2000);
+  
+//Inspection and clicking of "Upload" button
+  WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+  uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+ // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+  Actions act52 =  new Actions(driver);
+  act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+  System.out.println("06.Clicked on 'Upload' button");
+   Reporter.log("06.Clicked on 'Upload' button");
+   reportLog("06.Clicked on 'Upload' button");
+   Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
 	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -5101,6 +5060,16 @@ public void Test44() throws EncryptedDocumentException, InterruptedException, IO
      importMenuClickCLOSE.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
      driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")).click();
      
+//   //Inspection and clicking of 'Import Menu' button
+//     WebDriverWait dataMaintainceTabClickOpen = new WebDriverWait(driver, Duration.ofMillis(8000));
+//     dataMaintainceTabClickOpen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/div[2]")));
+//     driver.findElement(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/div[2]")).click();
+//    
+//   //Inspection and clicking of 'Import Menu' button
+//     WebDriverWait receivingDataTabClickOpen = new WebDriverWait(driver, Duration.ofMillis(8000));
+//     receivingDataTabClickOpen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/div[2]")));
+//     driver.findElement(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/div[2]")).click();
+//  
    //Inspection and clicking of 'poScreen' button
      WebDriverWait poScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
      poScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")));
@@ -5139,13 +5108,13 @@ public void Test44() throws EncryptedDocumentException, InterruptedException, IO
 //		   // Assert.assertNotEquals(notExpectedValidatoion, ActualValidation);
 
   
-        System.out.println("[Test 44 steps 'ENDS'] ");
-		    Reporter.log("[Test 44 steps 'ENDS'] ");
-		    reportLog("[Test 44 steps 'ENDS'] ");
+        System.out.println("[Test 42 steps 'ENDS'] ");
+		    Reporter.log("[Test 42 steps 'ENDS'] ");
+		    reportLog("[Test 42 steps 'ENDS'] ");
 		 
-		    System.out.println("************************************[ Test 44--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]************************************ ");
-		    Reporter.log("************************************[ Test 44--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]************************************ ");
-		    reportLog("******[ Test 44--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]****** ");
+		    System.out.println("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]************************************ ");
+		    Reporter.log("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]************************************ ");
+		    reportLog("******[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]****** ");
 		    System.out.println(" ");
 		    Reporter.log(" ");
 		    System.out.println(" ");
@@ -5154,27 +5123,27 @@ public void Test44() throws EncryptedDocumentException, InterruptedException, IO
       //ends PO3
       
     Assert.assertTrue(true);
-		test.log(LogStatus.PASS, "Test 44 - To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data is PASSED");
+		test.log(LogStatus.PASS, "Test 42 - To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data is PASSED");
 		Thread.sleep(8000); 		    
 }
 
-//@Test(priority=45)
-public void Test45() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
+@Test(priority=43)
+public void Test43() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
-	   test=extent.startTest("Test 45 - To verify Store Location is displaying or not(as we Seted initially) ");
+	   test=extent.startTest("Test 43 - To verify Store Location is displaying or not(as we Seted initially) ");
 
 	   System.setProperty("webdriver.chrome.driver",
 				"D:\\Eclipse_rohit\\EclipseSetup_Library\\chromedriver\\chromedriver.exe");
 		
     
-     System.out.println("************************************[ Test 45--> 'To verify Store Location is displaying or not(as we Seted initially' ]************************************ ");
-		 Reporter.log("************************************[ Test 45--> 'To verify Store Location is displaying or not(as we Seted initially' data' ]************************************ ");
-		 reportLog("******[ Test 45--> 'To verify Store Location is displaying or not(as we Seted initially' ]****** ");
+     System.out.println("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' ]************************************ ");
+		 Reporter.log("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' data' ]************************************ ");
+		 reportLog("******[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' ]****** ");
 		    
-     System.out.println("[Test 45 steps 'STARTS'] ");
-	     Reporter.log("[Test 45 steps 'STARTS'] ");
-	     reportLog("[Test 45 steps 'STARTS'] ");
+     System.out.println("[Test 43 steps 'STARTS'] ");
+	     Reporter.log("[Test 43 steps 'STARTS'] ");
+	     reportLog("[Test 43 steps 'STARTS'] ");
      
 	   //Inspection and clicking of 'Import Menu' button
 	     WebDriverWait importMenuClick = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -5201,13 +5170,13 @@ public void Test45() throws EncryptedDocumentException, InterruptedException, IO
 		   // Assert.assertNotEquals(notExpectedValidatoion, ActualValidation);
 
   
-        System.out.println("[Test 45 steps 'ENDS'] ");
-		    Reporter.log("[Test 45 steps 'ENDS'] ");
-		    reportLog("[Test 45 steps 'ENDS'] ");
+        System.out.println("[Test 43 steps 'ENDS'] ");
+		    Reporter.log("[Test 43 steps 'ENDS'] ");
+		    reportLog("[Test 43 steps 'ENDS'] ");
 		 
-		    System.out.println("************************************[ Test 45--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]************************************ ");
-		    Reporter.log("************************************[ Test 45--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]************************************ ");
-		    reportLog("******[ Test 45--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]****** ");
+		    System.out.println("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]************************************ ");
+		    Reporter.log("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]************************************ ");
+		    reportLog("******[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]****** ");
 		    System.out.println(" ");
 		    Reporter.log(" ");
 		    System.out.println(" ");
@@ -5216,7 +5185,7 @@ public void Test45() throws EncryptedDocumentException, InterruptedException, IO
       //ends PO3
       
     Assert.assertTrue(true);
-		test.log(LogStatus.PASS, "Test 45 - To verify Store Location is displaying or not(as we Seted initially is PASSED");
+		test.log(LogStatus.PASS, "Test 43 - To verify Store Location is displaying or not(as we Seted initially is PASSED");
 		Thread.sleep(8000); 		    
 }
 

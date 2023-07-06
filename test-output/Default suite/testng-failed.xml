@@ -6,8 +6,8 @@
       <class name="com.csm.qa.test2.LoginPageTest">
         <methods>
           <include name="getResult"/>
+          <include name="Test44"/>
           <include name="startReport"/>
-          <include name="Test3"/>
           <include name="endReport"/>
         </methods>
       </class> <!-- com.csm.qa.test2.LoginPageTest -->
