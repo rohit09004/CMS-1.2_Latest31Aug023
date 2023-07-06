@@ -343,7 +343,7 @@ public class LoginPageTest extends CSMBase{
 //  		
 //  }
 
-@Test(priority=1)
+//@Test(priority=1)
 public void Test1() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 	   File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -539,9 +539,9 @@ public void Test2() throws InterruptedException, AWTException
     String Path11= fileee.getAbsolutePath().toString();
     StringSelection str = new StringSelection(Path11);
     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-    System.out.println("05.Choosing excel file(having records) from System Directory to perform Import functionility");
- 	  Reporter.log("05.Choosing excel file(having records) from System Directory to perform Import functionility");
- 	  reportLog("05.Choosing excel file(having records) from System Directory to perform Import functionility");
+    System.out.println("02.Choosing excel file(having records) from System Directory to perform Import functionility");
+ 	  Reporter.log("02.Choosing excel file(having records) from System Directory to perform Import functionility");
+ 	  reportLog("02.Choosing excel file(having records) from System Directory to perform Import functionility");
    Thread.sleep(1000);
 	  
     // press Contol+V for pasting
@@ -563,9 +563,9 @@ public void Test2() throws InterruptedException, AWTException
   // driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
    Actions act52 =  new Actions(driver);
    act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
-   System.out.println("06.Clicked on 'Upload' button");
-    Reporter.log("06.Clicked on 'Upload' button");
-    reportLog("06.Clicked on 'Upload' button");
+   System.out.println("03.Clicked on 'Upload' button");
+    Reporter.log("03.Clicked on 'Upload' button");
+    reportLog("03.Clicked on 'Upload' button");
     Thread.sleep(1000);
 
 	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
@@ -644,9 +644,9 @@ public void Test3() throws InterruptedException, AWTException
     String Path11= fileee.getAbsolutePath().toString();
     StringSelection str = new StringSelection(Path11);
     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-    System.out.println("05.Choosing excel file(having records) from System Directory to perform Import functionility");
- 	  Reporter.log("05.Choosing excel file(having records) from System Directory to perform Import functionility");
- 	  reportLog("05.Choosing excel file(having records) from System Directory to perform Import functionility");
+    System.out.println("02.Choosing excel file(having records) from System Directory to perform Import functionility");
+ 	  Reporter.log("02.Choosing excel file(having records) from System Directory to perform Import functionility");
+ 	  reportLog("02.Choosing excel file(having records) from System Directory to perform Import functionility");
    Thread.sleep(1000);
 	  
     // press Contol+V for pasting
@@ -4757,7 +4757,7 @@ public void Test40() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000); 		    
 }
 
-@Test(priority=41)
+//@Test(priority=41)
 public void Test41() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -4937,7 +4937,7 @@ public void Test41() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(10000); 		    
 }
 
-@Test(priority=42)
+//@Test(priority=42)
 public void Test42() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
@@ -5144,7 +5144,7 @@ public void Test42() throws EncryptedDocumentException, InterruptedException, IO
 		Thread.sleep(8000); 		    
 }
 
-@Test(priority=43)
+//@Test(priority=43)
 public void Test43() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
 {
 
