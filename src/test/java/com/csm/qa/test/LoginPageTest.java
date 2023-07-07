@@ -71,7 +71,7 @@ public class LoginPageTest extends CSMBase{
 		}
    
 //    //Validate Login with Valid Credentials 
-//	////@Test(priority=1)
+//	//@Test(priority=1)
 //	public void LoginWithValidCredentials() throws InterruptedException, IOException
 //	{
 //		test=extent.startTest("Test 1 - Insertion of new data ");
@@ -106,7 +106,7 @@ public class LoginPageTest extends CSMBase{
 //		driver.quit();
 //	}
 
-//@Test(priority=1)
+@Test(priority=1)
 public void Test1() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	   
@@ -343,7 +343,7 @@ public void Test1() throws EncryptedDocumentException, InterruptedException, IOE
   		
   }
 
-//@Test(priority=2)
+@Test(priority=2)
 public void Test2() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	   File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -454,7 +454,7 @@ public void Test2() throws EncryptedDocumentException, InterruptedException, IOE
 }
 
 
-//@Test(priority=3)
+@Test(priority=3)
 public void Test3() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	   File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -663,7 +663,7 @@ public void Test3() throws EncryptedDocumentException, InterruptedException, IOE
 	    
 }
 
-//@Test(priority=4)
+@Test(priority=4)
 public void Test4() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	   File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -749,7 +749,7 @@ public void Test4() throws EncryptedDocumentException, InterruptedException, IOE
   		test.log(LogStatus.PASS, "Test 4 - Insertion of new record for non-exsisting data is PASSED");
 	    
 }
-//@Test(priority=5)
+@Test(priority=5)
 public void Test55() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	   File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -1179,7 +1179,7 @@ public void Test55() throws EncryptedDocumentException, InterruptedException, IO
 	    
 }
 
-//@Test(priority=6)
+@Test(priority=6)
 public void Test6() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	   File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -1441,7 +1441,7 @@ public void Test6() throws EncryptedDocumentException, InterruptedException, IOE
   		test.log(LogStatus.PASS, "Test 6 - Insertion of new record with duplicate data validation is PASSED");
 	    
 }
-//@Test(priority=7)
+@Test(priority=7)
 public void Test7() throws EncryptedDocumentException, InterruptedException, IOException
 {
 
@@ -1704,7 +1704,7 @@ public void Test7() throws EncryptedDocumentException, InterruptedException, IOE
   		test.log(LogStatus.PASS, "Test 7 - Insertion of new record with Leading space and Trailing space is PASSED");
 	    
 }
-//@Test(priority=8)
+@Test(priority=8)
 public void Test88() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	   File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -2049,7 +2049,7 @@ public void Test88() throws EncryptedDocumentException, InterruptedException, IO
   		test.log(LogStatus.PASS, "Test 8 - Updating particular record with new data(Updatation operation) is PASSED");
 	    
 }
-//@Test(priority=9)
+@Test(priority=9)
 public void Test99() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	   File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -2368,7 +2368,7 @@ public void Test99() throws EncryptedDocumentException, InterruptedException, IO
   		test.log(LogStatus.PASS, "Test 9 - Insertion of new data, to print REPORT is PASSED");
 	    
 }
-//@Test(priority=10)
+@Test(priority=10)
 public void Test100() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	   File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -2695,7 +2695,7 @@ public void Test100() throws EncryptedDocumentException, InterruptedException, I
 
 
 
-//@Test(priority=11)
+@Test(priority=11)
 public void Test11() throws EncryptedDocumentException, InterruptedException, IOException
 {
      	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -2899,7 +2899,7 @@ public void Test11() throws EncryptedDocumentException, InterruptedException, IO
  		    		    
 }
 
-//@Test(priority=12)
+@Test(priority=12)
 public void Test12() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -3105,7 +3105,7 @@ public void Test12() throws EncryptedDocumentException, InterruptedException, IO
  		    		    
 }
 
-//@Test(priority=13)
+@Test(priority=13)
 public void Test13() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -3309,7 +3309,7 @@ public void Test13() throws EncryptedDocumentException, InterruptedException, IO
 		    		    
 }
 
-//@Test(priority=14)
+@Test(priority=14)
 public void Test14() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -3512,7 +3512,7 @@ public void Test14() throws EncryptedDocumentException, InterruptedException, IO
 		    		    
 }
 
-//@Test(priority=15)
+@Test(priority=15)
 public void Test15() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -3732,7 +3732,7 @@ public void Test15() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 15 - Inserting NVARCHAR data inside 'PO Qty' field is PASSED");
 		    		    
 }
-//@Test(priority=16)
+@Test(priority=16)
 public void Test16() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -3953,7 +3953,7 @@ Assert.assertTrue(true);
 		    		    
 }
 
-//@Test(priority=17)
+@Test(priority=17)
 public void Test17() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -4187,7 +4187,7 @@ Assert.assertTrue(true);
 		    		    
 }
 
-//@Test(priority=18)
+@Test(priority=18)
 public void Test18() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -4392,7 +4392,7 @@ Assert.assertTrue(true);
 		test.log(LogStatus.PASS, "Test 18 - Inserting NULL data inside 'Ident Code' field is PASSED");
 		    		    
 }
-//@Test(priority=19)
+@Test(priority=19)
 public void Test19() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -4597,7 +4597,7 @@ Assert.assertTrue(true);
 		    		    
 }
 
-//@Test(priority=20)
+@Test(priority=20)
 public void Test20() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -4696,7 +4696,7 @@ public void Test20() throws EncryptedDocumentException, InterruptedException, IO
 }
 
 
-//@Test(priority=21)
+@Test(priority=21)
 public void Test21() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -4888,7 +4888,7 @@ public void Test21() throws EncryptedDocumentException, InterruptedException, IO
 		test.log(LogStatus.PASS, "Test 21 - Insertion of new data having field capacity more than provided is PASSED");
 	    
 }
-//@Test(priority=22)
+@Test(priority=22)
 public void Test22() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -5100,7 +5100,7 @@ public void Test22() throws EncryptedDocumentException, InterruptedException, IO
 	    
 }
 
-//@Test(priority=23)
+@Test(priority=23)
 public void Test23() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -5312,7 +5312,7 @@ driver.get("https://qacms.jgc.com/MAC_PT/PODataMaintenance/Index?mId=TUFDLUQtUE8
 	    
 }
 
-//@Test(priority=24)
+@Test(priority=24)
 public void Test24() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -5524,7 +5524,7 @@ driver.get("https://qacms.jgc.com/MAC_PT/PODataMaintenance/Index?mId=TUFDLUQtUE8
 	    
 }
 
-//@Test(priority=25)
+@Test(priority=25)
 public void Test25() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -5736,7 +5736,7 @@ reportLog("01.Clicked on 'Insert' button to add new Record");
 	    
 }
 
-//@Test(priority=26)
+@Test(priority=26)
 public void Test26() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -5948,7 +5948,7 @@ reportLog("01.Clicked on 'Insert' button to add new Record");
 	    
 }
 
-//@Test(priority=27)
+@Test(priority=27)
 public void Test27() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -6160,7 +6160,7 @@ reportLog("01.Clicked on 'Insert' button to add new Record");
 	    
 }
 
-//@Test(priority=28)
+@Test(priority=28)
 public void Test28() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -6224,7 +6224,7 @@ driver.get("https://qacms.jgc.com/MAC_PT/PODataMaintenance/Index?mId=TUFDLUQtUE8
 	    
 }
 
-//@Test(priority=29)
+@Test(priority=29)
 public void Test29() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
@@ -6435,7 +6435,7 @@ public void Test29() throws EncryptedDocumentException, InterruptedException, IO
 	    
 }
 
-//@Test(priority=30)
+@Test(priority=30)
 public void Test30() throws EncryptedDocumentException, InterruptedException, IOException
 {
 	File file =new File("PoScreen_TestsDocumentt.xlsx");
