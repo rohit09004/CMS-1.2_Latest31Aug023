@@ -260,16 +260,16 @@
       <![CDATA[ ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-06T15:48:56 IST" name="Surefire suite" finished-at="2023-07-06T15:50:49 IST" duration-ms="113401">
+  <suite started-at="2023-07-07T17:45:55 IST" name="Surefire suite" finished-at="2023-07-07T17:47:54 IST" duration-ms="118897">
     <groups>
     </groups>
-    <test started-at="2023-07-06T15:48:56 IST" name="Surefire test" finished-at="2023-07-06T15:50:49 IST" duration-ms="113401">
+    <test started-at="2023-07-07T17:45:55 IST" name="Surefire test" finished-at="2023-07-07T17:47:54 IST" duration-ms="118897">
       <class name="com.csm.qa.test2.LoginPageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-06T15:48:56 IST" name="startReport" finished-at="2023-07-06T15:48:56 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-07T17:45:55 IST" name="startReport" finished-at="2023-07-07T17:45:55 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method signature="Test1()[pri:1, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-06T15:48:56 IST" name="Test1" finished-at="2023-07-06T15:49:33 IST" duration-ms="36966" status="PASS">
+        <test-method signature="Test1()[pri:1, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-07T17:45:55 IST" name="Test1" finished-at="2023-07-07T17:46:37 IST" duration-ms="42241" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[************************************[ Test 1--> 'Importing new record' ]************************************ ]]>
@@ -345,7 +345,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-06T15:49:33 IST" name="getResult" finished-at="2023-07-06T15:49:33 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-07T17:46:37 IST" name="getResult" finished-at="2023-07-07T17:46:38 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -356,7 +356,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Test41()[pri:41, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-06T15:49:33 IST" name="Test41" finished-at="2023-07-06T15:50:09 IST" duration-ms="36535" status="PASS">
+        <test-method signature="Test41()[pri:41, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-07T17:46:38 IST" name="Test41" finished-at="2023-07-07T17:47:14 IST" duration-ms="36148" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[************************************[ Test 41--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not!' ]************************************ ]]>
@@ -450,7 +450,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test41 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-06T15:50:09 IST" name="getResult" finished-at="2023-07-06T15:50:09 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-07T17:47:14 IST" name="getResult" finished-at="2023-07-07T17:47:14 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -461,7 +461,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Test42()[pri:42, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-06T15:50:09 IST" name="Test42" finished-at="2023-07-06T15:50:39 IST" duration-ms="29994" status="PASS">
+        <test-method signature="Test42()[pri:42, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-07T17:47:14 IST" name="Test42" finished-at="2023-07-07T17:47:44 IST" duration-ms="30651" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ]]>
@@ -531,7 +531,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test42 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-06T15:50:39 IST" name="getResult" finished-at="2023-07-06T15:50:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-07T17:47:44 IST" name="getResult" finished-at="2023-07-07T17:47:44 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -542,7 +542,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Test43()[pri:43, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-06T15:50:39 IST" name="Test43" finished-at="2023-07-06T15:50:49 IST" duration-ms="9475" status="PASS">
+        <test-method signature="Test43()[pri:43, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-07T17:47:44 IST" name="Test43" finished-at="2023-07-07T17:47:54 IST" duration-ms="9336" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' data' ]************************************ ]]>
@@ -576,7 +576,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test43 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-06T15:50:49 IST" name="getResult" finished-at="2023-07-06T15:50:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-07T17:47:54 IST" name="getResult" finished-at="2023-07-07T17:47:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -587,17 +587,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-06T15:50:49 IST" name="endReport" finished-at="2023-07-06T15:50:49 IST" duration-ms="52" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@143640d5]" started-at="2023-07-07T17:47:54 IST" name="endReport" finished-at="2023-07-07T17:47:54 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.csm.qa.test2.LoginPageTest -->
       <class name="com.csm.qa.test.LoginPageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@4b168fa9]" started-at="2023-07-06T15:48:56 IST" name="startReport" finished-at="2023-07-06T15:48:56 IST" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@4b168fa9]" started-at="2023-07-07T17:45:55 IST" name="startReport" finished-at="2023-07-07T17:45:55 IST" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@4b168fa9]" started-at="2023-07-06T15:50:49 IST" name="endReport" finished-at="2023-07-06T15:50:49 IST" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@4b168fa9]" started-at="2023-07-07T17:47:54 IST" name="endReport" finished-at="2023-07-07T17:47:54 IST" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

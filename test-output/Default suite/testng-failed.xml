@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.csm.qa.test.LoginPageTest">
+      <class name="com.csm.qa.test2.LoginPageTest">
         <methods>
-          <include name="Test29"/>
           <include name="getResult"/>
           <include name="Test1"/>
+          <include name="Test41"/>
+          <include name="Test43"/>
           <include name="startReport"/>
           <include name="endReport"/>
+          <include name="Test42"/>
         </methods>
-      </class> <!-- com.csm.qa.test.LoginPageTest -->
+      </class> <!-- com.csm.qa.test2.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
