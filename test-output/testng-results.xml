@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[************************************[ Test 1--> 'Importing new record' ]************************************ ]]>
+      <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[******[ Test 1--> 'Importing new record' ]****** ]]>
+      <![CDATA[************************************[ Test 1--> Insertion of new data ]**************************************************** ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 1--> Insertion of new data ]****** ]]>
     </line>
     <line>
       <![CDATA[[Test 1 steps 'STARTS'] ]]>
@@ -14,46 +17,94 @@
       <![CDATA[[Test 1 steps 'STARTS'] ]]>
     </line>
     <line>
-      <![CDATA[01.Clicked on '.csv' radio button]]>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
     </line>
     <line>
-      <![CDATA[01.Clicked on '.csv' radio button]]>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
     </line>
     <line>
-      <![CDATA[02.Clicked 'type' dropdown]]>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
     </line>
     <line>
-      <![CDATA[02.Clicked 'type' dropdown]]>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
     </line>
     <line>
-      <![CDATA[03.Selected 'type' as 'PO' ]]>
+      <![CDATA[03.Choosing 'Company code' field ]]>
     </line>
     <line>
-      <![CDATA[03.Selected 'type' as 'PO' ]]>
+      <![CDATA[03.Choosing 'Company code' field ]]>
     </line>
     <line>
-      <![CDATA[04.Clicked on 'Select Import File' button]]>
+      <![CDATA[04.Inserting 'Title1' field ]]>
     </line>
     <line>
-      <![CDATA[04.Clicked on 'Select Import File' button]]>
+      <![CDATA[04.Inserting 'Title1' field ]]>
     </line>
     <line>
-      <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
     </line>
     <line>
-      <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
     </line>
     <line>
-      <![CDATA[06.Clicked on 'Upload' button]]>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
     </line>
     <line>
-      <![CDATA[06.Clicked on 'Upload' button]]>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
     </line>
     <line>
-      <![CDATA[07.Clicked on 'Import file' button once file uploaded successfully]]>
+      <![CDATA[07.Choosing 'Displine code' ]]>
     </line>
     <line>
-      <![CDATA[07.Clicked on 'Import file' button once file uploaded successfully]]>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicking on Delete button of 'Child' grid ]]>
+    </line>
+    <line>
+      <![CDATA[13.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[13.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[14.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[14.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[15.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[15.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
     </line>
     <line>
       <![CDATA[[Test 1 steps 'ENDS'] ]]>
@@ -62,100 +113,10 @@
       <![CDATA[[Test 1 steps 'ENDS'] ]]>
     </line>
     <line>
-      <![CDATA[************************************[ Test 1--> 'Importing new record' is ''PASSED'' ]************************************ ]]>
+      <![CDATA[************************************[ Test 1--> 'Insertion of new data' is ''PASSED'' ]************************************ ]]>
     </line>
     <line>
-      <![CDATA[******[ Test 1--> 'Importing new record' is ''PASSED'' ]****** ]]>
-    </line>
-    <line>
-      <![CDATA[ ]]>
-    </line>
-    <line>
-      <![CDATA[ ]]>
-    </line>
-    <line>
-      <![CDATA[************************************[ Test 41--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not!' ]************************************ ]]>
-    </line>
-    <line>
-      <![CDATA[******[ Test 41--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not!' ]****** ]]>
-    </line>
-    <line>
-      <![CDATA[[Test 41 steps 'STARTS'] ]]>
-    </line>
-    <line>
-      <![CDATA[[Test 41 steps 'STARTS'] ]]>
-    </line>
-    <line>
-      <![CDATA[01.Clicked on 'Select Import File' button]]>
-    </line>
-    <line>
-      <![CDATA[01.Clicked on 'Select Import File' button]]>
-    </line>
-    <line>
-      <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
-    </line>
-    <line>
-      <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
-    </line>
-    <line>
-      <![CDATA[06.Clicked on 'Upload' button]]>
-    </line>
-    <line>
-      <![CDATA[06.Clicked on 'Upload' button]]>
-    </line>
-    <line>
-      <![CDATA[04.Clicked on 'Import file' button once file uploaded successfully]]>
-    </line>
-    <line>
-      <![CDATA[04.Clicked on 'Import file' button once file uploaded successfully]]>
-    </line>
-    <line>
-      <![CDATA[05.Clicked on 'Import file' button once file uploaded successfully]]>
-    </line>
-    <line>
-      <![CDATA[05.Clicked on 'Import file' button once file uploaded successfully]]>
-    </line>
-    <line>
-      <![CDATA[06.Clicked on DATA MAINTAINCE menu(arrow)]]>
-    </line>
-    <line>
-      <![CDATA[06.Clicked on DATA MAINTAINCE menu(arrow)]]>
-    </line>
-    <line>
-      <![CDATA[07.Clicked of 'Receiving Data' under Data Maintainance]]>
-    </line>
-    <line>
-      <![CDATA[07.Clicked of 'Receiving Data' under Data Maintainance]]>
-    </line>
-    <line>
-      <![CDATA[08.Clicked on 'PO' Screen]]>
-    </line>
-    <line>
-      <![CDATA[08.Clicked on 'PO' Screen]]>
-    </line>
-    <line>
-      <![CDATA[09.Clicked inside 'PO No' field ]]>
-    </line>
-    <line>
-      <![CDATA[09.Clicked inside 'PO No' field ]]>
-    </line>
-    <line>
-      <![CDATA[10.Clicked on 'Go' button]]>
-    </line>
-    <line>
-      <![CDATA[10.Clicked on 'Go' button]]>
-    </line>
-    <line>
-      <![CDATA[[Test 41 steps 'ENDS'] ]]>
-    </line>
-    <line>
-      <![CDATA[[Test 41 steps 'ENDS'] ]]>
-    </line>
-    <line>
-      <![CDATA[************************************[ Test 41--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not!' is ''PASSED'' ]************************************ ]]>
-    </line>
-    <line>
-      <![CDATA[******[ Test 41--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not!' is ''PASSED'' ]****** ]]>
+      <![CDATA[******[ Test 1--> 'Insertion of new data' is ''PASSED'' ]****** ]]>
     </line>
     <line>
       <![CDATA[ ]]>
@@ -164,94 +125,109 @@
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ]]>
-    </line>
-    <line>
-      <![CDATA[******[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]****** ]]>
-    </line>
-    <line>
-      <![CDATA[[Test 42 steps 'STARTS'] ]]>
-    </line>
-    <line>
-      <![CDATA[[Test 42 steps 'STARTS'] ]]>
-    </line>
-    <line>
-      <![CDATA[01.Clicked on 'Select Import File' button]]>
-    </line>
-    <line>
-      <![CDATA[01.Clicked on 'Select Import File' button]]>
-    </line>
-    <line>
-      <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
-    </line>
-    <line>
-      <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
-    </line>
-    <line>
-      <![CDATA[06.Clicked on 'Upload' button]]>
-    </line>
-    <line>
-      <![CDATA[06.Clicked on 'Upload' button]]>
-    </line>
-    <line>
-      <![CDATA[04.Clicked on 'Import file' button once file uploaded successfully]]>
-    </line>
-    <line>
-      <![CDATA[04.Clicked on 'Import file' button once file uploaded successfully]]>
-    </line>
-    <line>
-      <![CDATA[09.Clicked inside 'PO No' field]]>
-    </line>
-    <line>
-      <![CDATA[09.Clicked inside 'PO No' field]]>
-    </line>
-    <line>
-      <![CDATA[10.Clicked on 'Go' button]]>
-    </line>
-    <line>
-      <![CDATA[10.Clicked on 'Go' button]]>
-    </line>
-    <line>
-      <![CDATA[[Test 42 steps 'ENDS'] ]]>
-    </line>
-    <line>
-      <![CDATA[[Test 42 steps 'ENDS'] ]]>
-    </line>
-    <line>
-      <![CDATA[************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]************************************ ]]>
-    </line>
-    <line>
-      <![CDATA[******[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]****** ]]>
-    </line>
-    <line>
       <![CDATA[ ]]>
     </line>
     <line>
-      <![CDATA[ ]]>
+      <![CDATA[************************************[ Test 14--> Inserting ALPHABETICAL data inside 'PO Qty' field ]**************************************************** ]]>
     </line>
     <line>
-      <![CDATA[************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' data' ]************************************ ]]>
+      <![CDATA[******[ Test 14--> Inserting ALPHABETICAL data inside 'PO Qty' field ]****** ]]>
     </line>
     <line>
-      <![CDATA[******[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' ]****** ]]>
+      <![CDATA[[Test 14 steps 'STARTS'] ]]>
     </line>
     <line>
-      <![CDATA[[Test 43 steps 'STARTS'] ]]>
+      <![CDATA[[Test 14 steps 'STARTS'] ]]>
     </line>
     <line>
-      <![CDATA[[Test 43 steps 'STARTS'] ]]>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
     </line>
     <line>
-      <![CDATA[[Test 43 steps 'ENDS'] ]]>
+      <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
     </line>
     <line>
-      <![CDATA[[Test 43 steps 'ENDS'] ]]>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
     </line>
     <line>
-      <![CDATA[************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]************************************ ]]>
+      <![CDATA[02.Inserting 'PO No.' field ]]>
     </line>
     <line>
-      <![CDATA[******[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]****** ]]>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[03.Choosing 'Company code' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[04.Inserting 'Title1' field ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[05.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[07.Choosing 'Displine code' ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[08.Inserting 'Item No.' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[09.Selecting 'Ident Code' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[10.Inserting 'PO Qty.' field ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[11.Cliking on 'SAVE' button ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[12.Clicking on Delete button of 'Parent' grid ]]>
+    </line>
+    <line>
+      <![CDATA[13.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[13.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 14 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[[Test 14 steps 'ENDS'] ]]>
+    </line>
+    <line>
+      <![CDATA[************************************[ Test 14--> 'Inserting ALPHABETICAL data inside 'PO Qty' field' is ''PASSED'' ]************************************ ]]>
+    </line>
+    <line>
+      <![CDATA[******[ Test 14--> 'Inserting ALPHABETICAL data inside 'PO Qty' field' is ''PASSED'' ]****** ]]>
     </line>
     <line>
       <![CDATA[ ]]>
@@ -260,22 +236,35 @@
       <![CDATA[ ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-07T18:04:15 IST" name="Default suite" finished-at="2023-07-07T18:06:14 IST" duration-ms="118730">
+  <suite started-at="2023-07-10T12:25:01 IST" name="Default suite" finished-at="2023-07-10T12:26:37 IST" duration-ms="95700">
     <groups>
     </groups>
-    <test started-at="2023-07-07T18:04:15 IST" name="Default test" finished-at="2023-07-07T18:06:14 IST" duration-ms="118730">
+    <test started-at="2023-07-10T12:25:01 IST" name="Default test" finished-at="2023-07-10T12:26:37 IST" duration-ms="95700">
       <class name="com.csm.qa.test2.LoginPageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@292b08d6]" started-at="2023-07-07T18:04:15 IST" name="startReport" finished-at="2023-07-07T18:04:15 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@62379589]" started-at="2023-07-10T12:25:01 IST" name="startReport" finished-at="2023-07-10T12:25:01 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method signature="Test1()[pri:1, instance:com.csm.qa.test2.LoginPageTest@292b08d6]" started-at="2023-07-07T18:04:15 IST" name="Test1" finished-at="2023-07-07T18:04:57 IST" duration-ms="41966" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@62379589]" started-at="2023-07-10T12:26:37 IST" name="endReport" finished-at="2023-07-10T12:26:37 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.csm.qa.test2.LoginPageTest -->
+      <class name="com.csm.qa.test.LoginPageTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@43bc63a3]" started-at="2023-07-10T12:25:01 IST" name="startReport" finished-at="2023-07-10T12:25:01 IST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method signature="Test1()[pri:1, instance:com.csm.qa.test.LoginPageTest@43bc63a3]" started-at="2023-07-10T12:25:01 IST" name="Test1" finished-at="2023-07-10T12:25:49 IST" duration-ms="48028" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[************************************[ Test 1--> 'Importing new record' ]************************************ ]]>
+              <![CDATA[ ]]>
             </line>
             <line>
-              <![CDATA[******[ Test 1--> 'Importing new record' ]****** ]]>
+              <![CDATA[************************************[ Test 1--> Insertion of new data ]**************************************************** ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 1--> Insertion of new data ]****** ]]>
             </line>
             <line>
               <![CDATA[[Test 1 steps 'STARTS'] ]]>
@@ -284,46 +273,94 @@
               <![CDATA[[Test 1 steps 'STARTS'] ]]>
             </line>
             <line>
-              <![CDATA[01.Clicked on '.csv' radio button]]>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
             </line>
             <line>
-              <![CDATA[01.Clicked on '.csv' radio button]]>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
             </line>
             <line>
-              <![CDATA[02.Clicked 'type' dropdown]]>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
             </line>
             <line>
-              <![CDATA[02.Clicked 'type' dropdown]]>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
             </line>
             <line>
-              <![CDATA[03.Selected 'type' as 'PO' ]]>
+              <![CDATA[03.Choosing 'Company code' field ]]>
             </line>
             <line>
-              <![CDATA[03.Selected 'type' as 'PO' ]]>
+              <![CDATA[03.Choosing 'Company code' field ]]>
             </line>
             <line>
-              <![CDATA[04.Clicked on 'Select Import File' button]]>
+              <![CDATA[04.Inserting 'Title1' field ]]>
             </line>
             <line>
-              <![CDATA[04.Clicked on 'Select Import File' button]]>
+              <![CDATA[04.Inserting 'Title1' field ]]>
             </line>
             <line>
-              <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
             </line>
             <line>
-              <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
             </line>
             <line>
-              <![CDATA[06.Clicked on 'Upload' button]]>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
             </line>
             <line>
-              <![CDATA[06.Clicked on 'Upload' button]]>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
             </line>
             <line>
-              <![CDATA[07.Clicked on 'Import file' button once file uploaded successfully]]>
+              <![CDATA[07.Choosing 'Displine code' ]]>
             </line>
             <line>
-              <![CDATA[07.Clicked on 'Import file' button once file uploaded successfully]]>
+              <![CDATA[07.Choosing 'Displine code' ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicking on Delete button of 'Child' grid ]]>
+            </line>
+            <line>
+              <![CDATA[13.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[13.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[14.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[14.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[15.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[15.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
             </line>
             <line>
               <![CDATA[[Test 1 steps 'ENDS'] ]]>
@@ -332,10 +369,10 @@
               <![CDATA[[Test 1 steps 'ENDS'] ]]>
             </line>
             <line>
-              <![CDATA[************************************[ Test 1--> 'Importing new record' is ''PASSED'' ]************************************ ]]>
+              <![CDATA[************************************[ Test 1--> 'Insertion of new data' is ''PASSED'' ]************************************ ]]>
             </line>
             <line>
-              <![CDATA[******[ Test 1--> 'Importing new record' is ''PASSED'' ]****** ]]>
+              <![CDATA[******[ Test 1--> 'Insertion of new data' is ''PASSED'' ]****** ]]>
             </line>
             <line>
               <![CDATA[ ]]>
@@ -345,102 +382,123 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@292b08d6]" started-at="2023-07-07T18:04:57 IST" name="getResult" finished-at="2023-07-07T18:04:57 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@43bc63a3]" started-at="2023-07-10T12:25:49 IST" name="getResult" finished-at="2023-07-10T12:25:49 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Test1 status=SUCCESS method=LoginPageTest.Test1()[pri:1, instance:com.csm.qa.test2.LoginPageTest@292b08d6] output=************************************[ Test 1--> 'Importing new record' ]************************************ ]]]>
+                <![CDATA[[TestResult name=Test1 status=SUCCESS method=LoginPageTest.Test1()[pri:1, instance:com.csm.qa.test.LoginPageTest@43bc63a3]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Test41()[pri:41, instance:com.csm.qa.test2.LoginPageTest@292b08d6]" started-at="2023-07-07T18:04:57 IST" name="Test41" finished-at="2023-07-07T18:05:34 IST" duration-ms="36257" status="PASS">
+        <test-method signature="Test14()[pri:14, instance:com.csm.qa.test.LoginPageTest@43bc63a3]" started-at="2023-07-10T12:25:49 IST" name="Test14" finished-at="2023-07-10T12:26:37 IST" duration-ms="47257" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[************************************[ Test 41--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not!' ]************************************ ]]>
+              <![CDATA[ ]]>
             </line>
             <line>
-              <![CDATA[******[ Test 41--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not!' ]****** ]]>
+              <![CDATA[************************************[ Test 14--> Inserting ALPHABETICAL data inside 'PO Qty' field ]**************************************************** ]]>
             </line>
             <line>
-              <![CDATA[[Test 41 steps 'STARTS'] ]]>
+              <![CDATA[******[ Test 14--> Inserting ALPHABETICAL data inside 'PO Qty' field ]****** ]]>
             </line>
             <line>
-              <![CDATA[[Test 41 steps 'STARTS'] ]]>
+              <![CDATA[[Test 14 steps 'STARTS'] ]]>
             </line>
             <line>
-              <![CDATA[01.Clicked on 'Select Import File' button]]>
+              <![CDATA[[Test 14 steps 'STARTS'] ]]>
             </line>
             <line>
-              <![CDATA[01.Clicked on 'Select Import File' button]]>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
             </line>
             <line>
-              <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
+              <![CDATA[01.Clicked on 'Insert' button to add new Record]]>
             </line>
             <line>
-              <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
             </line>
             <line>
-              <![CDATA[06.Clicked on 'Upload' button]]>
+              <![CDATA[02.Inserting 'PO No.' field ]]>
             </line>
             <line>
-              <![CDATA[06.Clicked on 'Upload' button]]>
+              <![CDATA[03.Choosing 'Company code' field ]]>
             </line>
             <line>
-              <![CDATA[04.Clicked on 'Import file' button once file uploaded successfully]]>
+              <![CDATA[03.Choosing 'Company code' field ]]>
             </line>
             <line>
-              <![CDATA[04.Clicked on 'Import file' button once file uploaded successfully]]>
+              <![CDATA[04.Inserting 'Title1' field ]]>
             </line>
             <line>
-              <![CDATA[05.Clicked on 'Import file' button once file uploaded successfully]]>
+              <![CDATA[04.Inserting 'Title1' field ]]>
             </line>
             <line>
-              <![CDATA[05.Clicked on 'Import file' button once file uploaded successfully]]>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
             </line>
             <line>
-              <![CDATA[06.Clicked on DATA MAINTAINCE menu(arrow)]]>
+              <![CDATA[05.Cliking on 'SAVE' button ]]>
             </line>
             <line>
-              <![CDATA[06.Clicked on DATA MAINTAINCE menu(arrow)]]>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
             </line>
             <line>
-              <![CDATA[07.Clicked of 'Receiving Data' under Data Maintainance]]>
+              <![CDATA[06.Clicked on 'Insert' button to add new CHILD Record]]>
             </line>
             <line>
-              <![CDATA[07.Clicked of 'Receiving Data' under Data Maintainance]]>
+              <![CDATA[07.Choosing 'Displine code' ]]>
             </line>
             <line>
-              <![CDATA[08.Clicked on 'PO' Screen]]>
+              <![CDATA[07.Choosing 'Displine code' ]]>
             </line>
             <line>
-              <![CDATA[08.Clicked on 'PO' Screen]]>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
             </line>
             <line>
-              <![CDATA[09.Clicked inside 'PO No' field ]]>
+              <![CDATA[08.Inserting 'Item No.' field ]]>
             </line>
             <line>
-              <![CDATA[09.Clicked inside 'PO No' field ]]>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
             </line>
             <line>
-              <![CDATA[10.Clicked on 'Go' button]]>
+              <![CDATA[09.Selecting 'Ident Code' field ]]>
             </line>
             <line>
-              <![CDATA[10.Clicked on 'Go' button]]>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
             </line>
             <line>
-              <![CDATA[[Test 41 steps 'ENDS'] ]]>
+              <![CDATA[10.Inserting 'PO Qty.' field ]]>
             </line>
             <line>
-              <![CDATA[[Test 41 steps 'ENDS'] ]]>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
             </line>
             <line>
-              <![CDATA[************************************[ Test 41--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not!' is ''PASSED'' ]************************************ ]]>
+              <![CDATA[11.Cliking on 'SAVE' button ]]>
             </line>
             <line>
-              <![CDATA[******[ Test 41--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not!' is ''PASSED'' ]****** ]]>
+              <![CDATA[12.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[12.Clicking on Delete button of 'Parent' grid ]]>
+            </line>
+            <line>
+              <![CDATA[13.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[13.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 14 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[[Test 14 steps 'ENDS'] ]]>
+            </line>
+            <line>
+              <![CDATA[************************************[ Test 14--> 'Inserting ALPHABETICAL data inside 'PO Qty' field' is ''PASSED'' ]************************************ ]]>
+            </line>
+            <line>
+              <![CDATA[******[ Test 14--> 'Inserting ALPHABETICAL data inside 'PO Qty' field' is ''PASSED'' ]****** ]]>
             </line>
             <line>
               <![CDATA[ ]]>
@@ -449,155 +507,19 @@
               <![CDATA[ ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Test41 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@292b08d6]" started-at="2023-07-07T18:05:34 IST" name="getResult" finished-at="2023-07-07T18:05:34 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Test14 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test.LoginPageTest@43bc63a3]" started-at="2023-07-10T12:26:37 IST" name="getResult" finished-at="2023-07-10T12:26:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Test41 status=SUCCESS method=LoginPageTest.Test41()[pri:41, instance:com.csm.qa.test2.LoginPageTest@292b08d6] output=************************************[ Test 41--> 'To verify IMPORTED record(contains Special Symbols as 'PO No') is displaying in DM screen or not!' ]************************************ ]]]>
+                <![CDATA[[TestResult name=Test14 status=SUCCESS method=LoginPageTest.Test14()[pri:14, instance:com.csm.qa.test.LoginPageTest@43bc63a3]]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Test42()[pri:42, instance:com.csm.qa.test2.LoginPageTest@292b08d6]" started-at="2023-07-07T18:05:34 IST" name="Test42" finished-at="2023-07-07T18:06:04 IST" duration-ms="30686" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ]]>
-            </line>
-            <line>
-              <![CDATA[******[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]****** ]]>
-            </line>
-            <line>
-              <![CDATA[[Test 42 steps 'STARTS'] ]]>
-            </line>
-            <line>
-              <![CDATA[[Test 42 steps 'STARTS'] ]]>
-            </line>
-            <line>
-              <![CDATA[01.Clicked on 'Select Import File' button]]>
-            </line>
-            <line>
-              <![CDATA[01.Clicked on 'Select Import File' button]]>
-            </line>
-            <line>
-              <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
-            </line>
-            <line>
-              <![CDATA[05.Choosing excel file(having records) from System Directory to perform Import functionility]]>
-            </line>
-            <line>
-              <![CDATA[06.Clicked on 'Upload' button]]>
-            </line>
-            <line>
-              <![CDATA[06.Clicked on 'Upload' button]]>
-            </line>
-            <line>
-              <![CDATA[04.Clicked on 'Import file' button once file uploaded successfully]]>
-            </line>
-            <line>
-              <![CDATA[04.Clicked on 'Import file' button once file uploaded successfully]]>
-            </line>
-            <line>
-              <![CDATA[09.Clicked inside 'PO No' field]]>
-            </line>
-            <line>
-              <![CDATA[09.Clicked inside 'PO No' field]]>
-            </line>
-            <line>
-              <![CDATA[10.Clicked on 'Go' button]]>
-            </line>
-            <line>
-              <![CDATA[10.Clicked on 'Go' button]]>
-            </line>
-            <line>
-              <![CDATA[[Test 42 steps 'ENDS'] ]]>
-            </line>
-            <line>
-              <![CDATA[[Test 42 steps 'ENDS'] ]]>
-            </line>
-            <line>
-              <![CDATA[************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]************************************ ]]>
-            </line>
-            <line>
-              <![CDATA[******[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]****** ]]>
-            </line>
-            <line>
-              <![CDATA[ ]]>
-            </line>
-            <line>
-              <![CDATA[ ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Test42 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@292b08d6]" started-at="2023-07-07T18:06:04 IST" name="getResult" finished-at="2023-07-07T18:06:04 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Test42 status=SUCCESS method=LoginPageTest.Test42()[pri:42, instance:com.csm.qa.test2.LoginPageTest@292b08d6] output=************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="Test43()[pri:43, instance:com.csm.qa.test2.LoginPageTest@292b08d6]" started-at="2023-07-07T18:06:04 IST" name="Test43" finished-at="2023-07-07T18:06:14 IST" duration-ms="9336" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' data' ]************************************ ]]>
-            </line>
-            <line>
-              <![CDATA[******[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' ]****** ]]>
-            </line>
-            <line>
-              <![CDATA[[Test 43 steps 'STARTS'] ]]>
-            </line>
-            <line>
-              <![CDATA[[Test 43 steps 'STARTS'] ]]>
-            </line>
-            <line>
-              <![CDATA[[Test 43 steps 'ENDS'] ]]>
-            </line>
-            <line>
-              <![CDATA[[Test 43 steps 'ENDS'] ]]>
-            </line>
-            <line>
-              <![CDATA[************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]************************************ ]]>
-            </line>
-            <line>
-              <![CDATA[******[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]****** ]]>
-            </line>
-            <line>
-              <![CDATA[ ]]>
-            </line>
-            <line>
-              <![CDATA[ ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Test43 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.csm.qa.test2.LoginPageTest@292b08d6]" started-at="2023-07-07T18:06:14 IST" name="getResult" finished-at="2023-07-07T18:06:14 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Test43 status=SUCCESS method=LoginPageTest.Test43()[pri:43, instance:com.csm.qa.test2.LoginPageTest@292b08d6] output=************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' data' ]************************************ ]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test2.LoginPageTest@292b08d6]" started-at="2023-07-07T18:06:14 IST" name="endReport" finished-at="2023-07-07T18:06:14 IST" duration-ms="57" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- com.csm.qa.test2.LoginPageTest -->
-      <class name="com.csm.qa.test.LoginPageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@6a6cb05c]" started-at="2023-07-07T18:04:15 IST" name="startReport" finished-at="2023-07-07T18:04:15 IST" duration-ms="124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@6a6cb05c]" started-at="2023-07-07T18:06:14 IST" name="endReport" finished-at="2023-07-07T18:06:14 IST" duration-ms="260" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.csm.qa.test.LoginPageTest@43bc63a3]" started-at="2023-07-10T12:26:37 IST" name="endReport" finished-at="2023-07-10T12:26:37 IST" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
