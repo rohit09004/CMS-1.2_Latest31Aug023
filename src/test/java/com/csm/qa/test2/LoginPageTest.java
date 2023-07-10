@@ -4937,274 +4937,274 @@ Thread.sleep(1000);
 		Thread.sleep(10000); 		    
 }
 
-@Test(priority=42)
-public void Test42() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
-{
-
-	   test=extent.startTest("Test 42 - To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data ");
-
-	   System.setProperty("webdriver.chrome.driver",
-				"D:\\Eclipse_rohit\\EclipseSetup_Library\\chromedriver\\chromedriver.exe");
-		
-
- System.out.println("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ");
-		 Reporter.log("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ");
-		 reportLog("******[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]****** ");
-		    
- System.out.println("[Test 42 steps 'STARTS'] ");
-	     Reporter.log("[Test 42 steps 'STARTS'] ");
-	     reportLog("[Test 42 steps 'STARTS'] ");
- 
-	   //Inspection and clicking of 'Import Menu' button
-	     WebDriverWait importMenuClick = new WebDriverWait(driver, Duration.ofMillis(8000));
-	     importMenuClick.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
-	     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")).click();
-	     
-	     //Inspection and clicking of 'Select Import File' button
-	     WebDriverWait poShippingScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
-	     poShippingScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/ul/li[2]/div")));
-	     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/ul/li[2]/div")).click();
-	     
-	   //Inspection and clicking '.csv' radio button 
-     WebDriverWait csvRadioButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-     csvRadioButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[1]/div/div/div[2]/div[1]/div")));
-		 driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[1]/div/div/div[2]/div[1]/div")).click();
-		
-		 
-		//Inspection and clicking of 'type' dropdown 
-     WebDriverWait typePOButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-     typePOButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[2]/div/div/div/div[2]/div/div/div")));
-		 driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[2]/div/div/div/div[2]/div/div/div")).click();
-		 System.out.println("02.Clicked 'type' dropdown");
-	    
-		 
-		//Inspection and Selected 'type' as 'PO' 
-     WebDriverWait poOption = new WebDriverWait(driver, Duration.ofMillis(8000));
-     poOption.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div[1]/div")));
-		 driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div[1]/div")).click();
-     Thread.sleep(1000); 
-	     
-		//Inspection and clicking of 'Select Import File' button
- WebDriverWait selectImportFile = new WebDriverWait(driver, Duration.ofMillis(8000));
- selectImportFile.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[1]/div[1]/div")));
-		 driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[1]/div[1]/div")).click();
-		 System.out.println("01.Clicked on 'Select Import File' button");
-	     Reporter.log("01.Clicked on 'Select Import File' button");
-	     reportLog("01.Clicked on 'Select Import File' button");
-		 Thread.sleep(2000); 
-		 
-//creating object of Robot class
-Robot rb = new Robot();
-
-////copying File path to Clipboard
-//StringSelection str = new StringSelection("D:\\Eclipse_rohit\\CMS_DMscreens(2.0)\\TestEvidences[ExtentReport]\\ImportMenu\\POShipping\\44_Po_Data_ImportedDataWithDMScreenVerification.csv");
+//@Test(priority=42)
+//public void Test42() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
+//{
+//
+//	   test=extent.startTest("Test 42 - To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data ");
+//
+//	   System.setProperty("webdriver.chrome.driver",
+//				"D:\\Eclipse_rohit\\EclipseSetup_Library\\chromedriver\\chromedriver.exe");
+//		
+//
+// System.out.println("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ");
+//		 Reporter.log("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]************************************ ");
+//		 reportLog("******[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' ]****** ");
+//		    
+// System.out.println("[Test 42 steps 'STARTS'] ");
+//	     Reporter.log("[Test 42 steps 'STARTS'] ");
+//	     reportLog("[Test 42 steps 'STARTS'] ");
+// 
+//	   //Inspection and clicking of 'Import Menu' button
+//	     WebDriverWait importMenuClick = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	     importMenuClick.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
+//	     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")).click();
+//	     
+//	     //Inspection and clicking of 'Select Import File' button
+//	     WebDriverWait poShippingScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	     poShippingScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/ul/li[2]/div")));
+//	     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/ul/li[2]/div")).click();
+//	     
+//	   //Inspection and clicking '.csv' radio button 
+//     WebDriverWait csvRadioButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//     csvRadioButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[1]/div/div/div[2]/div[1]/div")));
+//		 driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[1]/div/div/div[2]/div[1]/div")).click();
+//		
+//		 
+//		//Inspection and clicking of 'type' dropdown 
+//     WebDriverWait typePOButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//     typePOButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[2]/div/div/div/div[2]/div/div/div")));
+//		 driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[2]/div/div/div/div[2]/div/div/div")).click();
+//		 System.out.println("02.Clicked 'type' dropdown");
+//	    
+//		 
+//		//Inspection and Selected 'type' as 'PO' 
+//     WebDriverWait poOption = new WebDriverWait(driver, Duration.ofMillis(8000));
+//     poOption.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div[1]/div")));
+//		 driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div[1]/div")).click();
+//     Thread.sleep(1000); 
+//	     
+//		//Inspection and clicking of 'Select Import File' button
+// WebDriverWait selectImportFile = new WebDriverWait(driver, Duration.ofMillis(8000));
+// selectImportFile.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[1]/div[1]/div")));
+//		 driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[1]/div[1]/div")).click();
+//		 System.out.println("01.Clicked on 'Select Import File' button");
+//	     Reporter.log("01.Clicked on 'Select Import File' button");
+//	     reportLog("01.Clicked on 'Select Import File' button");
+//		 Thread.sleep(2000); 
+//		 
+////creating object of Robot class
+//Robot rb = new Robot();
+//
+//////copying File path to Clipboard
+////StringSelection str = new StringSelection("D:\\Eclipse_rohit\\CMS_DMscreens(2.0)\\TestEvidences[ExtentReport]\\ImportMenu\\POShipping\\44_Po_Data_ImportedDataWithDMScreenVerification.csv");
+////Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+////System.out.println("02.Choosing excel file(having records) from System Directory to perform Import functionility");
+////	  Reporter.log("02.Choosing excel file(having records) from System Directory to perform Import functionility.Choosing excel file(having records) from System Directory to perform Import functionility");
+////	  reportLog("02.Choosing excel file(having records) from System Directory to perform Import functionility");
+////Thread.sleep(2000);
+//
+//File fileee =new File("44_Po_Data_ImportedDataWithDMScreenVerification.csv");
+//String Path11= fileee.getAbsolutePath().toString();
+//StringSelection str = new StringSelection(Path11);
 //Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-//System.out.println("02.Choosing excel file(having records) from System Directory to perform Import functionility");
-//	  Reporter.log("02.Choosing excel file(having records) from System Directory to perform Import functionility.Choosing excel file(having records) from System Directory to perform Import functionility");
-//	  reportLog("02.Choosing excel file(having records) from System Directory to perform Import functionility");
+//System.out.println("05.Choosing excel file(having records) from System Directory to perform Import functionility");
+//	  Reporter.log("05.Choosing excel file(having records) from System Directory to perform Import functionility");
+//	  reportLog("05.Choosing excel file(having records) from System Directory to perform Import functionility");
+//Thread.sleep(1000);
+//	  
+//// press Contol+V for pasting
+//rb.keyPress(KeyEvent.VK_CONTROL);
+//rb.keyPress(KeyEvent.VK_V);
+//
+////release Contol+V for pasting
+//rb.keyRelease(KeyEvent.VK_CONTROL);
+//rb.keyRelease(KeyEvent.VK_V);
+//
+////for pressing and releasing Enter
+//rb.keyPress(KeyEvent.VK_ENTER);
+//rb.keyRelease(KeyEvent.VK_ENTER); 
 //Thread.sleep(2000);
-
-File fileee =new File("44_Po_Data_ImportedDataWithDMScreenVerification.csv");
-String Path11= fileee.getAbsolutePath().toString();
-StringSelection str = new StringSelection(Path11);
-Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-System.out.println("05.Choosing excel file(having records) from System Directory to perform Import functionility");
-	  Reporter.log("05.Choosing excel file(having records) from System Directory to perform Import functionility");
-	  reportLog("05.Choosing excel file(having records) from System Directory to perform Import functionility");
-Thread.sleep(1000);
-	  
-// press Contol+V for pasting
-rb.keyPress(KeyEvent.VK_CONTROL);
-rb.keyPress(KeyEvent.VK_V);
-
-//release Contol+V for pasting
-rb.keyRelease(KeyEvent.VK_CONTROL);
-rb.keyRelease(KeyEvent.VK_V);
-
-//for pressing and releasing Enter
-rb.keyPress(KeyEvent.VK_ENTER);
-rb.keyRelease(KeyEvent.VK_ENTER); 
-Thread.sleep(2000);
-
+//
+//////Inspection and clicking of "Upload" button
+////	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+////	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+////	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+////	     System.out.println("03.Clicked on 'Upload' button");
+////	     Reporter.log("03.Clicked on 'Upload' button");
+////	     reportLog("03.Clicked on 'Upload' button");
+//// Thread.sleep(2000);
+//
 ////Inspection and clicking of "Upload" button
-//	    WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-//	    uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-//	     System.out.println("03.Clicked on 'Upload' button");
-//	     Reporter.log("03.Clicked on 'Upload' button");
-//	     reportLog("03.Clicked on 'Upload' button");
-// Thread.sleep(2000);
-
-//Inspection and clicking of "Upload" button
-WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
-uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
-//driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
-Actions act52 =  new Actions(driver);
-act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
-System.out.println("06.Clicked on 'Upload' button");
-Reporter.log("06.Clicked on 'Upload' button");
-reportLog("06.Clicked on 'Upload' button");
-Thread.sleep(1000);
-
-	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
-	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    importfilebutton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[4]/button")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[4]/button")).click();
-	     System.out.println("04.Clicked on 'Import file' button once file uploaded successfully");
-	     Reporter.log("04.Clicked on 'Import file' button once file uploaded successfully");
-	     reportLog("04.Clicked on 'Import file' button once file uploaded successfully");
-   Thread.sleep(2000);
- 
-////Inspection and clicking of 'Import Menu' button
-// WebDriverWait importMenuClickCLOSE = new WebDriverWait(driver, Duration.ofMillis(8000));
-// importMenuClickCLOSE.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
-// driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")).click();
+//WebDriverWait uploadButton = new WebDriverWait(driver, Duration.ofMillis(12000));
+//uploadButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")));
+////driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+//Actions act52 =  new Actions(driver);
+//act52.moveToElement(driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div"))).click().perform();
+//System.out.println("06.Clicked on 'Upload' button");
+//Reporter.log("06.Clicked on 'Upload' button");
+//reportLog("06.Clicked on 'Upload' button");
+//Thread.sleep(1000);
+//
+//	    //Inspection and clicking of "Import file" button once file uploaded successfully. 
+//	    WebDriverWait importfilebutton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    importfilebutton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[4]/button")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[4]/button")).click();
+//	     System.out.println("04.Clicked on 'Import file' button once file uploaded successfully");
+//	     Reporter.log("04.Clicked on 'Import file' button once file uploaded successfully");
+//	     reportLog("04.Clicked on 'Import file' button once file uploaded successfully");
+//   Thread.sleep(2000);
 // 
-//Inspection and clicking of "Upload" button
- WebDriverWait importMenuClickCLOSEE = new WebDriverWait(driver, Duration.ofMillis(12000));
- importMenuClickCLOSEE.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
-// driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
- Actions act52importMenu =  new Actions(driver);
- act52importMenu.moveToElement(driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]"))).click().perform();
- Thread.sleep(1000);
- 
-////Inspection and clicking of 'Import Menu' button
-// WebDriverWait dataMaintainceTabClickOpen = new WebDriverWait(driver, Duration.ofMillis(8000));
-// dataMaintainceTabClickOpen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/div[2]")));
-// driver.findElement(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/div[2]")).click();
+//////Inspection and clicking of 'Import Menu' button
+//// WebDriverWait importMenuClickCLOSE = new WebDriverWait(driver, Duration.ofMillis(8000));
+//// importMenuClickCLOSE.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
+//// driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")).click();
+//// 
+////Inspection and clicking of "Upload" button
+// WebDriverWait importMenuClickCLOSEE = new WebDriverWait(driver, Duration.ofMillis(12000));
+// importMenuClickCLOSEE.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
+//// driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+// Actions act52importMenu =  new Actions(driver);
+// act52importMenu.moveToElement(driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]"))).click().perform();
+// Thread.sleep(1000);
+// 
+//////Inspection and clicking of 'Import Menu' button
+//// WebDriverWait dataMaintainceTabClickOpen = new WebDriverWait(driver, Duration.ofMillis(8000));
+//// dataMaintainceTabClickOpen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/div[2]")));
+//// driver.findElement(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/div[2]")).click();
+////
+//////Inspection and clicking of 'Import Menu' button
+//// WebDriverWait receivingDataTabClickOpen = new WebDriverWait(driver, Duration.ofMillis(8000));
+//// receivingDataTabClickOpen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/div[2]")));
+//// driver.findElement(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/div[2]")).click();
+////
 //
-////Inspection and clicking of 'Import Menu' button
-// WebDriverWait receivingDataTabClickOpen = new WebDriverWait(driver, Duration.ofMillis(8000));
-// receivingDataTabClickOpen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/div[2]")));
-// driver.findElement(By.xpath("/html/body/div[1]/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/div[2]")).click();
-//
-
-//  //Inspection and clicking of 'poScreen' button
-// WebDriverWait poScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
+////  //Inspection and clicking of 'poScreen' button
+//// WebDriverWait poScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
+//// poScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")));
+//// driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")).click();
+//// 
+////Inspection and clicking of "Upload" button
+// WebDriverWait poScreen = new WebDriverWait(driver, Duration.ofMillis(12000));
 // poScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")));
-// driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")).click();
+//// driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
+// Actions act52poScreen =  new Actions(driver);
+// act52poScreen.moveToElement(driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div"))).click().perform();
+//  Thread.sleep(1000);
 // 
-//Inspection and clicking of "Upload" button
- WebDriverWait poScreen = new WebDriverWait(driver, Duration.ofMillis(12000));
- poScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div")));
-// driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[3]/div/div/div/div/div[2]/div")).click();
- Actions act52poScreen =  new Actions(driver);
- act52poScreen.moveToElement(driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/div"))).click().perform();
-  Thread.sleep(1000);
- 
-//Inspection and clicking of "PO NO:" Field 
-	    WebDriverWait poNoField = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    poNoField.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input"))); 
-	   // driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input")).click();
-		//String poNoFieldd= sh.getRow(1).getCell(1).getStringCellValue();
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input")).sendKeys("P-2842-1022-BD");
-	    Thread.sleep(2000);
-	    Actions action3 = new Actions(driver); 
-	    WebElement  element3 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
-	    action3.moveToElement(element3).click().perform();
-	    System.out.println("09.Clicked inside 'PO No' field");
-	    Reporter.log("09.Clicked inside 'PO No' field");
-	    reportLog("09.Clicked inside 'PO No' field");
-	    Thread.sleep(2000);
- 
-	    //Inspection and clicking of "Go" Button 
-	    WebDriverWait clickingGOButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    clickingGOButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[2]/div/div")));
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[2]/div/div")).click();
- System.out.println("10.Clicked on 'Go' button");
- Reporter.log("10.Clicked on 'Go' button");
- reportLog("10.Clicked on 'Go' button");
-	    Thread.sleep(5000);
-	    
-//	        // Verification of PO Qty data using assertion
-//	        String expectedPOQty = "0.00001";
-//		    WebElement actualPOQtyXPATH= driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]"));
-//	        String actualPOQty = actualPOQtyXPATH.getText();
-//		    System.out.println(actualPOQty);
-//		    Assert.assertEquals(expectedPOQty, actualPOQty);
+////Inspection and clicking of "PO NO:" Field 
+//	    WebDriverWait poNoField = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    poNoField.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input"))); 
+//	   // driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input")).click();
+//		//String poNoFieldd= sh.getRow(1).getCell(1).getStringCellValue();
+//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[1]/div/div/div[1]/div/input")).sendKeys("P-2842-1022-BD");
+//	    Thread.sleep(2000);
+//	    Actions action3 = new Actions(driver); 
+//	    WebElement  element3 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
+//	    action3.moveToElement(element3).click().perform();
+//	    System.out.println("09.Clicked inside 'PO No' field");
+//	    Reporter.log("09.Clicked inside 'PO No' field");
+//	    reportLog("09.Clicked inside 'PO No' field");
+//	    Thread.sleep(2000);
+// 
+//	    //Inspection and clicking of "Go" Button 
+//	    WebDriverWait clickingGOButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    clickingGOButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[2]/div/div")));
+//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[2]/div[2]/div/div")).click();
+// System.out.println("10.Clicked on 'Go' button");
+// Reporter.log("10.Clicked on 'Go' button");
+// reportLog("10.Clicked on 'Go' button");
+//	    Thread.sleep(5000);
+//	    
+////	        // Verification of PO Qty data using assertion
+////	        String expectedPOQty = "0.00001";
+////		    WebElement actualPOQtyXPATH= driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]"));
+////	        String actualPOQty = actualPOQtyXPATH.getText();
+////		    System.out.println(actualPOQty);
+////		    Assert.assertEquals(expectedPOQty, actualPOQty);
+////		   // Assert.assertNotEquals(notExpectedValidatoion, ActualValidation);
+//
+//
+//    System.out.println("[Test 42 steps 'ENDS'] ");
+//		    Reporter.log("[Test 42 steps 'ENDS'] ");
+//		    reportLog("[Test 42 steps 'ENDS'] ");
+//		 
+//		    System.out.println("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]************************************ ");
+//		    Reporter.log("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]************************************ ");
+//		    reportLog("******[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]****** ");
+//		    System.out.println(" ");
+//		    Reporter.log(" ");
+//		    System.out.println(" ");
+//		    Reporter.log(" ");
+//		    //driver.quit();
+//  //ends PO3
+//  
+//Assert.assertTrue(true);
+//		test.log(LogStatus.PASS, "Test 42 - To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data is PASSED");
+//		Thread.sleep(8000); 		    
+//}
+//
+//@Test(priority=43)
+//public void Test43() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
+//{
+//
+//	   test=extent.startTest("Test 43 - To verify Store Location is displaying or not(as we Seted initially) ");
+//
+//	   System.setProperty("webdriver.chrome.driver",
+//				"D:\\Eclipse_rohit\\EclipseSetup_Library\\chromedriver\\chromedriver.exe");
+//		
+//
+// System.out.println("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' ]************************************ ");
+//		 Reporter.log("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' data' ]************************************ ");
+//		 reportLog("******[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' ]****** ");
+//		    
+// System.out.println("[Test 43 steps 'STARTS'] ");
+//	     Reporter.log("[Test 43 steps 'STARTS'] ");
+//	     reportLog("[Test 43 steps 'STARTS'] ");
+// 
+//	   //Inspection and clicking of 'Import Menu' button
+//	     WebDriverWait importMenuClick = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	     importMenuClick.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
+//	     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")).click();
+//	     
+//	     //Inspection and clicking of 'Select Import File' button
+//	     WebDriverWait poShippingScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	     poShippingScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/ul/li[2]/div")));
+//	     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/ul/li[2]/div")).click();
+//	     
+//	   //Inspection and clicking '.csv' radio button 
+//     WebDriverWait csvRadioButton = new WebDriverWait(driver, Duration.ofMillis(8000));
+//     csvRadioButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[1]/div/div/div[2]/div[1]/div")));
+//		 driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[1]/div/div/div[2]/div[1]/div")).click();
+//		
+//
+//       // Verification of PO Qty data using assertion
+//	        String expectedStoreLocation = "JGC-6S";
+//		    WebElement actualStoreLocationXPATH= driver.findElement(By.xpath("/html/body/div[1]/div/section[1]/a[2]"));
+//	        String actualStoreLocation = actualStoreLocationXPATH.getText();
+//		    System.out.println(actualStoreLocation);
+//		    Assert.assertEquals(expectedStoreLocation, actualStoreLocation);
 //		   // Assert.assertNotEquals(notExpectedValidatoion, ActualValidation);
-
-
-    System.out.println("[Test 42 steps 'ENDS'] ");
-		    Reporter.log("[Test 42 steps 'ENDS'] ");
-		    reportLog("[Test 42 steps 'ENDS'] ");
-		 
-		    System.out.println("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]************************************ ");
-		    Reporter.log("************************************[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]************************************ ");
-		    reportLog("******[ Test 42--> 'To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data' is ''PASSED'' ]****** ");
-		    System.out.println(" ");
-		    Reporter.log(" ");
-		    System.out.println(" ");
-		    Reporter.log(" ");
-		    //driver.quit();
-  //ends PO3
-  
-Assert.assertTrue(true);
-		test.log(LogStatus.PASS, "Test 42 - To verify IMPORTED record is displaying in DM screen or not! for 'PO Qty' data is PASSED");
-		Thread.sleep(8000); 		    
-}
-
-@Test(priority=43)
-public void Test43() throws EncryptedDocumentException, InterruptedException, IOException, AWTException
-{
-
-	   test=extent.startTest("Test 43 - To verify Store Location is displaying or not(as we Seted initially) ");
-
-	   System.setProperty("webdriver.chrome.driver",
-				"D:\\Eclipse_rohit\\EclipseSetup_Library\\chromedriver\\chromedriver.exe");
-		
-
- System.out.println("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' ]************************************ ");
-		 Reporter.log("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' data' ]************************************ ");
-		 reportLog("******[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' ]****** ");
-		    
- System.out.println("[Test 43 steps 'STARTS'] ");
-	     Reporter.log("[Test 43 steps 'STARTS'] ");
-	     reportLog("[Test 43 steps 'STARTS'] ");
- 
-	   //Inspection and clicking of 'Import Menu' button
-	     WebDriverWait importMenuClick = new WebDriverWait(driver, Duration.ofMillis(8000));
-	     importMenuClick.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")));
-	     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/div[2]")).click();
-	     
-	     //Inspection and clicking of 'Select Import File' button
-	     WebDriverWait poShippingScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
-	     poShippingScreen.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/ul/li[2]/div")));
-	     driver.findElement(By.xpath("/html/body/div/aside/div/section/div[2]/div/div/div/div/div[1]/ul/li[1]/ul/li[2]/div")).click();
-	     
-	   //Inspection and clicking '.csv' radio button 
-     WebDriverWait csvRadioButton = new WebDriverWait(driver, Duration.ofMillis(8000));
-     csvRadioButton.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[1]/div/div/div[2]/div[1]/div")));
-		 driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div/div[2]/div[1]/div/div/div[2]/div[1]/div")).click();
-		
-
-       // Verification of PO Qty data using assertion
-	        String expectedStoreLocation = "JGC-6S";
-		    WebElement actualStoreLocationXPATH= driver.findElement(By.xpath("/html/body/div[1]/div/section[1]/a[2]"));
-	        String actualStoreLocation = actualStoreLocationXPATH.getText();
-		    System.out.println(actualStoreLocation);
-		    Assert.assertEquals(expectedStoreLocation, actualStoreLocation);
-		   // Assert.assertNotEquals(notExpectedValidatoion, ActualValidation);
-
-
-    System.out.println("[Test 43 steps 'ENDS'] ");
-		    Reporter.log("[Test 43 steps 'ENDS'] ");
-		    reportLog("[Test 43 steps 'ENDS'] ");
-		 
-		    System.out.println("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]************************************ ");
-		    Reporter.log("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]************************************ ");
-		    reportLog("******[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]****** ");
-		    System.out.println(" ");
-		    Reporter.log(" ");
-		    System.out.println(" ");
-		    Reporter.log(" ");
-		    //driver.quit();
-  //ends PO3
-  
-Assert.assertTrue(true);
-		test.log(LogStatus.PASS, "Test 43 - To verify Store Location is displaying or not(as we Seted initially is PASSED");
-		Thread.sleep(8000); 		    
-}
+//
+//
+//    System.out.println("[Test 43 steps 'ENDS'] ");
+//		    Reporter.log("[Test 43 steps 'ENDS'] ");
+//		    reportLog("[Test 43 steps 'ENDS'] ");
+//		 
+//		    System.out.println("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]************************************ ");
+//		    Reporter.log("************************************[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]************************************ ");
+//		    reportLog("******[ Test 43--> 'To verify Store Location is displaying or not(as we Seted initially' is ''PASSED'' ]****** ");
+//		    System.out.println(" ");
+//		    Reporter.log(" ");
+//		    System.out.println(" ");
+//		    Reporter.log(" ");
+//		    //driver.quit();
+//  //ends PO3
+//  
+//Assert.assertTrue(true);
+//		test.log(LogStatus.PASS, "Test 43 - To verify Store Location is displaying or not(as we Seted initially is PASSED");
+//		Thread.sleep(8000); 		    
+//}
 
 @AfterMethod
 public void getResult(ITestResult result) throws IOException

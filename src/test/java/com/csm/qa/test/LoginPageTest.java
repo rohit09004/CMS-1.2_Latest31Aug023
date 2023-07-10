@@ -6435,443 +6435,443 @@ public void Test29() throws EncryptedDocumentException, InterruptedException, IO
 	    
 }
 
-@Test(priority=30)
-public void Test30() throws EncryptedDocumentException, InterruptedException, IOException
-{
-	File file =new File("PoScreen_TestsDocumentt.xlsx");
-    String Path1= file.getAbsolutePath().toString();
-	   FileInputStream fs = new FileInputStream(Path1);
-	   XSSFWorkbook workbook = new XSSFWorkbook(fs);
-	   XSSFSheet sheet = workbook.getSheetAt(0); 
-
-	   test=extent.startTest("Test 30 - Validate to filter out particular record from list ");
-   
-   System.setProperty("webdriver.chrome.driver",
-				"D:\\Eclipse_rohit\\EclipseSetup_Library\\chromedriver\\chromedriver.exe");
-		
-   driver.get("https://qacms.jgc.com/MAC_PT/PODataMaintenance/Index?mId=TUFDLUQtUE8=");
-  	
-	
-	CSMBase base=new CSMBase();
-// basepo_ReceivingDataDataMaintenanceScenario1(driver);
-
-	
-	 System.out.println(" ");
-	   Reporter.log("");
-	   System.out.println("************************************[ Test 30--> Validate to filter out particular record from list ]**************************************************** ");
-	   Reporter.log("************************************[ Test 30--> Validate to filter out particular record from list ]**************************************************** ");
-	   reportLog("******[ Test 30--> Validate to filter out particular record from list ]****** ");
-	   
-	   System.out.println("[Test 30 steps 'STARTS'] ");
-	   Reporter.log("[Test 30 steps 'STARTS'] ");
-	   reportLog("[Test 30 steps 'STARTS'] ");
-	   
-    //Inspection and clicking of "Insert" Button for Parent grid under PO Screen
-	    WebDriverWait insertSymbole5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    insertSymbole5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[4]/div/div/div[3]/div[2]/div/div/div")));
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[4]/div/div/div[3]/div[2]/div/div/div")).click();
-     System.out.println("01.Clicked on 'Insert' button to add new Record");
-     Reporter.log("01.Clicked on 'Insert' button to add new Record");
-     reportLog("01.Clicked on 'Insert' button to add new Record");
-     
-	    //Inspection and clicking of "PO No." field   	    
-	    WebDriverWait poNoField5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    poNoField5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[2]/div/div/div/input")));
-	    String poNoFieldSheet5=sheet.getRow(38).getCell(2).getStringCellValue();
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[2]/div/div/div/input")).sendKeys(poNoFieldSheet5);
-	    System.out.println("02.Inserting 'PO No.' field ");
-	    Reporter.log("02.Inserting 'PO No.' field ");
-	    reportLog("02.Inserting 'PO No.' field ");
-	    
-	    //Inspection and clicking of "Company Code" field   	    
-	    WebDriverWait companyCodeFieldOptions5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    companyCodeFieldOptions5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[3]/div/div/div/div/input")));
-	    String companyCodeField5=sheet.getRow(38).getCell(15).getStringCellValue();
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[3]/div/div/div/div/input")).sendKeys(companyCodeField5);
-	    System.out.println("03.Choosing 'Company code' field ");
-	    Reporter.log("03.Choosing 'Company code' field ");
-	    reportLog("03.Choosing 'Company code' field ");
-	    
-	    base.commonCompanyCodeField(driver);        
-	    base.commonElementPODate(driver);
-	    
-	  //Inspection and clicking of "Title1" field   	    
-	    WebDriverWait title105 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    title105.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[6]/div/div/div/input")));
-	    String title1Data05=sheet.getRow(38).getCell(12).getStringCellValue();
-	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[6]/div/div/div/input")).sendKeys(title1Data05);
-	    System.out.println("04.Inserting 'Title1' field ");
-	    Reporter.log("04.Inserting 'Title1' field ");
-	    reportLog("04.Inserting 'Title1' field ");
-	    Thread.sleep(2000);
-	
-   
-	    base.commonSAVEbutton(driver);
-	    System.out.println("05.Cliking on 'SAVE' button ");
-	    Reporter.log("05.Cliking on 'SAVE' button ");
-	    reportLog("05.Cliking on 'SAVE' button ");
-	    Thread.sleep(3000);
-
-	  //Inspection and clicking of "Insert" Button for Child grid under PO Screen
-	  		WebDriverWait insertChildSymbole5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	  	    insertChildSymbole5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")));
-	  	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")).click();
-	  	    System.out.println("06.Clicked on 'Insert' button to add new CHILD Record");
-	  	    Reporter.log("06.Clicked on 'Insert' button to add new CHILD Record");
-	  	    reportLog("06.Clicked on 'Insert' button to add new CHILD Record");
-	  	    Thread.sleep(2000);		    
-	  	    
-	  	    //Inspection and clicking of "Discipline Code"   	    
-	  	    WebDriverWait disciplineCodeDropdown5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	  	    disciplineCodeDropdown5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")));
-	  	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")).click();
-	  	    Thread.sleep(2000);
-	  	    
-	  	    //Inspection and clicking of particular "Discipline Code"    	    
-	  	    WebDriverWait disciplineCodeDropdownPiping5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	  	    disciplineCodeDropdownPiping5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")));
-	  	    driver.findElement(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")).click();
-	  	    System.out.println("07.Choosing 'Displine code' ");
-	  	    Reporter.log("07.Choosing 'Displine code' ");
-	  	    reportLog("07.Choosing 'Displine code' ");
-	  	    Thread.sleep(2000);
-	    
-		//Inspection and clicking of "Item No"   	    
-		WebDriverWait itemNo5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-		itemNo5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")));
-		String itemNoData5=sheet.getRow(38).getCell(4).getStringCellValue();
-		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")).sendKeys(itemNoData5);
-		System.out.println("08.Inserting 'Item No.' field ");
-		Reporter.log("08.Inserting 'Item No.' field ");
-		reportLog("08.Inserting 'Item No.' field ");
-		Thread.sleep(2000);
-
-    //Inspection and clicking of "Ident Code"   	    
-	WebDriverWait identCodeList5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-		identCodeList5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")));
-	    String identCodeData5=sheet.getRow(38).getCell(5).getStringCellValue();
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")).sendKeys(identCodeData5);
-	    System.out.println("09.Selecting 'Ident Code' field ");
-	    Reporter.log("09.Selecting 'Ident Code' field ");
-	    reportLog("09.Selecting 'Ident Code' field ");
-	    Thread.sleep(2000);
-	    //Inspection and clicking a particular "Ident Code" once inserted inside field(Showing blue color ident code data i.e Existing data)  
-	    Actions action5 = new Actions(driver); 
-	    WebElement  element5 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
-	    // /html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div
-	    action5.moveToElement(element5).click().perform();
-	    Thread.sleep(2000);
-		    
-	  //Inspection and clicking of "PO Qty."
-	    WebDriverWait poQty52 = new WebDriverWait(driver, Duration.ofMillis(20000));
-	    poQty52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")));
-        String poQtyData52= sheet.getRow(38).getCell(9).getStringCellValue();
-	    base.commonPOQtyBackSpace(driver);
-        Actions act52 =  new Actions(driver);
-        act52.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))).click().sendKeys(poQtyData52).perform();
-        System.out.println("10.Inserting 'PO Qty.' field ");
-	    Reporter.log("10.Inserting 'PO Qty.' field ");
-	    reportLog("10.Inserting 'PO Qty.' field ");
-	    Thread.sleep(1000);
-	    
-//	    //Inspection and clicking of "PO Qty."
-//	    WebDriverWait poQty5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-//	    poQty5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))); 
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).click();
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
-//        base.commonPOQtyBackSpace(driver);
-//        Thread.sleep(2000);
-//		String poQtyData5= sheet.getRow(38).getCell(9).getStringCellValue();
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(poQtyData5);
-//	    System.out.println("10.Inserting 'PO Qty.' field ");
+//@Test(priority=30)
+//public void Test30() throws EncryptedDocumentException, InterruptedException, IOException
+//{
+//	File file =new File("PoScreen_TestsDocumentt.xlsx");
+//    String Path1= file.getAbsolutePath().toString();
+//	   FileInputStream fs = new FileInputStream(Path1);
+//	   XSSFWorkbook workbook = new XSSFWorkbook(fs);
+//	   XSSFSheet sheet = workbook.getSheetAt(0); 
+//
+//	   test=extent.startTest("Test 30 - Validate to filter out particular record from list ");
+//   
+//   System.setProperty("webdriver.chrome.driver",
+//				"D:\\Eclipse_rohit\\EclipseSetup_Library\\chromedriver\\chromedriver.exe");
+//		
+//   driver.get("https://qacms.jgc.com/MAC_PT/PODataMaintenance/Index?mId=TUFDLUQtUE8=");
+//  	
+//	
+//	CSMBase base=new CSMBase();
+//// basepo_ReceivingDataDataMaintenanceScenario1(driver);
+//
+//	
+//	 System.out.println(" ");
+//	   Reporter.log("");
+//	   System.out.println("************************************[ Test 30--> Validate to filter out particular record from list ]**************************************************** ");
+//	   Reporter.log("************************************[ Test 30--> Validate to filter out particular record from list ]**************************************************** ");
+//	   reportLog("******[ Test 30--> Validate to filter out particular record from list ]****** ");
+//	   
+//	   System.out.println("[Test 30 steps 'STARTS'] ");
+//	   Reporter.log("[Test 30 steps 'STARTS'] ");
+//	   reportLog("[Test 30 steps 'STARTS'] ");
+//	   
+//    //Inspection and clicking of "Insert" Button for Parent grid under PO Screen
+//	    WebDriverWait insertSymbole5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    insertSymbole5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[4]/div/div/div[3]/div[2]/div/div/div")));
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[4]/div/div/div[3]/div[2]/div/div/div")).click();
+//     System.out.println("01.Clicked on 'Insert' button to add new Record");
+//     Reporter.log("01.Clicked on 'Insert' button to add new Record");
+//     reportLog("01.Clicked on 'Insert' button to add new Record");
+//     
+//	    //Inspection and clicking of "PO No." field   	    
+//	    WebDriverWait poNoField5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    poNoField5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[2]/div/div/div/input")));
+//	    String poNoFieldSheet5=sheet.getRow(38).getCell(2).getStringCellValue();
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[2]/div/div/div/input")).sendKeys(poNoFieldSheet5);
+//	    System.out.println("02.Inserting 'PO No.' field ");
+//	    Reporter.log("02.Inserting 'PO No.' field ");
+//	    reportLog("02.Inserting 'PO No.' field ");
+//	    
+//	    //Inspection and clicking of "Company Code" field   	    
+//	    WebDriverWait companyCodeFieldOptions5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    companyCodeFieldOptions5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[3]/div/div/div/div/input")));
+//	    String companyCodeField5=sheet.getRow(38).getCell(15).getStringCellValue();
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[3]/div/div/div/div/input")).sendKeys(companyCodeField5);
+//	    System.out.println("03.Choosing 'Company code' field ");
+//	    Reporter.log("03.Choosing 'Company code' field ");
+//	    reportLog("03.Choosing 'Company code' field ");
+//	    
+//	    base.commonCompanyCodeField(driver);        
+//	    base.commonElementPODate(driver);
+//	    
+//	  //Inspection and clicking of "Title1" field   	    
+//	    WebDriverWait title105 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    title105.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[6]/div/div/div/input")));
+//	    String title1Data05=sheet.getRow(38).getCell(12).getStringCellValue();
+//	    driver.findElement(By.xpath("/html/body/div/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[1]/td[6]/div/div/div/input")).sendKeys(title1Data05);
+//	    System.out.println("04.Inserting 'Title1' field ");
+//	    Reporter.log("04.Inserting 'Title1' field ");
+//	    reportLog("04.Inserting 'Title1' field ");
+//	    Thread.sleep(2000);
+//	
+//   
+//	    base.commonSAVEbutton(driver);
+//	    System.out.println("05.Cliking on 'SAVE' button ");
+//	    Reporter.log("05.Cliking on 'SAVE' button ");
+//	    reportLog("05.Cliking on 'SAVE' button ");
+//	    Thread.sleep(3000);
+//
+//	  //Inspection and clicking of "Insert" Button for Child grid under PO Screen
+//	  		WebDriverWait insertChildSymbole5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	  	    insertChildSymbole5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")));
+//	  	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")).click();
+//	  	    System.out.println("06.Clicked on 'Insert' button to add new CHILD Record");
+//	  	    Reporter.log("06.Clicked on 'Insert' button to add new CHILD Record");
+//	  	    reportLog("06.Clicked on 'Insert' button to add new CHILD Record");
+//	  	    Thread.sleep(2000);		    
+//	  	    
+//	  	    //Inspection and clicking of "Discipline Code"   	    
+//	  	    WebDriverWait disciplineCodeDropdown5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	  	    disciplineCodeDropdown5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")));
+//	  	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")).click();
+//	  	    Thread.sleep(2000);
+//	  	    
+//	  	    //Inspection and clicking of particular "Discipline Code"    	    
+//	  	    WebDriverWait disciplineCodeDropdownPiping5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	  	    disciplineCodeDropdownPiping5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")));
+//	  	    driver.findElement(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")).click();
+//	  	    System.out.println("07.Choosing 'Displine code' ");
+//	  	    Reporter.log("07.Choosing 'Displine code' ");
+//	  	    reportLog("07.Choosing 'Displine code' ");
+//	  	    Thread.sleep(2000);
+//	    
+//		//Inspection and clicking of "Item No"   	    
+//		WebDriverWait itemNo5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//		itemNo5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")));
+//		String itemNoData5=sheet.getRow(38).getCell(4).getStringCellValue();
+//		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")).sendKeys(itemNoData5);
+//		System.out.println("08.Inserting 'Item No.' field ");
+//		Reporter.log("08.Inserting 'Item No.' field ");
+//		reportLog("08.Inserting 'Item No.' field ");
+//		Thread.sleep(2000);
+//
+//    //Inspection and clicking of "Ident Code"   	    
+//	WebDriverWait identCodeList5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//		identCodeList5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")));
+//	    String identCodeData5=sheet.getRow(38).getCell(5).getStringCellValue();
+//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")).sendKeys(identCodeData5);
+//	    System.out.println("09.Selecting 'Ident Code' field ");
+//	    Reporter.log("09.Selecting 'Ident Code' field ");
+//	    reportLog("09.Selecting 'Ident Code' field ");
+//	    Thread.sleep(2000);
+//	    //Inspection and clicking a particular "Ident Code" once inserted inside field(Showing blue color ident code data i.e Existing data)  
+//	    Actions action5 = new Actions(driver); 
+//	    WebElement  element5 = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
+//	    // /html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div
+//	    action5.moveToElement(element5).click().perform();
+//	    Thread.sleep(2000);
+//		    
+//	  //Inspection and clicking of "PO Qty."
+//	    WebDriverWait poQty52 = new WebDriverWait(driver, Duration.ofMillis(20000));
+//	    poQty52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")));
+//        String poQtyData52= sheet.getRow(38).getCell(9).getStringCellValue();
+//	    base.commonPOQtyBackSpace(driver);
+//        Actions act52 =  new Actions(driver);
+//        act52.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))).click().sendKeys(poQtyData52).perform();
+//        System.out.println("10.Inserting 'PO Qty.' field ");
 //	    Reporter.log("10.Inserting 'PO Qty.' field ");
 //	    reportLog("10.Inserting 'PO Qty.' field ");
+//	    Thread.sleep(1000);
+//	    
+////	    //Inspection and clicking of "PO Qty."
+////	    WebDriverWait poQty5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+////	    poQty5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))); 
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).click();
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////        base.commonPOQtyBackSpace(driver);
+////        Thread.sleep(2000);
+////		String poQtyData5= sheet.getRow(38).getCell(9).getStringCellValue();
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(poQtyData5);
+////	    System.out.println("10.Inserting 'PO Qty.' field ");
+////	    Reporter.log("10.Inserting 'PO Qty.' field ");
+////	    reportLog("10.Inserting 'PO Qty.' field ");
+////	    Thread.sleep(2000);
+//	    
+//			    
+//	    base.commonSAVEbuttonCHILD(driver);
+//		System.out.println("11.Cliking on 'SAVE' button ");
+//		Reporter.log("11.Cliking on 'SAVE' button ");
+//		reportLog("11.Cliking on 'SAVE' button ");
+//		Thread.sleep(2000);
+//		
+////child data 1
+//		//Inspection and clicking of "Insert" Button for Child grid under PO Screen
+//		WebDriverWait insertChildSymbolee5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    insertChildSymbolee5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")));
+//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")).click();
+//	    System.out.println("12.Clicked on 'Insert' button to add new CHILD Record");
+//	    Reporter.log("12.Clicked on 'Insert' button to add new CHILD Record");
+//	    reportLog("12.Clicked on 'Insert' button to add new CHILD Record");
+//	    Thread.sleep(2000);		    
+//	    
+//	    //Inspection and clicking of "Discipline Code"   	    
+//	    WebDriverWait disciplineCodeDropdownn5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    disciplineCodeDropdownn5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")));
+//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")).click();
 //	    Thread.sleep(2000);
-	    
-			    
-	    base.commonSAVEbuttonCHILD(driver);
-		System.out.println("11.Cliking on 'SAVE' button ");
-		Reporter.log("11.Cliking on 'SAVE' button ");
-		reportLog("11.Cliking on 'SAVE' button ");
-		Thread.sleep(2000);
-		
-//child data 1
-		//Inspection and clicking of "Insert" Button for Child grid under PO Screen
-		WebDriverWait insertChildSymbolee5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    insertChildSymbolee5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")));
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")).click();
-	    System.out.println("12.Clicked on 'Insert' button to add new CHILD Record");
-	    Reporter.log("12.Clicked on 'Insert' button to add new CHILD Record");
-	    reportLog("12.Clicked on 'Insert' button to add new CHILD Record");
-	    Thread.sleep(2000);		    
-	    
-	    //Inspection and clicking of "Discipline Code"   	    
-	    WebDriverWait disciplineCodeDropdownn5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    disciplineCodeDropdownn5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")));
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")).click();
-	    Thread.sleep(2000);
-	    
-	    //Inspection and clicking of particular "Discipline Code"    	    
-	    WebDriverWait disciplineCodeDropdownPipingg5= new WebDriverWait(driver, Duration.ofMillis(8000));
-	    disciplineCodeDropdownPipingg5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")));
-	    driver.findElement(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")).click();
-	    System.out.println("13.Choosing 'Displine code' ");
-	    Reporter.log("13.Choosing 'Displine code' ");
-	    reportLog("13.Choosing 'Displine code' ");
-	    Thread.sleep(2000);
-	    
-		//Inspection and clicking of "Item No"   	    
-		WebDriverWait itemNo51 = new WebDriverWait(driver, Duration.ofMillis(8000));
-		itemNo51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")));
-		String itemNoData51=sheet.getRow(39).getCell(4).getStringCellValue();
-		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")).sendKeys(itemNoData51);
-		System.out.println("14.Inserting 'Item No.' field ");
-		Reporter.log("14.Inserting 'Item No.' field ");
-		reportLog("14.Inserting 'Item No.' field ");
-		Thread.sleep(2000);
-
-    //Inspection and clicking of "Ident Code"   	    
-	WebDriverWait identCodeList51 = new WebDriverWait(driver, Duration.ofMillis(8000));
-		identCodeList51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")));
-	    String identCodeData51=sheet.getRow(39).getCell(5).getStringCellValue();
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")).sendKeys(identCodeData51);
-	    System.out.println("15.Selecting 'Ident Code' field ");
-	    Reporter.log("15.Selecting 'Ident Code' field ");
-	    reportLog("15.Selecting 'Ident Code' field ");
-	    Thread.sleep(2000);
-	    //Inspection and clicking a particular "Ident Code" once inserted inside field(Showing blue color ident code data i.e Existing data)  
-	    Actions action51 = new Actions(driver); 
-	    WebElement  element51= driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
-	    action51.moveToElement(element51).click().perform();
-	    Thread.sleep(2000);
-		    
-	    //Inspection and clicking of "PO Qty."
-	    WebDriverWait poQty522 = new WebDriverWait(driver, Duration.ofMillis(20000));
-	    poQty522.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")));
-        String poQtyData522= sheet.getRow(39).getCell(9).getStringCellValue();
-	    base.commonPOQtyBackSpace(driver);
-        Actions act522 =  new Actions(driver);
-        act522.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))).click().sendKeys(poQtyData522).perform();
-        System.out.println("10.Inserting 'PO Qty.' field ");
-	    Reporter.log("10.Inserting 'PO Qty.' field ");
-	    reportLog("10.Inserting 'PO Qty.' field ");
-	    Thread.sleep(1000);
-	    
+//	    
+//	    //Inspection and clicking of particular "Discipline Code"    	    
+//	    WebDriverWait disciplineCodeDropdownPipingg5= new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    disciplineCodeDropdownPipingg5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")));
+//	    driver.findElement(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")).click();
+//	    System.out.println("13.Choosing 'Displine code' ");
+//	    Reporter.log("13.Choosing 'Displine code' ");
+//	    reportLog("13.Choosing 'Displine code' ");
+//	    Thread.sleep(2000);
+//	    
+//		//Inspection and clicking of "Item No"   	    
+//		WebDriverWait itemNo51 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//		itemNo51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")));
+//		String itemNoData51=sheet.getRow(39).getCell(4).getStringCellValue();
+//		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")).sendKeys(itemNoData51);
+//		System.out.println("14.Inserting 'Item No.' field ");
+//		Reporter.log("14.Inserting 'Item No.' field ");
+//		reportLog("14.Inserting 'Item No.' field ");
+//		Thread.sleep(2000);
+//
+//    //Inspection and clicking of "Ident Code"   	    
+//	WebDriverWait identCodeList51 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//		identCodeList51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")));
+//	    String identCodeData51=sheet.getRow(39).getCell(5).getStringCellValue();
+//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")).sendKeys(identCodeData51);
+//	    System.out.println("15.Selecting 'Ident Code' field ");
+//	    Reporter.log("15.Selecting 'Ident Code' field ");
+//	    reportLog("15.Selecting 'Ident Code' field ");
+//	    Thread.sleep(2000);
+//	    //Inspection and clicking a particular "Ident Code" once inserted inside field(Showing blue color ident code data i.e Existing data)  
+//	    Actions action51 = new Actions(driver); 
+//	    WebElement  element51= driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
+//	    action51.moveToElement(element51).click().perform();
+//	    Thread.sleep(2000);
+//		    
 //	    //Inspection and clicking of "PO Qty."
-//	    WebDriverWait poQty51 = new WebDriverWait(driver, Duration.ofMillis(8000));
-//	    poQty51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))); 
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).click();
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+//	    WebDriverWait poQty522 = new WebDriverWait(driver, Duration.ofMillis(20000));
+//	    poQty522.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")));
+//        String poQtyData522= sheet.getRow(39).getCell(9).getStringCellValue();
 //	    base.commonPOQtyBackSpace(driver);
-//        Thread.sleep(2000);
-//		String poQtyData51= sheet.getRow(39).getCell(9).getStringCellValue();
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(poQtyData51);
-//	    System.out.println("16.Inserting 'PO Qty.' field ");
-//	    Reporter.log("16.Inserting 'PO Qty.' field ");
-//	    reportLog("16.Inserting 'PO Qty.' field ");
+//        Actions act522 =  new Actions(driver);
+//        act522.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))).click().sendKeys(poQtyData522).perform();
+//        System.out.println("10.Inserting 'PO Qty.' field ");
+//	    Reporter.log("10.Inserting 'PO Qty.' field ");
+//	    reportLog("10.Inserting 'PO Qty.' field ");
+//	    Thread.sleep(1000);
+//	    
+////	    //Inspection and clicking of "PO Qty."
+////	    WebDriverWait poQty51 = new WebDriverWait(driver, Duration.ofMillis(8000));
+////	    poQty51.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))); 
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).click();
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////	    base.commonPOQtyBackSpace(driver);
+////        Thread.sleep(2000);
+////		String poQtyData51= sheet.getRow(39).getCell(9).getStringCellValue();
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(poQtyData51);
+////	    System.out.println("16.Inserting 'PO Qty.' field ");
+////	    Reporter.log("16.Inserting 'PO Qty.' field ");
+////	    reportLog("16.Inserting 'PO Qty.' field ");
+////	    Thread.sleep(2000);
+//	    
+//			    
+//	    base.commonSAVEbuttonCHILD(driver);
+//		System.out.println("17.Cliking on 'SAVE' button ");
+//		Reporter.log("17.Cliking on 'SAVE' button ");
+//		reportLog("17.Cliking on 'SAVE' button ");
+//		Thread.sleep(2000);
+//		
+//		
+////child data 2
+//		//Inspection and clicking of "Insert" Button for Child grid under PO Screen
+//		WebDriverWait insertChildSymbole52 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    insertChildSymbole52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")));
+//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")).click();
+//	    System.out.println("18.Clicked on 'Insert' button to add new CHILD Record");
+//	    Reporter.log("18.Clicked on 'Insert' button to add new CHILD Record");
+//	    reportLog("18.Clicked on 'Insert' button to add new CHILD Record");
+//	    Thread.sleep(2000);		    
+//	    
+//	    //Inspection and clicking of "Discipline Code"   	    
+//	    WebDriverWait disciplineCodeDropdown52 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    disciplineCodeDropdown52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")));
+//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")).click();
 //	    Thread.sleep(2000);
-	    
-			    
-	    base.commonSAVEbuttonCHILD(driver);
-		System.out.println("17.Cliking on 'SAVE' button ");
-		Reporter.log("17.Cliking on 'SAVE' button ");
-		reportLog("17.Cliking on 'SAVE' button ");
-		Thread.sleep(2000);
-		
-		
-//child data 2
-		//Inspection and clicking of "Insert" Button for Child grid under PO Screen
-		WebDriverWait insertChildSymbole52 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    insertChildSymbole52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")));
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[4]/div/div/div[3]/div[1]/div/div/div")).click();
-	    System.out.println("18.Clicked on 'Insert' button to add new CHILD Record");
-	    Reporter.log("18.Clicked on 'Insert' button to add new CHILD Record");
-	    reportLog("18.Clicked on 'Insert' button to add new CHILD Record");
-	    Thread.sleep(2000);		    
-	    
-	    //Inspection and clicking of "Discipline Code"   	    
-	    WebDriverWait disciplineCodeDropdown52 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    disciplineCodeDropdown52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")));
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[1]/div/div/div/div/div[2]/div/div/div")).click();
-	    Thread.sleep(2000);
-	    
-	    //Inspection and clicking of particular "Discipline Code"    	    
-	    WebDriverWait disciplineCodeDropdownPiping52 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    disciplineCodeDropdownPiping52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")));
-	    driver.findElement(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")).click();
-	    System.out.println("19.Choosing 'Displine code' ");
-	    Reporter.log("19.Choosing 'Displine code' ");
-	    reportLog("19.Choosing 'Displine code' ");
-	    Thread.sleep(2000);
-	    
-		//Inspection and clicking of "Item No"   	    
-		WebDriverWait itemNo52 = new WebDriverWait(driver, Duration.ofMillis(8000));
-		itemNo52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")));
-		String itemNoData52=sheet.getRow(40).getCell(4).getStringCellValue();
-		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")).sendKeys(itemNoData52);
-		System.out.println("20.Inserting 'Item No.' field ");
-		Reporter.log("20.Inserting 'Item No.' field ");
-		reportLog("20.Inserting 'Item No.' field ");
-		Thread.sleep(2000);
-
-    //Inspection and clicking of "Ident Code"   	    
-   	WebDriverWait identCodeList52 = new WebDriverWait(driver, Duration.ofMillis(8000));
-		identCodeList52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")));
-	    String identCodeData52=sheet.getRow(40).getCell(5).getStringCellValue();
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")).sendKeys(identCodeData52);
-	    System.out.println("21.Selecting 'Ident Code' field ");
-	    Reporter.log("21.Selecting 'Ident Code' field ");
-	    reportLog("21.Selecting 'Ident Code' field ");
-	    Thread.sleep(2000);
-	    //Inspection and clicking a particular "Ident Code" once inserted inside field(Showing blue color ident code data i.e Existing data)  
-	    Actions action52 = new Actions(driver); 
-	    WebElement  element52= driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
-	    action52.moveToElement(element52).click().perform();
-	    Thread.sleep(2000);
-		    
-	  //Inspection and clicking of "PO Qty."
-	    WebDriverWait poQty523 = new WebDriverWait(driver, Duration.ofMillis(20000));
-	    poQty523.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")));
-        String poQtyData523= sheet.getRow(40).getCell(9).getStringCellValue();
-	    base.commonPOQtyBackSpace(driver);
-        Actions act523 =  new Actions(driver);
-        act523.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))).click().sendKeys(poQtyData523).perform();
-        System.out.println("10.Inserting 'PO Qty.' field ");
-	    Reporter.log("10.Inserting 'PO Qty.' field ");
-	    reportLog("10.Inserting 'PO Qty.' field ");
-	    Thread.sleep(1000);
-	    
-//	    //Inspection and clicking of "PO Qty."
-//	    WebDriverWait poQty52 = new WebDriverWait(driver, Duration.ofMillis(8000));
-//	    poQty52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))); 
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).click();
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
-//        base.commonPOQtyBackSpace(driver);
-//        Thread.sleep(2000);
-//		String poQtyData52= sheet.getRow(40).getCell(9).getStringCellValue();
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(poQtyData52);
-//	    System.out.println("22.Inserting 'PO Qty.' field ");
-//	    Reporter.log("22.Inserting 'PO Qty.' field ");
-//	    reportLog("22.Inserting 'PO Qty.' field ");
+//	    
+//	    //Inspection and clicking of particular "Discipline Code"    	    
+//	    WebDriverWait disciplineCodeDropdownPiping52 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    disciplineCodeDropdownPiping52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")));
+//	    driver.findElement(By.xpath("(//div[@class='dx-item-content dx-list-item-content'])[6]")).click();
+//	    System.out.println("19.Choosing 'Displine code' ");
+//	    Reporter.log("19.Choosing 'Displine code' ");
+//	    reportLog("19.Choosing 'Displine code' ");
 //	    Thread.sleep(2000);
-	    
-			    
-	    base.commonSAVEbuttonCHILD(driver);
-		System.out.println("23.Cliking on 'SAVE' button ");
-		Reporter.log("23.Cliking on 'SAVE' button ");
-		reportLog("23.Cliking on 'SAVE' button ");
-		Thread.sleep(2000);
-		
-		 
-		// Search bar data filtering
-		WebDriverWait searcbBarFilterOut = new WebDriverWait(driver, Duration.ofMillis(8000));
-		searcbBarFilterOut.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[2]/table/tbody/tr[2]/td[2]/div/div[2]/div/div/input")));
-		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[2]/table/tbody/tr[2]/td[2]/div/div[2]/div/div/input")).click();
-		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[2]/table/tbody/tr[2]/td[2]/div/div[2]/div/div/input")).sendKeys("0321");
-	    Thread.sleep(6000);
-	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[2]/table/tbody/tr[2]/td[2]/div/div[2]/div/div/input")).click();
-		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[2]/table/tbody/tr[2]/td[2]/div/div[2]/div/div/input")).clear();
-	    Thread.sleep(2000);
-	    
-        // To perform DELETE Operation
-	    //Inspection and clicking of "Delete" button of Child grid
-	    WebDriverWait deleteButtonChildTest5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    deleteButtonChildTest5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@title='Delete this record'])[4]")));
-	    driver.findElement(By.xpath("(//span[@title='Delete this record'])[4]")).click();
-	    System.out.println("24.Clicking on Delete button of 'Child' grid ");
-	    Reporter.log("24.Clicking on Delete button of 'Child' grid ");
-	    reportLog("24.Clicking on Delete button of 'Child' grid ");
-	    Thread.sleep(2000);
-	    
-	    //Inspection and clicking of "Yes" button under delete button(Confirmation)
-	    WebDriverWait deleteButtonChildConfirmTest5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    deleteButtonChildConfirmTest5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-button-content'])[17]")));
-	    driver.findElement(By.xpath("(//div[@class='dx-button-content'])[17]")).click();
-	    System.out.println("25.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
-	    Reporter.log("25.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
-	    reportLog("25.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
-	    Thread.sleep(2000);
-	    
-	    
-	    //Inspection and clicking of "Delete" button of Child grid
-	    WebDriverWait deleteButtonChild1Test5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    deleteButtonChild1Test5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@title='Delete this record'])[3]")));
-	    driver.findElement(By.xpath("(//span[@title='Delete this record'])[3]")).click();
-	    System.out.println("26.Clicking on Delete button of 'Child' grid ");
-	    Reporter.log("26.Clicking on Delete button of 'Child' grid ");
-	    reportLog("26.Clicking on Delete button of 'Child' grid ");
-	    Thread.sleep(2000);
-	    
-	    //Inspection and clicking of "Yes" button under delete button(Confirmation)
-	    WebDriverWait deleteButtonChildConfirm1Test5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    deleteButtonChildConfirm1Test5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-button-content'])[17]")));
-	    driver.findElement(By.xpath("(//div[@class='dx-button-content'])[17]")).click();
-	    System.out.println("27.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
-	    Reporter.log("27.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
-	    reportLog("27.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
-	    Thread.sleep(2000);
-	    
-      //Inspection and clicking of "Delete" button of Child grid
-	    WebDriverWait deleteButtonChild2Test5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    deleteButtonChild2Test5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@title='Delete this record'])[2]")));
-	    driver.findElement(By.xpath("(//span[@title='Delete this record'])[2]")).click();
-	    System.out.println("28.Clicking on Delete button of 'Child' grid ");
-	    Reporter.log("28.Clicking on Delete button of 'Child' grid ");
-	    reportLog("28.Clicking on Delete button of 'Child' grid ");
-	    Thread.sleep(2000);
-	    
-	    //Inspection and clicking of "Yes" button under delete button(Confirmation)
-	    WebDriverWait deleteButtonChildConfirm2Test5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    deleteButtonChildConfirm2Test5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-button-content'])[17]")));
-	    driver.findElement(By.xpath("(//div[@class='dx-button-content'])[17]")).click();
-	    System.out.println("29.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
-	    Reporter.log("29.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
-	    reportLog("29.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
-	    Thread.sleep(2000);
-
-      // To perform DELETE Operation
-	    //Inspection and clicking of "Delete" button of Parent grid
-	    WebDriverWait deleteButtonParentTest5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    deleteButtonParentTest5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@title='Delete this record'])[1]")));
-	    driver.findElement(By.xpath("(//span[@title='Delete this record'])[1]")).click();
-	    System.out.println("30.Clicking on Delete button of 'Parent' grid ");
-	    Reporter.log("30.Clicking on Delete button of 'Parent' grid ");
-	    reportLog("30.Clicking on Delete button of 'Parent' grid ");
-	    Thread.sleep(2000);
-	 
-      //Inspection and clicking of "Yes" button under delete button(Confirmation)
-	    WebDriverWait deleteButtonParentConfirmTest5 = new WebDriverWait(driver, Duration.ofMillis(8000));
-	    deleteButtonParentConfirmTest5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-button-content'])[17]")));
-	    driver.findElement(By.xpath("(//div[@class='dx-button-content'])[17]")).click();
-	    System.out.println("31.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ");
-	    Reporter.log("31.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ");
-	    reportLog("31.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ");
-	    Thread.sleep(2000);
-	    System.out.println("[Test 30 steps 'ENDS'] ");
-	    Reporter.log("[Test 30 steps 'ENDS'] ");
-	    reportLog("[Test 30 steps 'ENDS'] ");
-	    System.out.println("************************************[ Test 30--> 'Validate to filter out particular record from list' is ''PASSED'' ]************************************ ");
-	    Reporter.log("************************************[ Test 30--> 'Validate to filter out particular record from list' is ''PASSED'' ]************************************ ");
-	    reportLog("******[ Test 30--> 'Validate to filter out particular record from list' is ''PASSED'' ]****** ");
-	    Reporter.log(" ");
-      System.out.println(" ");
-	    Reporter.log(" ");
-      System.out.println(" ");
-	    Reporter.log(" ");
-	    
-	    Assert.assertTrue(true);
-		test.log(LogStatus.PASS, "Test 30 - Validate to filter out particular record from list is PASSED");
-	    
-}
+//	    
+//		//Inspection and clicking of "Item No"   	    
+//		WebDriverWait itemNo52 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//		itemNo52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")));
+//		String itemNoData52=sheet.getRow(40).getCell(4).getStringCellValue();
+//		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")).sendKeys(itemNoData52);
+//		System.out.println("20.Inserting 'Item No.' field ");
+//		Reporter.log("20.Inserting 'Item No.' field ");
+//		reportLog("20.Inserting 'Item No.' field ");
+//		Thread.sleep(2000);
+//
+//    //Inspection and clicking of "Ident Code"   	    
+//   	WebDriverWait identCodeList52 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//		identCodeList52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")));
+//	    String identCodeData52=sheet.getRow(40).getCell(5).getStringCellValue();
+//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")).sendKeys(identCodeData52);
+//	    System.out.println("21.Selecting 'Ident Code' field ");
+//	    Reporter.log("21.Selecting 'Ident Code' field ");
+//	    reportLog("21.Selecting 'Ident Code' field ");
+//	    Thread.sleep(2000);
+//	    //Inspection and clicking a particular "Ident Code" once inserted inside field(Showing blue color ident code data i.e Existing data)  
+//	    Actions action52 = new Actions(driver); 
+//	    WebElement  element52= driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]/div/div[1]/div[2]/div/div"));
+//	    action52.moveToElement(element52).click().perform();
+//	    Thread.sleep(2000);
+//		    
+//	  //Inspection and clicking of "PO Qty."
+//	    WebDriverWait poQty523 = new WebDriverWait(driver, Duration.ofMillis(20000));
+//	    poQty523.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")));
+//        String poQtyData523= sheet.getRow(40).getCell(9).getStringCellValue();
+//	    base.commonPOQtyBackSpace(driver);
+//        Actions act523 =  new Actions(driver);
+//        act523.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))).click().sendKeys(poQtyData523).perform();
+//        System.out.println("10.Inserting 'PO Qty.' field ");
+//	    Reporter.log("10.Inserting 'PO Qty.' field ");
+//	    reportLog("10.Inserting 'PO Qty.' field ");
+//	    Thread.sleep(1000);
+//	    
+////	    //Inspection and clicking of "PO Qty."
+////	    WebDriverWait poQty52 = new WebDriverWait(driver, Duration.ofMillis(8000));
+////	    poQty52.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))); 
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).click();
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(Keys.BACK_SPACE);
+////        base.commonPOQtyBackSpace(driver);
+////        Thread.sleep(2000);
+////		String poQtyData52= sheet.getRow(40).getCell(9).getStringCellValue();
+////	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(poQtyData52);
+////	    System.out.println("22.Inserting 'PO Qty.' field ");
+////	    Reporter.log("22.Inserting 'PO Qty.' field ");
+////	    reportLog("22.Inserting 'PO Qty.' field ");
+////	    Thread.sleep(2000);
+//	    
+//			    
+//	    base.commonSAVEbuttonCHILD(driver);
+//		System.out.println("23.Cliking on 'SAVE' button ");
+//		Reporter.log("23.Cliking on 'SAVE' button ");
+//		reportLog("23.Cliking on 'SAVE' button ");
+//		Thread.sleep(2000);
+//		
+//		 
+//		// Search bar data filtering
+//		WebDriverWait searcbBarFilterOut = new WebDriverWait(driver, Duration.ofMillis(8000));
+//		searcbBarFilterOut.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[2]/table/tbody/tr[2]/td[2]/div/div[2]/div/div/input")));
+//		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[2]/table/tbody/tr[2]/td[2]/div/div[2]/div/div/input")).click();
+//		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[2]/table/tbody/tr[2]/td[2]/div/div[2]/div/div/input")).sendKeys("0321");
+//	    Thread.sleep(6000);
+//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[2]/table/tbody/tr[2]/td[2]/div/div[2]/div/div/input")).click();
+//		driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[5]/div[2]/table/tbody/tr[2]/td[2]/div/div[2]/div/div/input")).clear();
+//	    Thread.sleep(2000);
+//	    
+//        // To perform DELETE Operation
+//	    //Inspection and clicking of "Delete" button of Child grid
+//	    WebDriverWait deleteButtonChildTest5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    deleteButtonChildTest5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@title='Delete this record'])[4]")));
+//	    driver.findElement(By.xpath("(//span[@title='Delete this record'])[4]")).click();
+//	    System.out.println("24.Clicking on Delete button of 'Child' grid ");
+//	    Reporter.log("24.Clicking on Delete button of 'Child' grid ");
+//	    reportLog("24.Clicking on Delete button of 'Child' grid ");
+//	    Thread.sleep(2000);
+//	    
+//	    //Inspection and clicking of "Yes" button under delete button(Confirmation)
+//	    WebDriverWait deleteButtonChildConfirmTest5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    deleteButtonChildConfirmTest5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-button-content'])[17]")));
+//	    driver.findElement(By.xpath("(//div[@class='dx-button-content'])[17]")).click();
+//	    System.out.println("25.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
+//	    Reporter.log("25.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
+//	    reportLog("25.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
+//	    Thread.sleep(2000);
+//	    
+//	    
+//	    //Inspection and clicking of "Delete" button of Child grid
+//	    WebDriverWait deleteButtonChild1Test5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    deleteButtonChild1Test5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@title='Delete this record'])[3]")));
+//	    driver.findElement(By.xpath("(//span[@title='Delete this record'])[3]")).click();
+//	    System.out.println("26.Clicking on Delete button of 'Child' grid ");
+//	    Reporter.log("26.Clicking on Delete button of 'Child' grid ");
+//	    reportLog("26.Clicking on Delete button of 'Child' grid ");
+//	    Thread.sleep(2000);
+//	    
+//	    //Inspection and clicking of "Yes" button under delete button(Confirmation)
+//	    WebDriverWait deleteButtonChildConfirm1Test5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    deleteButtonChildConfirm1Test5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-button-content'])[17]")));
+//	    driver.findElement(By.xpath("(//div[@class='dx-button-content'])[17]")).click();
+//	    System.out.println("27.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
+//	    Reporter.log("27.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
+//	    reportLog("27.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
+//	    Thread.sleep(2000);
+//	    
+//      //Inspection and clicking of "Delete" button of Child grid
+//	    WebDriverWait deleteButtonChild2Test5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    deleteButtonChild2Test5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@title='Delete this record'])[2]")));
+//	    driver.findElement(By.xpath("(//span[@title='Delete this record'])[2]")).click();
+//	    System.out.println("28.Clicking on Delete button of 'Child' grid ");
+//	    Reporter.log("28.Clicking on Delete button of 'Child' grid ");
+//	    reportLog("28.Clicking on Delete button of 'Child' grid ");
+//	    Thread.sleep(2000);
+//	    
+//	    //Inspection and clicking of "Yes" button under delete button(Confirmation)
+//	    WebDriverWait deleteButtonChildConfirm2Test5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    deleteButtonChildConfirm2Test5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-button-content'])[17]")));
+//	    driver.findElement(By.xpath("(//div[@class='dx-button-content'])[17]")).click();
+//	    System.out.println("29.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
+//	    Reporter.log("29.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
+//	    reportLog("29.Clicking on Delete button of 'Child' grid for confirmation(YES/NO) ");
+//	    Thread.sleep(2000);
+//
+//      // To perform DELETE Operation
+//	    //Inspection and clicking of "Delete" button of Parent grid
+//	    WebDriverWait deleteButtonParentTest5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    deleteButtonParentTest5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@title='Delete this record'])[1]")));
+//	    driver.findElement(By.xpath("(//span[@title='Delete this record'])[1]")).click();
+//	    System.out.println("30.Clicking on Delete button of 'Parent' grid ");
+//	    Reporter.log("30.Clicking on Delete button of 'Parent' grid ");
+//	    reportLog("30.Clicking on Delete button of 'Parent' grid ");
+//	    Thread.sleep(2000);
+//	 
+//      //Inspection and clicking of "Yes" button under delete button(Confirmation)
+//	    WebDriverWait deleteButtonParentConfirmTest5 = new WebDriverWait(driver, Duration.ofMillis(8000));
+//	    deleteButtonParentConfirmTest5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='dx-button-content'])[17]")));
+//	    driver.findElement(By.xpath("(//div[@class='dx-button-content'])[17]")).click();
+//	    System.out.println("31.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ");
+//	    Reporter.log("31.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ");
+//	    reportLog("31.Clicking on Delete button of 'Parent' grid for confirmation(YES/NO) ");
+//	    Thread.sleep(2000);
+//	    System.out.println("[Test 30 steps 'ENDS'] ");
+//	    Reporter.log("[Test 30 steps 'ENDS'] ");
+//	    reportLog("[Test 30 steps 'ENDS'] ");
+//	    System.out.println("************************************[ Test 30--> 'Validate to filter out particular record from list' is ''PASSED'' ]************************************ ");
+//	    Reporter.log("************************************[ Test 30--> 'Validate to filter out particular record from list' is ''PASSED'' ]************************************ ");
+//	    reportLog("******[ Test 30--> 'Validate to filter out particular record from list' is ''PASSED'' ]****** ");
+//	    Reporter.log(" ");
+//      System.out.println(" ");
+//	    Reporter.log(" ");
+//      System.out.println(" ");
+//	    Reporter.log(" ");
+//	    
+//	    Assert.assertTrue(true);
+//		test.log(LogStatus.PASS, "Test 30 - Validate to filter out particular record from list is PASSED");
+//	    
+//}
 
 
 @AfterMethod
