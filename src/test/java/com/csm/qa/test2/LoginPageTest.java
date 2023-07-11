@@ -30,6 +30,7 @@ import org.testng.annotations.*;
 import com.csm.qa.base.CSMBase;
 import com.csm.qa.pages.HomePage;
 import com.csm.qa.pages.LoginPage;
+import com.csm.qa.test_MAC.MAC_MasterData_01_CompanyMaster;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -5213,7 +5214,7 @@ public void getResult(ITestResult result) throws IOException
     {
       Random randVar = new Random();
       int randomVarr=randVar.nextInt(1000);
-      String screenShotPath = GetScreenShot.capture(driver, "FailedTestScreen"+randomVarr);
+      String screenShotPath = MAC_MasterData_01_CompanyMaster.capture(driver, "FailedTestScreen"+randomVarr);
       test.log(LogStatus.FAIL, result.getThrowable());
       test.log(LogStatus.FAIL, "Failed Screenshot below : " + test.addScreenCapture(screenShotPath));
       

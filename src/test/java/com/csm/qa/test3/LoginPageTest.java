@@ -1,4 +1,4 @@
-package com.csm.qa.test;
+package com.csm.qa.test3;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
