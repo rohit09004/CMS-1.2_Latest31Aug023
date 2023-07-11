@@ -4867,7 +4867,8 @@ Thread.sleep(1000);
 	    System.out.println("06.Clicked on DATA MAINTAINCE menu(arrow)");
 	    Reporter.log("06.Clicked on DATA MAINTAINCE menu(arrow)");
 	    reportLog("06.Clicked on DATA MAINTAINCE menu(arrow)");
-    Thread.sleep(2000);
+        Thread.sleep(2000);
+        System.out.println("");
 	    
 	  //Inspection and clicking of "Receiving Data" under Data Maintainance
 	    WebDriverWait receivingDataOptions = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -4876,7 +4877,7 @@ Thread.sleep(1000);
 	    System.out.println("07.Clicked of 'Receiving Data' under Data Maintainance");
 	    Reporter.log("07.Clicked of 'Receiving Data' under Data Maintainance");
 	    reportLog("07.Clicked of 'Receiving Data' under Data Maintainance");
-    Thread.sleep(2000);
+        Thread.sleep(2000);
 	    
 	  //Inspection and clicking of "PO" Screen
 	    WebDriverWait poScreen = new WebDriverWait(driver, Duration.ofMillis(8000));
