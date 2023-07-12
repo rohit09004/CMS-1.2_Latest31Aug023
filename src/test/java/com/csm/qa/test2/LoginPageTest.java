@@ -30,7 +30,6 @@ import org.testng.annotations.*;
 import com.csm.qa.base.CSMBase;
 import com.csm.qa.pages.HomePage;
 import com.csm.qa.pages.LoginPage;
-import com.csm.qa.test_MAC.MAC_MasterData_01_CompanyMaster;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -4886,7 +4885,7 @@ Thread.sleep(1000);
 	    System.out.println("08.Clicked on 'PO' Screen");
 	    Reporter.log("08.Clicked on 'PO' Screen");
 	    reportLog("08.Clicked on 'PO' Screen");
-     Thread.sleep(2000);
+        Thread.sleep(2000);
 	    
 	   //Inspection and clicking of "PO NO:" Field 
 	    WebDriverWait poNoField = new WebDriverWait(driver, Duration.ofMillis(8000));
@@ -5215,7 +5214,7 @@ public void getResult(ITestResult result) throws IOException
     {
       Random randVar = new Random();
       int randomVarr=randVar.nextInt(1000);
-      String screenShotPath = MAC_MasterData_01_CompanyMaster.capture(driver, "FailedTestScreen"+randomVarr);
+      String screenShotPath = GetScreenShot.capture(driver, "FailedTestScreen"+randomVarr);
       test.log(LogStatus.FAIL, result.getThrowable());
       test.log(LogStatus.FAIL, "Failed Screenshot below : " + test.addScreenCapture(screenShotPath));
       
