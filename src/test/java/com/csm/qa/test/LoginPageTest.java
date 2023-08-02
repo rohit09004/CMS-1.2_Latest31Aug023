@@ -6362,20 +6362,7 @@ public void Test29() throws EncryptedDocumentException, InterruptedException, IO
 	    reportLog("10.Inserting 'PO Qty.' field ");
 	    Thread.sleep(1000);
 	    
-//	    //Inspection and clicking of "PO Qty."
-//	    WebDriverWait poQty3 = new WebDriverWait(driver, Duration.ofMillis(8000));
-//	    poQty3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input"))); 
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).click();
-//	    base.commonPOQtyBackSpace(driver);
-//        Thread.sleep(2000);
-//		String poQtyData3= sheet.getRow(37).getCell(9).getStringCellValue();
-//	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[7]/div/div/div/input")).sendKeys(poQtyData3);
-//	    System.out.println("10.Inserting 'PO Qty.' field ");
-//	    Reporter.log("10.Inserting 'PO Qty.' field ");
-//	    reportLog("10.Inserting 'PO Qty.' field ");
-//	    Thread.sleep(2000);
-	    
-			    
+
 	    base.commonSAVEbuttonCHILD(driver);
 		System.out.println("11.Cliking on 'SAVE' button ");
 		Reporter.log("11.Cliking on 'SAVE' button ");
