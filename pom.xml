@@ -35,7 +35,20 @@
     <version>5.2.2</version>
 </dependency> 
 
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
+<!-- 
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.7.1</version>
+    <scope>test</scope>
+</dependency>
+-->
+
+
+
+
+
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
@@ -43,20 +56,50 @@
     <scope>test</scope>
 </dependency>
 
+<!-- 
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-to-slf4j</artifactId>
+    <version>2.8.2</version>
+</dependency>
+-->
+
+
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<!-- 
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>5.1.0</version>
 </dependency>
+-->
+
 
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>5.3.2</version>
+    <version>5.4.1</version>
 </dependency>
 
+
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<!--
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.3.2</version>
+</dependency>
+ -->
+
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<!-- 
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.3.3</version>
+</dependency>
+-->
 
 
 <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
@@ -116,7 +159,7 @@
 
 
 
-
+<!-- 
 <dependency>
  <groupId>org.testng</groupId>
  <artifactId>testng</artifactId>
@@ -124,11 +167,16 @@
  <scope>test</scope>
 </dependency>
 
+-->
+
+<!-- 
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>4.4.3</version>
 </dependency>
+-->
+
 
 <dependency>
     <groupId>com.relevantcodes</groupId>

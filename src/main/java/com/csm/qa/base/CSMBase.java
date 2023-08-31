@@ -66,8 +66,11 @@ public class CSMBase {
 		 driver.manage().deleteAllCookies();
 		 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TestUtil.pageload_wait));
 		 //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.implicit_wait));
-		 driver.get(prop.getProperty("url"));//url is launched 
+		 //driver.get(prop.getProperty("url"));//url is launched 
+		 driver.get("https://qacms.jgc.com/cms_training");
     }
+	
+
 	
 	//Method for adding logs passed from test cases
 		 public void reportLog(String message) {    
@@ -260,7 +263,21 @@ public class CSMBase {
 		}
 	
 	
-	
+		
+         public static void commonAllElementsNDE(WebDriver driver) throws EncryptedDocumentException, IOException{
+			
+		    //Inspection and clicking of "CMS" tab 	    
+		    WebDriverWait cmstab_wait = new WebDriverWait(driver, Duration.ofMillis(8000));
+		    cmstab_wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/header/nav/div/ul/li[2]/a")));
+		    driver.findElement(By.xpath("/html/body/div[1]/header/nav/div/ul/li[2]/a")).click();
+
+		  //Inspection and clicking of "CMS" tab 	    
+		    WebDriverWait wecModule = new WebDriverWait(driver, Duration.ofMillis(8000));
+		    wecModule.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/header/nav/div/ul/li[2]/ul/li[1]/ul/li[7]/a")));
+		    driver.findElement(By.xpath("/html/body/div[1]/header/nav/div/ul/li[2]/ul/li[1]/ul/li[7]/a")).click();
+
+
+         }
 	
 	
 }

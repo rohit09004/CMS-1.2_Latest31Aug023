@@ -563,7 +563,7 @@ public void Test3() throws EncryptedDocumentException, InterruptedException, IOE
 		Thread.sleep(2000);
   
       //Inspection and clicking of "Ident Code"   	    
-  	WebDriverWait identCodeList3 = new WebDriverWait(driver, Duration.ofMillis(8000));
+  	    WebDriverWait identCodeList3 = new WebDriverWait(driver, Duration.ofMillis(8000));
 		identCodeList3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")));
 	    String identCodeData3=sheet.getRow(3).getCell(5).getStringCellValue();
 	    driver.findElement(By.xpath("/html/body/div[1]/div/section[2]/div[1]/form/div[3]/div/div/div/div[6]/div/div/div[1]/div/table/tbody/tr[2]/td/div/div/div[6]/div[1]/div/div/div/table/tbody/tr[1]/td[3]/div/div/div[1]/div/input")).sendKeys(identCodeData3);
